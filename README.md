@@ -69,7 +69,7 @@ Installation
 
 
 Unpack the tar file to a directory of your choice, cd to DarkStars/run
-and type './mkdark'.  If you've got the Intel fortran compiler,
+and type './mkdark'.  If you've got the Intel or GNU fortran compiler,
 and are running on an x86 machine, then everything
 *should* go smoothly.  If not, edit DarkStars/make/makefile
 to suit your compiler and architecture.  Users should probably do this
@@ -77,7 +77,7 @@ anyway to ensure that the correct optimisations are being used for their
 specific architecture.  It may also be necessary to edit the makefiles
 in the DarkSUSY directory if compiling proves troublesome.
 
-DarkStars so far only supports ifort.
+DarkStars has been tested with ifort 12 and gfortran 4.8.5.
 
 
 Running (and plotting) the examples

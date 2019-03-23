@@ -25,7 +25,7 @@
 # for the Intel compiler with flags set for Intel Core Duo processor (laptop)
 # FC = ifort -132 -xP -arch SSE2 -vec-report0
 # for the Intel compiler with flags set for Intel Pentium 4 with no SSE extensions (GLAST boxes)
- FC = ifort -132 -vec-report0 -xW
+# FC = ifort -132 -vec-report0 -xW
 # for the Intel compiler with flags set for Intel Core 2 Duo / Xeon processors (OSX 8 core machine)
 # FC = ifort -132 -vec-report0 -xT
 # -axP generates code for Intel core duo processors.
@@ -34,6 +34,9 @@
 # -p for grof profiling
 # -ipo for extra interfile optimization and inlining
 # -vec-report0 to eliminate diagnostics about vectorized loops
+
+# for gfortran
+FC = gfortran -ffixed-line-length-132
 
 # for the IBM compiler with free format
 #FC = xlf95
@@ -49,7 +52,7 @@
 #FC = g95 -ffixed-line-length-132
 
 # use standard optimization
-FFLAGS = -O2 #-check all -traceback -fpstkchk -std90 -warn unused -warn declarations  
+FFLAGS = -O2 #-check all -traceback -fpstkchk -std90 -warn unused -warn declarations
 #FFLAGS = -O2 -Rb -Rs
 # -Rb checks array boundaries, -Rs checks array conformance
 # for performance profiling and gprof with Absoft compiler (others use -pg)
@@ -71,7 +74,7 @@ OBJ_LATE = \
  ez_utils.o ez_log_utils.o ez_log.o \
  ez_opacity.o ez_convection.o ez_nuclear.o ez_vcool.o ez_ionization.o ez_state.o \
  ez_shell.o ez_equations.o ez_magnitude.o ez_report.o ez_solve.o ez_cycle.o ez_setup.o \
- ez_flash.o ez_driver.o ez_do_one_utils.o 
+ ez_flash.o ez_driver.o ez_do_one_utils.o
 OBJ_LATER = ez_do_one.o ez_example.o interp_1D.o demo1.o demo2.o experiment.o
 OBJ_VERY_LATE = dispatch.o
 OBJ = $(OBJ_EARLY) $(OBJ_LATE) $(OBJ_LATER) $(OBJ_VERY_LATE)
@@ -88,7 +91,6 @@ LAOBJ = \
 
 DS_ROOT = ../DarkSUSYLE
 DS_INSTALL = $(DS_ROOT)
-DS_COMPILER_LIB = g2c
 DS_INC = $(DS_ROOT)/include
 DS_LIB = $(DS_INSTALL)/lib
 DSEDITION = darksusyLE
@@ -96,47 +98,46 @@ DSEDITION = darksusyLE
 NUMDIR = ../num
 # The commented routines are derived from proprietry code and therefore not included in the public DarkStars release.
 # You can replace them with your own personal versions, or just rely on Simpson's rule for all integrals
-# (which is the default anyway).  RK45 is faster, but not as reliable as Simpson's rule for this problem. 
-NUMOBJ = zeroin.o #zbrent.o #fehl.o rkfs.o rkf45.o DkStrs_Romberg.o 
+# (which is the default anyway).  RK45 is faster, but not as reliable as Simpson's rule for this problem.
+NUMOBJ = zeroin.o #zbrent.o #fehl.o rkfs.o rkf45.o DkStrs_Romberg.o
 
 TSDIR = ../TSPACK
 TSOBJ = ENDSLP.o SIGS.o SNHCSH.o STORE.o YPCOEF.o YPC1.o YPC1P.o YPC2.o YPC2P.o TSPSI.o \
  INTRVL.o HVAL.o HPVAL.o
 
 DSTARSPROG = DarkStars
-DSTARSOBJ_VERY_EARLY = DkStrs_akraw.o DkStrs_constants.o DkStrs_data.o 
+DSTARSOBJ_VERY_EARLY = DkStrs_akraw.o DkStrs_constants.o DkStrs_data.o
 DSTARSOBJ_EARLY = DkStrs_utils.o \
- DkStrs_WIMPdens.o DkStrs_annihilation.o DkStrs_fint_ext.o DkStrs_transport.o 
+ DkStrs_WIMPdens.o DkStrs_annihilation.o DkStrs_fint_ext.o DkStrs_transport.o
 DSTARSOBJ_MIDDLE = DkStrs_init.o DkStrs_admin.o
 DSTARSOBJ_LATE  = DarkStars.o
 DSTARSOBJ = $(DSTARSOBJ_VERY_EARLY) $(DSTARSOBJ_EARLY) $(DSTARSOBJ_MIDDLE) $(DSTARSOBJ_LATE)
 
 all :  darkstars
-	
+
 darkstars : $(LAOBJ) $(TSOBJ) $(DSEDITION:%=%_lib) $(OBJ_EARLY) $(DSTARSOBJ_VERY_EARLY) $(NUMOBJ) \
 	$(DSTARSOBJ_EARLY) $(OBJ_LATE) $(DSTARSOBJ_MIDDLE) $(OBJ_LATER) $(DSTARSOBJ_LATE) $(OBJ_VERY_LATE)
 	$(FC) $(FFLAGS) -L$(DS_LIB) -o $(RUNDIR)/$(DSTARSPROG) \
-	$(LAOBJ) $(TSOBJ) $(NUMOBJ) $(OBJ) $(DSTARSOBJ) -l$(DS_COMPILER_LIB) -l$(DSEDITION)
+	$(LAOBJ) $(TSOBJ) $(NUMOBJ) $(OBJ) $(DSTARSOBJ) -l$(DSEDITION)
 
 $(DSEDITION:%=%_lib):
 	cd $(DS_ROOT); make $(DSEDITION:%=%_lib)
 
 $(DSTARSOBJ) : %.o : $(SRCDIR)/%.f $(DSEDITION:%=%_lib)
-	$(FC) -fpe0 -c $(FFLAGS) -I$(DS_INC) -L$(DS_LIB) \
-	$< -l$(DSEDITION)
+	$(FC) -c $(FFLAGS) -I$(DS_INC) -L$(DS_LIB) -l$(DSEDITION) $<
 
 $(NUMOBJ) : %.o : $(NUMDIR)/%.f
-	$(FC) -fpe0 -c $(FFLAGS) $<
+	$(FC) $(FFLAGS) -c $<
 
 $(TSOBJ) : %.o : $(TSDIR)/%.f
-	$(FC) -fpe0 -c $(FFLAGS) $<
+	$(FC) $(FFLAGS) -c $<
 
 clean : clean_EZ
 	-@rm -f $(DSTARSOBJ) $(TSOBJ) $(NUMOBJ)
 
 cleanall : cleanall_EZ clean_darksusy clean
 
-clean_darksusy : 
+clean_darksusy :
 	cd $(DS_ROOT); make cleanLE
 
 # End DarkStars section
@@ -150,8 +151,8 @@ clean_darksusy :
 %.o: $(LADIR)/%.f
 	$(FC) -c $(FFLAGS) $<
 
-clean_EZ : 
+clean_EZ :
 	-@rm -f $(OBJ) *.mod
 
-cleanall_EZ : 
+cleanall_EZ :
 	-@rm -f $(LAOBJ) $(OBJ) *.mod

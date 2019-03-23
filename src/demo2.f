@@ -2,7 +2,7 @@
       USE ez_do_one
       USE star_extras
       IMPLICIT NONE
-     
+
       integer :: he_break_even_model
 
       CONTAINS
@@ -15,15 +15,15 @@
          CALL Demo_2_Info
          IF (.TRUE.) THEN ! USE THIS FOR DOING A SINGLE MASS FOR A SINGLE Z
             ! the default demo2 case is mass = 3.0 Msun and Z = 0.02
-         
+
             mass = 3.0d0  ! the initial mass of the star
-         
+
             metals_dir = '../metals/z02'  ! where to get metals data
             data_dir = '../demos/data_z02' ! where to write the output logs
-         
+
             CALL Init_Do_One_Utils ( mass )
             CALL Open_Demo2_DIFFME()
-         
+
             WRITE_PROFILE_TO_RUN = .TRUE.
             WRITE_PROFILE_TO_DATA = .TRUE.
             WRITE_PROFILE_TO_MODELS = .FALSE. ! change to .TRUE. for making movies
@@ -54,8 +54,8 @@
          head_cnt = 10; summary_cnt = 1
          stop_at_Model = -1
       END SUBROUTINE Demo2_Before_Evolve
-      
-      
+
+
       SUBROUTINE Demo_2_All
         INTEGER, PARAMETER :: num_Masses = 51
         DOUBLE PRECISION :: mass, mass_Array(num_Masses)
@@ -78,7 +78,7 @@
            CALL Get_Star_Info ( mass, Build_Demo2_Filename, Demo2_Initial_Params, Dummy_Before_Evolve, Do_One_Check_Model )
         END DO
         END SUBROUTINE Demo_2_All
-     
+
       SUBROUTINE Demo_2_Z
         INTEGER, PARAMETER :: num_MassesZ = 7
         DOUBLE PRECISION :: mass_ArrayZ(num_MassesZ)
@@ -90,7 +90,7 @@
         INTEGER :: first_Z, last_Z, num_MassesZ
         LOGICAL :: postHeFlash
         DOUBLE PRECISION :: mass_ArrayZ(num_MassesZ), mass
-        INTEGER :: first_to_doZ, last_to_doZ, i, j 
+        INTEGER :: first_to_doZ, last_to_doZ, i, j
         first_to_doZ = 1; last_to_doZ = num_MassesZ
         DO j = first_Z, last_Z
            SELECT CASE (j)
@@ -129,7 +129,7 @@
            END DO
         END DO
       END SUBROUTINE Demo_2_Zs
-     
+
       SUBROUTINE Demo_2_Info
         WRITE (*,*)
         WRITE (*,*)
@@ -151,14 +151,14 @@
         WRITE(*,'(a)') '      PSIcntr is the central electron degeneracy.'
         WRITE(*,'(a)') '      GAMcntr is the central plasma interaction parameter.'
       END SUBROUTINE Demo_2_Info
-     
+
       SUBROUTINE Demo2_Initial_Params
       wind_Eta = 1D0  ! set Reimers' wind eta
       END SUBROUTINE Demo2_Initial_Params
-     
+
       SUBROUTINE Null_Before_Evolve
       END SUBROUTINE Null_Before_Evolve
-     
+
       SUBROUTINE Open_Demo2_DIFFME
         INTEGER :: ios
         CHARACTER (LEN=strlen) :: diffme_filename
@@ -171,7 +171,7 @@
            WRITE(*,*) 'Build_Demo2_Filename: Failed to open file ', TRIM(diffme_filename)
         END IF
       END SUBROUTINE Open_Demo2_DIFFME
-     
+
       SUBROUTINE Build_Demo2_Filename(init_M)
         DOUBLE PRECISION, INTENT(IN) :: init_M
         INTEGER :: im, tenths
@@ -192,12 +192,12 @@
         WRITE(full_name,frmt) trim(data_dir), '/demo2_', im, '_', tenths, '/', trim(partial_name)
         WRITE(*,*) full_name
       END SUBROUTINE Build_Demo2_Filename
-       
+
       SUBROUTINE Get_logF_EoS
         USE ez_setup
         DOUBLE PRECISION :: logTmin, logTmax, logFmin, logFmax
         INTEGER :: logTpoints, logFpoints
-        CHARACTER (LEN=strlen) :: metals_dir, out_filename
+        CHARACTER (LEN=strlen) :: out_filename
         metals_dir = '../metals/z02'
         out_filename = '../profile/logF_EoS.data'
         logTmin = 3D0; logTmax = 8.5D0; logTpoints = 100
@@ -217,14 +217,14 @@
            CALL Write_logF_EoS(logTmin, logTmax, logTpoints, logFmin, logFmax, logFpoints, out_filename)
            WRITE(*,*) 'Finished writing ', trim(out_filename)
         END IF
-     
+
       END SUBROUTINE Get_logF_EoS
-     
+
       SUBROUTINE Get_logRHO_EoS
         USE ez_setup
         DOUBLE PRECISION :: lgTmn, lgTmx, lgRHOmn, lgRHOmx
         INTEGER :: lgTsteps, lgRHOsteps
-        CHARACTER (LEN=strlen) :: metals_dir, out_dir
+        CHARACTER (LEN=strlen) :: out_dir
         metals_dir = '../metals/z02'
         out_dir = '.'
         ! full range
@@ -240,16 +240,16 @@
         WRITE(*,*) 'Finished writing logRHO_EoS'
       END SUBROUTINE Get_logRHO_EoS
 
-      
+
       SUBROUTINE Phil_Initial_Params
-      
+
          mixing_length_alpha = 1.6D0
          overshoot_param_H = 0.12D0
          overshoot_param_He = 0.12D0
          wind_Eta = 0d0
          number_of_center_shells_to_mix = 0
          call_save_exp_info = .true.
-      
+
       END SUBROUTINE Phil_Initial_Params
 
 
@@ -266,7 +266,7 @@
          DOUBLE PRECISION, PARAMETER :: Lsun = 1d33 * CLSN
          DOUBLE PRECISION, PARAMETER :: Msun = 1d33 * CMSN
          DOUBLE PRECISION, PARAMETER :: CSDAY = 86.4d3
-      
+
          flg = Do_One_Check_Model()
          IF (flg /= KEEP_GOING) then
             Phil_Check_Model = flg
@@ -286,7 +286,7 @@
             Phil_Check_Model = TERMINATE
          END IF
          end if
-      
+
          call EZ_Extras
          if (.false.) then ! use this to force mixing at center
          do i = SX_CNTR, SX_SURF, -1
@@ -298,15 +298,15 @@
          else
          number_of_center_shells_to_mix = 0
          end if
-      
+
          if (mod(model_Number,20) == 0 .or. log10(star_Age) > 8.5) CALL Save_Profiles
-      
+
          if (center_He > 0.9d0) Phil_Check_Model = TERMINATE
       END FUNCTION Phil_Check_Model
-      
+
       SUBROUTINE Lars_Initial_Params
-         call Demo2_Initial_Params  
-         he_break_even_model = -1   
+         call Demo2_Initial_Params
+         he_break_even_model = -1
       END SUBROUTINE Lars_Initial_Params
 
 
@@ -320,7 +320,7 @@
          USE ez_do_one_data
          USE star_constants
          integer :: flg
-      
+
          flg = Do_One_Check_Model()
          IF (flg /= KEEP_GOING) then
             Lars_Check_Model = flg
@@ -328,7 +328,7 @@
          end if
          Lars_Check_Model = KEEP_GOING
          if (model_Number == 10) call save_lars_model
-      
+
          if (he_break_even_model < 0) then
             if (helium_ignition) then
                he_break_even_model = model_Number
@@ -339,16 +339,16 @@
          else if (center_He < 1d-5 .and. mod(model_Number-he_break_even_model,20) == 0) then
             call save_lars_model
          end if
-      
+
          contains
-      
+
          subroutine report_negL
-      
+
             integer :: i
             double precision :: minL, minL_mass
-         
+
             minL = 0
-         
+
             do i = N_CNTR_shell, N_SURF_shell, -1
                if (SX(SX_L,i) < minL) then
                   minL = SX(SX_L,i)
@@ -356,15 +356,15 @@
                end if
             end do
             if (minL < 0) write(*,*) model_number, minL, minL_mass
-      
+
          end subroutine report_negL
-      
+
          subroutine save_lars_model
-      
+
             character (len=256) :: filename
             integer :: io_unit, i
             io_unit = 63
-         
+
             if (model_Number < 1000) then
                write(filename,'(a,f3.1,a,i3,a)') 'lars_data/m_',  initial_Mass, '_mod_', model_number, '.data'
             else
@@ -373,39 +373,39 @@
             write(*,*) 'save to ', trim(filename)
             open(unit=io_unit,file=trim(filename))
             call EZ_Extras
-         
+
             call report_negL
-         
-            write(io_unit,'(a8,4x,99a20)') 
+
+            write(io_unit,'(a8,4x,99a20)')
      >         'mod#', 'star_Age', 'star_Mass', 'initial_Mass', 'initial_Z'
             write(io_unit,'(i8,4x,e20.6,99f20.6)') model_number, star_Age, star_Mass,
      >         initial_Mass, initial_Z
-     
-            write(io_unit,'(99a20)') 
+
+            write(io_unit,'(99a20)')
      >            'mass He core', 'mass C core', 'mass O core',
      >            'radius He core', 'radius C core', 'radius O core'
             write(io_unit,'(99e20.6)') mass_He_Core, mass_C_Core, mass_O_Core,
      >         radius_He_Core, radius_C_Core, radius_O_Core
-     
+
             write(io_unit,'(99(a11,3x))') 'm', 'r', 'L', 'rho', 'P', 'T', 'conv vel', 'eps H', 'eps He',
      >         'opacity', 'xhe', 'xc', 'xn', 'xo'
             do i = N_CNTR_shell, N_SURF_shell, -1
-            write(io_unit,'(99e14.6)') SX(SX_M,i), SX(SX_R,i), SX(SX_L,i), 
-     >           SX(SX_RHO,i), SX(SX_P,i), SX(SX_T,i), 
-     >           SX(SX_CV,i), SX(SX_EPS_H,i), SX(SX_EPS_HE,i), SX(SX_OPACITY,i), 
+            write(io_unit,'(99e14.6)') SX(SX_M,i), SX(SX_R,i), SX(SX_L,i),
+     >           SX(SX_RHO,i), SX(SX_P,i), SX(SX_T,i),
+     >           SX(SX_CV,i), SX(SX_EPS_H,i), SX(SX_EPS_HE,i), SX(SX_OPACITY,i),
      >           SX(SX_XHE,i), SX(SX_XC,i), SX(SX_XN,i), SX(SX_XO,i)
             end do
             close(io_unit)
-      
+
          end subroutine save_lars_model
-      
+
       END FUNCTION Lars_Check_Model
 
 
       END MODULE demo2
-     
-     
-     
-     
-     
-     
+
+
+
+
+
+
