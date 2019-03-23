@@ -8,14 +8,14 @@
       use star_constants
       implicit none
 
-      ! Set true to do a solar "legacy" capture calculation, using 
+      ! Set true to do a solar "legacy" capture calculation, using
       ! the DarkSUSY "nt" programs (these are included
       ! in DarkSUSYLE only for the purposes of legacy capture).
       ! Uses the standard solar model of Bachall et al to get
       ! the density structure of the Sun (though additional
       ! abundances still come from the chosen input abundance file).
       ! Doing only a 16-species capture (i.e. no He3, etc) is quite
-      ! different in this case, as the Bachall model includes the 
+      ! different in this case, as the Bachall model includes the
       ! helium-3 shell above the core; this is left out normally since
       ! EZ doesn't follow helium-3 explicitly.  Leaving out such a zone
       ! (in a star which posesses it) raises the effective metallicity
@@ -23,9 +23,9 @@
       ! tad for capture dominated by the spin-independent cross-section
       ! (e.g. about 7% in the Sun).
       logical, parameter :: legacy=.false.
-      
+
       ! Version tag
-      character (len=strlen) :: DarkStars_version = 'v1.03'
+      character (len=strlen) :: DarkStars_version = 'v1.06'
 
       ! grams per GeV
       double precision, parameter :: CGGEV = 1.d3 * CMEV / CL**2
