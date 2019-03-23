@@ -1,5 +1,20 @@
 Revision history for DarkStars
 
+v1.06
+-----
+Updated to compile with gfortran 4.8.5
+
+
+v1.05
+-----
+Internal version for alternative WD EoS; branch discontinued.
+
+
+v1.04
+-----
+Internal version for alternative WD EoS; branch discontinued.
+
+
 v1.03
 -----
 Improved support for saving a non-dark run and restarting it with the effects of dark matter included.
