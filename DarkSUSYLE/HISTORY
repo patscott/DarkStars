@@ -1,0 +1,278 @@
+Version history for DarkSUSY
+============================
+
+====================================================== VERSION HISTORY
+
+---------- Version: current (not tagged yet)
+
+* First galprop interface added
+
+* Now uses a configure script to set up the makefiles before compilation.
+  It is now possible to install DarkSUSY in your favourite location (e.g.
+  /usr/local). The default is to install in the DarkSUSY directory itself.
+
+* Small fixes to the sfermion coannihilation routines (working, but not
+  complete yet).
+
+---------- Version 4.1.6:  April, 2006 ----------
+
+* Cleaned up the earth density and composition routines.
+
+* Added routines that calculate the electron density in the Earth as
+  a function of the radius (needed for neutrino oscillation code)
+
+---------- Version 4.1.5:  April, 2006 ----------
+
+* Merged together different subversions. Added a cleaner way of adding
+  coannihilating particles (everything is done in dsrdomega now).
+
+* Small bug fixes in the relic density routines (rare infinite loops
+  caught)
+
+* A bug in the full numerical solar capture rates fixed (the rates were
+  over-estimated by 6%).
+
+* New standard solar model used: BS05(OP). Gives very good ageement
+  with the old BP2000 model, but with about 1% higher capture rates.
+  The new alternative solar model, BS05(AGS,OP) with new heavy element
+  abundances is also available. This model give a 4% higher capture
+  rate on Hydrongen, but lower (about 20%) on the heavier elements.
+  However, it doesn't fit helioseismology as well, so we use the BS05(OP)
+  as the default.
+
+---------- Version 4.1.4:  December, 2005 ----------
+
+* Started adding routines to get column densities etc in the Sun. These
+  are then used by an external neutrino oscillation code.
+
+---------- Version 4.1.2:  September, 2005 ----------
+
+* Fixed a problem with sfermion coannihilations at very high masses.
+
+* Changed artificial width of sparticles to work better with very high
+  mass models.
+
+---------- Version 4.1.1: November 17, 2004 ----------
+
+* Fixed a bug which could cause the relic density routines to crash
+  if the print level was set to print all information/error messages
+
+---------- Version 4.1: June 8, 2004 ----------
+
+* Small bugfixes, most of which were not imporant (the only exception
+  being the scattering rates on Na-23 and the spin-dependent
+  scattering rates on specific nuclei. Note that the scattering cross
+  sections on protons and neutrons were not affected).
+
+* The MSSM test models used by test/dstest.f have been updated to
+  correspond to the benchmark models in the DarkSUSY paper,
+  astro-ph/0406204.
+
+---------- Version 4.00: February 19, 2004 ----------
+
+* New public release
+
+---------- Version 4.00-pre7: February 19, 2004 ----------
+
+* Added direct detection on various nuclei
+
+* Cleaned up the code
+
+* Updated the test files in test/
+
+---------- Version 4.00-pre3: February 17, 2004 ----------
+
+* Added new J(Psi) routines in src/hm.
+
+* Code partly cleaned up.
+
+---------- Version 4.00-pre2: February 16, 2004 ----------
+
+* Cleaned up the code a little bit.
+
+* Added the latest dbar routines and new updated halo properties from Piero.
+
+---------- Version 4.00-pre1: February 16, 2004 ----------
+
+* Merged with Paolo's routines:
+  - Galactic center routines (though without the correct thick
+    source treatment) included.
+  - Direct detection routines updated. Drees-Nojiri formulae can be
+    used and rates on various elements can be calculated.
+  - Bug fixes in muon g-2 routines
+  - Rearrangment of routines for annihilation rates are rest in the halo
+  - Bug fixe for the neutrino yukawas.
+  - Better error handling for mass diagonlization.
+
+---------- Version 3.14.05-beta24: February 13, 2004 ----------
+
+* Piero's new positron routines are included. They are tested against
+  Ted's routines and for non-cuspy profiles they agree. For cuspy profiles,
+  Piero's routines give larger fluxes due to the fact that these routines
+  integrate the source over both r and z and does not approximate the source
+  as uniform in z as is done in Ted's routines. We have verified that Piero's
+  routines with the same approximation gives the same result as Ted's
+  routines. The new routines are in src/ep_clump/ and share many of 
+  the common block of Ted's routines.
+
+* The diffusion parameters for positron model esu04 have been corrected.
+
+---------- Version 3.14.05-beta23: February 10, 2004 ----------
+
+* New velocity distribution routines for Burkert and N03 (adiabsm)
+  profiles
+
+---------- Version 3.14.05-beta21: January 26, 2004 ----------
+
+* The pbar routines are updated to also include the routines to create
+  data files for the new propagation routines
+
+---------- Version 3.14.05-beta20: January 21, 2004 ----------
+
+* ep routines updated to use Piero's diffusion parameters through the
+  option 'esu04'.
+
+---------- Version 3.14.05-beta19: January 21, 2004 ----------
+
+* New halo routines implemented. The possibility to use the Burkert
+ profile has been added. The diffusion parameters for pbar, dbar and eplus
+ have also been updated.
+
+---------- Version 3.14.05-beta18: December 23, 2003 ----------
+
+* A bug in the form factors for the Earth and the Sun numerical capture
+  rates was fixed. For the Earth, this had little effect, but for the
+  Sun, the fix is important.
+
+---------- Version 3.14.05-beta17: December 16, 2003 ----------
+
+* Results of a new solar system diffusion with solar depletion are
+  now implemented.
+
+* A bug in the Sun and Earth capture rates was fixed. The affected
+  Earth routine was by default not used, so the Earth capture
+  rates were OK. The Sun capture rates were on the other hand over-
+  estimated by about 25-30%.
+
+* Isasugra version 7.69 can now be used for the mSUGRA RGE running.
+
+---------- Version 3.14.05-beta15: May 23, 2003 ----------
+
+* The isasugra interface is trimmed to correctly identify unphysical
+  models as such.
+
+---------- Version 3.14.05-beta14: May 21, 2003 ----------
+
+* Isasugra version 7.67 is now implemented to use with DarkSUSY. Compared
+  to the earlier version 7.64, full one-loop corrections are now
+  included for the sparticle masses, which change these by up to 5%.
+  The isasugra routines have been converted to double precision to
+  make them more stable in e.g. the focus point region and the convergence
+  criteria are tightened compared to the isasugra distribution.
+
+---------- Version 3.14.05-beta13: May 15, 2003 ----------
+
+* The b -> s gamma routines have been updated to include higher order
+  loop corrections in the SM and SUSY calculation. The accelerator bound
+  routine has been updated to compare with the current world-average
+  of BR(b-> s gamma).
+* Anti-deutron fluxes have been added. 
+
+---------- Version 3.14.05-beta12: January 22, 2003 ----------
+
+* A missing factor of 1/2 (see Ullio et al, PRD66(2002)123502) in
+  the annihilation rates for annihilation in the halo has been inserted.
+  Routines returning expressions like N*(sigma v) are not affected;
+  only the routines returning a resulting flux have been modified.
+  In addition, the neutrino fluxes from the Sun and the Earth have
+  not been modifed as these included the factor of 1/2 already.
+* The antiproton routines have been modifed so that different
+  pbtd.dat files are used for different propagation models.
+ 
+
+---------- Version 3.14.05-beta11: December 11, 2002 ----------
+
+* A few errors on the ISAUGRA interface have been fixed
+* ISASUGRA version 7.64 is now used. We have converted this
+  into double-precision and increased the convergence criteria
+  from the default values to make it stable in e.g. the
+  focus point region.
+
+---------- Version 3.14.05-beta10: October 10, 2002 ----------
+
+* For extreme parameters, cancellation errors could occur for some
+  sfermion coannihilation channels. This is now taken care of.
+* On some systems (Sun), the anstau-efos routines wouldn't compile
+  due to missed external declarations. This is now fixed (even though
+  these routines are never used).
+* A missing process sfmerion coannihilation process has been inserted
+  (slepton + slepton* -> nu nu-bar with chi+ exchange)
+* The routine dreal in contrib/feynhiggs commented out since it
+  conflicts with the intrinsic dreal on some systems.
+
+---------- Version 3.14.05-beta9: October 3, 2002 ----------
+
+* Changed the maximal momentum p that is used in the relic density
+  routines. It is usually set to p_max ~ 26 m_x to cover a large
+  integration region even for small x. Changed the maximum to
+  15*m_x instead and itroduced an extrapolation in dsrdwintp. This
+  avoids sampling the cross sections in regions which in rare cases
+  are numerically unstable (large cancellation errors).
+  It should not affect the results of the relic density calculation.
+* Fixed a few bugs in the new higwid routine
+* Changed name of two FeynHiggs routines that conflicted with common
+  blocks in private DarkSUSY routines.
+* Updated accelerator constraints to pdg2002 (approximately).
+  The new routines are in dsacbnd4.f and are used as a default
+  when dsacbnd.f is called. The old routines will be used if
+  a call to dsacset('pdg2000') is made before the call to dsacbnd.f.
+
+---------- Version 3.14.05-beta8: September 18, 2002 ----------
+
+* QCD corrections to Higgs widths and vertices added. Bugs in
+  Higgs widths routines fixed.
+* Running couplings and masses implemented in a simple way.
+* Interface to HDECAY available (call dshdecay to set widths
+  from there instead. Currently masses are set as well, uncomment
+  in src/xhdecay/dshdecay.f if not wanted).
+* Bugs in some vertices with A-terms fixed (sign error).
+
+---------- Version 3.14.05-beta7: July 12, 2002 ----------
+
+* Sfermion coannihilations included.
+* Bug in chargino-(up-squark)-(down-quark) vertex fixed (sign error)
+* Interface to Isajet v7.63
+* Interface to full FeynHiggs routines (v.1.2.2)
+* Many small fixes and improvements here and there
+
+---------- Version 3.14.03-beta: April, 2001 ----------
+
+* On systems with long directory names there was a problem with reading
+  the datafiles. The limit on the length of the directory names has
+  now been increased.
+
+---------- Version 3.14.02-beta: February 19, 2001 ----------
+
+* A bug in the Z gamma expressions fixed.
+* The rate in neutrino telescopes was not correct when the
+  Damour-Krauss population of neutralinos was included (non-standard
+  option) and the effect of the new population was significant. This
+  is now fixed.
+* The idtag flag is no longer set in dsgive_model.
+* The MSSM contribution to the g-2 amplitude can now be calculated.
+* A flag in pbset was not saved properly. This caused a problem
+  with some compilers. This is now fixed.
+* The accelerator bound on mh2 was incorrect. This is now fixed.
+* The call to dswhwarn in dstest.f was incorrect. This is now fixed.
+* Makefiles rewritten to work better on different platforms.
+
+---------- Version 3.14.01-beta: September 15, 2000 ----------
+
+* First public release.
+
+--------------------------------------------------------------
+
+
+
+
+

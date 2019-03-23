@@ -1,0 +1,2951 @@
+ 
+ -----------------------------------------------------------------
+ Welcome to DarkStars v1.00 (incorportating DarkSUSY and EZ/STARS)
+ -----------------------------------------------------------------
+ 
+ Initializing DarkStars...
+ 
+   Reading simulation input parameters...
+   done.
+ 
+   Initializing DarkSUSYLE...
+   done.
+ 
+   Inializing WIMP thermal diffusivities and conductivities...
+   done.
+ 
+   Inializing WIMP-nucleus cross-sections...
+   done.
+ 
+   Determining machine precision...
+   done.
+ 
+ done.
+ 
+
+
+  Evolve   1.0 Msolar star with data from ../metals/z01                                                                                                                   
+
+ WIMP radial distribution mode set to accurate.
+ Interpolation mode set to advanced.
+   (Cubic or automatically-tensioned splines, depending upon application)
+ Potential mode set to tabulate.
+ Halo velocity integration mode set to analytical.
+ Halo velocity distribution will extend to infinity.
+ Using an isothermal Maxwell-Boltzmann distribution for halo velocities.
+ 
+ Logs to be saved to ../DarkRuns/example_verydark/logs
+ Profiles to be saved to ../DarkRuns/example_verydark/profiles
+ No movie though :(
+ 
+ Stellar models will not be reconverged.
+ 
+ Model number:           0
+ Total WIMPs in star:      1.000000000000000E+030
+ Capture rate:     2.922762136560960E+042 WIMPs/yr
+ Net accretion rate:    2.922762136560960E+042 WIMPs/yr
+ Annually injected annihilation energy:   7.273071589272930E+015 GeV
+ WIMP thermal radius:   1.476394335323575E-002 stellar radii
+ WIMP isothermal temperature:    13639200.7334493      K
+ Central WIMP density:    217.293587498318      WIMPs/cm^3
+ WIMP density at thermal radius:    79.9378435390192      WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.000000000000000E+000
+ Last timestep:    12.0000000000000      yrs
+ Next requested maximum timestep:    12.0000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+ Model number:           1
+ Total WIMPs in star:      3.471960225234173E+043
+ Capture rate:     2.814778213266262E+042 WIMPs/yr
+ Net accretion rate:    2.734635843356264E+042 WIMPs/yr
+ Annually injected annihilation energy:   8.014236990999809E+042 GeV
+ WIMP thermal radius:   1.516274663221898E-002 stellar radii
+ WIMP isothermal temperature:    13469562.2001228      K
+ Central WIMP density:   7.239883050926212E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.512765421820841E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   3.471960225234073E+015
+ Last timestep:    12.0000000000000      yrs
+ Next requested maximum timestep:    13.2218796164488      yrs
+ 
+     1   1.9015   7.1306  17.1731  -0.0503   3.7676   1.0792   1.0792 -33.7855  -0.0370   1.0000   0.0000   1.0000   0.7285   0.2614   0.0010   0.0015   0.0051  -1.7033   0.1562
+ Model number:           2
+ Total WIMPs in star:      6.637457995967478E+043
+ Capture rate:     2.814715095280062E+042 WIMPs/yr
+ Net accretion rate:    2.521774040786314E+042 WIMPs/yr
+ Annually injected annihilation energy:   2.929410544937484E+043 GeV
+ WIMP thermal radius:   1.516531661610314E-002 stellar radii
+ WIMP isothermal temperature:    13469193.7363468      K
+ Central WIMP density:   1.385311001421705E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   4.803450157955731E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:    91.1732152841642     
+ Last timestep:    12.0000000000000      yrs
+ Next requested maximum timestep:    31.6140604272179      yrs
+ 
+     2   1.9015   7.1306  17.1731  -0.0502   3.7677   1.3802   1.0792 -33.7860  -0.0370   1.0000   0.0000   1.0000   0.7285   0.2614   0.0010   0.0015   0.0051  -1.7033   0.1562
+ Model number:           3
+ Total WIMPs in star:      1.076559571476256E+044
+ Capture rate:     2.814711892529453E+042 WIMPs/yr
+ Net accretion rate:    2.044078246875130E+042 WIMPs/yr
+ Annually injected annihilation energy:   7.706336456543224E+043 GeV
+ WIMP thermal radius:   1.516548204376971E-002 stellar radii
+ WIMP isothermal temperature:    13469210.9022791      K
+ Central WIMP density:   2.246871983610938E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   7.790851114988699E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:    62.1945588401929     
+ Last timestep:    18.0000000000000      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+     3   1.9015   7.1306  17.1731  -0.0502   3.7677   1.6232   1.2553 -33.7860  -0.0370   1.0000   0.0000   1.0000   0.7285   0.2614   0.0010   0.0015   0.0051  -1.7033   0.1562
+ Model number:           4
+ Total WIMPs in star:      1.522236011641464E+044
+ Capture rate:     2.814701673699485E+042 WIMPs/yr
+ Net accretion rate:    1.273990502244628E+042 WIMPs/yr
+ Annually injected annihilation energy:   1.540711171454857E+044 GeV
+ WIMP thermal radius:   1.516578645429036E-002 stellar radii
+ WIMP isothermal temperature:    13469262.1385870      K
+ Central WIMP density:   3.176930554324428E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.101575848250704E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:    41.3982144577531     
+ Last timestep:    27.0000000000000      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+     4   1.9014   7.1306  17.1731  -0.0503   3.7676   1.8388   1.4314 -33.7859  -0.0370   1.0000   0.0000   1.0000   0.7285   0.2614   0.0010   0.0015   0.0051  -1.7033   0.1562
+ Model number:           5
+ Total WIMPs in star:      1.863889070296415E+044
+ Capture rate:     2.814678217057207E+042 WIMPs/yr
+ Net accretion rate:    5.049858051851280E+041 WIMPs/yr
+ Annually injected annihilation energy:   2.309692411872079E+044 GeV
+ WIMP thermal radius:   1.516634263161460E-002 stellar radii
+ WIMP isothermal temperature:    13469375.2584011      K
+ Central WIMP density:   3.889621981497513E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.348696371110763E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:    22.4441582016272     
+ Last timestep:    40.5000000000000      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+     5   1.9014   7.1306  17.1731  -0.0503   3.7676   2.0394   1.6075 -33.7857  -0.0370   1.0000   0.0000   1.0000   0.7285   0.2614   0.0010   0.0015   0.0051  -1.7034   0.1562
+ Model number:           6
+ Total WIMPs in star:      2.019372935808128E+044
+ Capture rate:     2.814636678902126E+042 WIMPs/yr
+ Net accretion rate:    1.038948349484230E+041 WIMPs/yr
+ Annually injected annihilation energy:   2.710741843953703E+044 GeV
+ WIMP thermal radius:   1.516722357108710E-002 stellar radii
+ WIMP isothermal temperature:    13469561.8063723      K
+ Central WIMP density:   4.213533010535697E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.461010399968153E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:    8.34190553448477     
+ Last timestep:    60.7500000000000      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+     6   1.9014   7.1306  17.1731  -0.0503   3.7676   2.2311   1.7835 -33.7852  -0.0371   1.0000   0.0000   1.0000   0.7285   0.2614   0.0010   0.0015   0.0051  -1.7035   0.1562
+ Model number:           7
+ Total WIMPs in star:      2.054511023082052E+044
+ Capture rate:     2.814572130217956E+042 WIMPs/yr
+ Net accretion rate:    9.293665606564456E+039 WIMPs/yr
+ Annually injected annihilation energy:   2.805278464611392E+044 GeV
+ WIMP thermal radius:   1.516851836575344E-002 stellar radii
+ WIMP isothermal temperature:    13469839.6368836      K
+ Central WIMP density:   4.285948882959731E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.486120792369224E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:    1.74004943073390     
+ Last timestep:    91.1250000000000      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+     7   1.9013   7.1306  17.1730  -0.0504   3.7676   2.4173   1.9596 -33.7844  -0.0371   1.0000   0.0000   1.0000   0.7285   0.2614   0.0010   0.0015   0.0051  -1.7037   0.1562
+ Model number:           8
+ Total WIMPs in star:      2.057830498108044E+044
+ Capture rate:     2.814475027775392E+042 WIMPs/yr
+ Net accretion rate:    9.605513813451378E+038 WIMPs/yr
+ Annually injected annihilation energy:   2.813514476394047E+044 GeV
+ WIMP thermal radius:   1.517035054296928E-002 stellar radii
+ WIMP isothermal temperature:    13470222.7522179      K
+ Central WIMP density:   4.291620607019940E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.488087895332141E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.161570076222449     
+ Last timestep:    136.687500000000      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+     8   1.9013   7.1307  17.1730  -0.0504   3.7676   2.6000   2.1357 -33.7831  -0.0371   1.0000   0.0000   1.0000   0.7285   0.2614   0.0010   0.0015   0.0051  -1.7039   0.1562
+ Model number:           9
+ Total WIMPs in star:      2.058180456846642E+044
+ Capture rate:     2.814329391732670E+042 WIMPs/yr
+ Net accretion rate:    1.086813200594409E+039 WIMPs/yr
+ Annually injected annihilation energy:   2.813242578532076E+044 GeV
+ WIMP thermal radius:   1.517296714236913E-002 stellar radii
+ WIMP isothermal temperature:    13470769.2019389      K
+ Central WIMP density:   4.290510911545853E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.487698523237029E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   1.700619846581181E-002
+ Last timestep:    205.031250000000      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+     9   1.9012   7.1307  17.1729  -0.0505   3.7676   2.7804   2.3118 -33.7812  -0.0371   1.0000   0.0000   1.0000   0.7285   0.2614   0.0010   0.0015   0.0051  -1.7042   0.1562
+ Model number:          10
+ Total WIMPs in star:      2.058577888491365E+044
+ Capture rate:     2.814111025791927E+042 WIMPs/yr
+ Net accretion rate:    1.545364759351892E+039 WIMPs/yr
+ Annually injected annihilation energy:   2.812565661032575E+044 GeV
+ WIMP thermal radius:   1.517664174732016E-002 stellar radii
+ WIMP isothermal temperature:    13471504.2268290      K
+ Central WIMP density:   4.288714645780513E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.487042618308655E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   1.930985416757604E-002
+ Last timestep:    307.546875000000      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    10   1.9010   7.1307  17.1727  -0.0506   3.7676   2.9593   2.4879 -33.7786  -0.0371   1.0000   0.0000   1.0000   0.7285   0.2614   0.0010   0.0015   0.0051  -1.7047   0.1562
+ Model number:          11
+ Total WIMPs in star:      2.059143351952915E+044
+ Capture rate:     2.813783644132017E+042 WIMPs/yr
+ Net accretion rate:    2.156402857957229E+039 WIMPs/yr
+ Annually injected annihilation energy:   2.811627241274060E+044 GeV
+ WIMP thermal radius:   1.518181265498494E-002 stellar radii
+ WIMP isothermal temperature:    13472494.4810766      K
+ Central WIMP density:   4.286158129708594E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.486108655973795E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   2.746864545234641E-002
+ Last timestep:    461.320312500000      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    11   1.9008   7.1307  17.1725  -0.0507   3.7676   3.1373   2.6640 -33.7750  -0.0371   1.0000   0.0000   1.0000   0.7285   0.2614   0.0010   0.0014   0.0051  -1.7053   0.1561
+ Model number:          12
+ Total WIMPs in star:      2.059932839878748E+044
+ Capture rate:     2.813290817244376E+042 WIMPs/yr
+ Net accretion rate:    3.294162423310489E+039 WIMPs/yr
+ Annually injected annihilation energy:   2.809996654821066E+044 GeV
+ WIMP thermal radius:   1.518949430972410E-002 stellar radii
+ WIMP isothermal temperature:    13473681.0531124      K
+ Central WIMP density:   4.282068027371528E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.484655157172703E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   3.834060047756918E-002
+ Last timestep:    691.980468750000      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    12   1.9004   7.1308  17.1722  -0.0509   3.7675   3.3147   2.8401 -33.6568  -0.0371   1.0000   0.0000   1.0000   0.7285   0.2614   0.0013   0.0011   0.0051  -1.7063   0.1560
+ Model number:          13
+ Total WIMPs in star:      2.061139917077966E+044
+ Capture rate:     2.812553697682980E+042 WIMPs/yr
+ Net accretion rate:    4.402403749111360E+039 WIMPs/yr
+ Annually injected annihilation energy:   2.808151293933869E+044 GeV
+ WIMP thermal radius:   1.519972064455871E-002 stellar radii
+ WIMP isothermal temperature:    13475336.6032384      K
+ Central WIMP density:   4.276862787827861E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.482809344426408E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   5.859789095306620E-002
+ Last timestep:    1037.97070312500      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    13   1.8999   7.1308  17.1718  -0.0510   3.7675   3.4916   3.0162 -33.6445  -0.0372   1.0000   0.0000   1.0000   0.7285   0.2614   0.0014   0.0010   0.0051  -1.7077   0.1560
+ Model number:          14
+ Total WIMPs in star:      2.062754932717391E+044
+ Capture rate:     2.811449473592247E+042 WIMPs/yr
+ Net accretion rate:    6.276650587282970E+039 WIMPs/yr
+ Annually injected annihilation energy:   2.805172823004963E+044 GeV
+ WIMP thermal radius:   1.521394932398464E-002 stellar radii
+ WIMP isothermal temperature:    13477375.8214078      K
+ Central WIMP density:   4.269101369723128E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.480101983594807E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   7.835545884308864E-002
+ Last timestep:    1556.95605468750      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    14   1.8992   7.1309  17.1712  -0.0512   3.7675   3.6683   3.1923 -33.6347  -0.0372   1.0000   0.0000   1.0000   0.7285   0.2614   0.0014   0.0010   0.0051  -1.7096   0.1559
+ Model number:          15
+ Total WIMPs in star:      2.065061378423932E+044
+ Capture rate:     2.809795635621990E+042 WIMPs/yr
+ Net accretion rate:    8.787616861408793E+039 WIMPs/yr
+ Annually injected annihilation energy:   2.801008018760581E+044 GeV
+ WIMP thermal radius:   1.523363021869443E-002 stellar radii
+ WIMP isothermal temperature:    13479667.8099957      K
+ Central WIMP density:   4.258251116410612E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.476144543680884E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.111813850009963     
+ Last timestep:    2335.43408203125      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    15   1.8982   7.1310  17.1702  -0.0515   3.7674   3.8447   3.3684 -33.6240  -0.0372   1.0000   0.0000   1.0000   0.7285   0.2614   0.0014   0.0010   0.0051  -1.7124   0.1557
+ Model number:          16
+ Total WIMPs in star:      2.068298205524471E+044
+ Capture rate:     2.807320366694902E+042 WIMPs/yr
+ Net accretion rate:    1.217858122723549E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.795141785467667E+044 GeV
+ WIMP thermal radius:   1.525884170279126E-002 stellar radii
+ WIMP isothermal temperature:    13482013.1785380      K
+ Central WIMP density:   4.243051607378534E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.470766479561393E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.156742416199234     
+ Last timestep:    3503.15112304688      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    16   1.8968   7.1310  17.1688  -0.0515   3.7674   4.0211   3.5445 -33.6136  -0.0372   1.0000   0.0000   1.0000   0.7285   0.2614   0.0014   0.0009   0.0051  -1.7161   0.1555
+ Model number:          17
+ Total WIMPs in star:      2.072799150709947E+044
+ Capture rate:     2.803622385975520E+042 WIMPs/yr
+ Net accretion rate:    1.654774711564610E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.787074638859874E+044 GeV
+ WIMP thermal radius:   1.529349040906259E-002 stellar radii
+ WIMP isothermal temperature:    13483832.1249327      K
+ Central WIMP density:   4.221809318835227E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.463342319858907E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.217615872481724     
+ Last timestep:    5254.72668457031      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    17   1.8948   7.1311  17.1668  -0.0515   3.7674   4.1973   3.7206 -33.6253  -0.0371   1.0000   0.0000   1.0000   0.7285   0.2614   0.0014   0.0010   0.0051  -1.7214   0.1553
+ Model number:          18
+ Total WIMPs in star:      2.078943477371364E+044
+ Capture rate:     2.798105643337051E+042 WIMPs/yr
+ Net accretion rate:    2.266906667088618E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.775436576666165E+044 GeV
+ WIMP thermal radius:   1.534142382403882E-002 stellar radii
+ WIMP isothermal temperature:    13484145.6543160      K
+ Central WIMP density:   4.192605269186759E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.452955665581022E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.296426533140589     
+ Last timestep:    7882.09002685547      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    18   1.8918   7.1311  17.1639  -0.0514   3.7673   4.3735   3.8966 -33.6610  -0.0370   1.0000   0.0000   1.0000   0.7285   0.2614   0.0013   0.0011   0.0051  -1.7285   0.1550
+ Model number:          19
+ Total WIMPs in star:      2.087416354734323E+044
+ Capture rate:     2.789895038071285E+042 WIMPs/yr
+ Net accretion rate:    3.029627334508895E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.759598764726197E+044 GeV
+ WIMP thermal radius:   1.540797120526981E-002 stellar radii
+ WIMP isothermal temperature:    13481158.6823686      K
+ Central WIMP density:   4.152741520700064E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.438782625089290E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.407556889121007     
+ Last timestep:    11823.1350402832      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    19   1.8877   7.1310  17.1597  -0.0514   3.7673   4.5497   4.0727 -33.7228  -0.0369   1.0000   0.0000   1.0000   0.7285   0.2614   0.0011   0.0012   0.0051  -1.7382   0.1546
+ Model number:          20
+ Total WIMPs in star:      2.098843434426331E+044
+ Capture rate:     2.777695633141244E+042 WIMPs/yr
+ Net accretion rate:    4.040859134261516E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.737287041798628E+044 GeV
+ WIMP thermal radius:   1.550119555903315E-002 stellar radii
+ WIMP isothermal temperature:    13471909.4092170      K
+ Central WIMP density:   4.098055250135941E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.419324631117519E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.547426950358578     
+ Last timestep:    17734.7025604248      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    20   1.8819   7.1307  17.1535  -0.0516   3.7672   4.7258   4.2488 -33.7658  -0.0367   1.0000   0.0000   1.0000   0.7285   0.2614   0.0011   0.0013   0.0051  -1.7512   0.1540
+ Model number:          21
+ Total WIMPs in star:      2.114278533585192E+044
+ Capture rate:     2.759631015564450E+042 WIMPs/yr
+ Net accretion rate:    5.264819979440287E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.706982815770047E+044 GeV
+ WIMP thermal radius:   1.563341816401322E-002 stellar radii
+ WIMP isothermal temperature:    13451649.8414870      K
+ Central WIMP density:   4.024396165359046E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.393296706141852E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.735409745466774     
+ Last timestep:    26602.0538406372      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    21   1.8738   7.1301  17.1446  -0.0523   3.7669   4.9020   4.4249 -33.8010  -0.0367   1.0000   0.0000   1.0000   0.7286   0.2614   0.0011   0.0013   0.0051  -1.7686   0.1534
+ Model number:          22
+ Total WIMPs in star:      2.134739861552794E+044
+ Capture rate:     2.733032683612096E+042 WIMPs/yr
+ Net accretion rate:    6.852196171200247E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.664510721900093E+044 GeV
+ WIMP thermal radius:   1.582405546404706E-002 stellar radii
+ WIMP isothermal temperature:    13413096.7891473      K
+ Central WIMP density:   3.925873195721383E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.358278641326841E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.967768798792337     
+ Last timestep:    39903.0807609558      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    22   1.8624   7.1288  17.1318  -0.0545   3.7665   5.0781   4.6010 -33.8904  -0.0369   1.0000   0.0000   1.0000   0.7286   0.2614   0.0010   0.0013   0.0051  -1.7918   0.1525
+ Model number:          23
+ Total WIMPs in star:      2.162014668885908E+044
+ Capture rate:     2.702988202375085E+042 WIMPs/yr
+ Net accretion rate:    6.937512003188257E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.633613082343202E+044 GeV
+ WIMP thermal radius:   1.604073946963700E-002 stellar radii
+ WIMP isothermal temperature:    13362061.7853922      K
+ Central WIMP density:   3.834123404021302E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.325490402261809E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:    1.27766421681350     
+ Last timestep:    46128.3866322690      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    23   1.8500   7.1272  17.1177  -0.0582   3.7658   5.2197   4.6640 -33.9901  -0.0374   1.0000   0.0000   1.0000   0.7286   0.2614   0.0010   0.0014   0.0051  -1.8159   0.1517
+ Model number:          24
+ Total WIMPs in star:      2.190305662271411E+044
+ Capture rate:     2.673520477382687E+042 WIMPs/yr
+ Net accretion rate:    6.224556523732701E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.611274912145360E+044 GeV
+ WIMP thermal radius:   1.625703556239145E-002 stellar radii
+ WIMP isothermal temperature:    13306710.9413028      K
+ Central WIMP density:   3.755035642158102E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.297241206767058E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:    1.30854770749923     
+ Last timestep:    46315.3950237058      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    24   1.8382   7.1254  17.1040  -0.0631   3.7650   5.3266   4.6657 -34.0706  -0.0382   1.0000   0.0000   1.0000   0.7286   0.2614   0.0010   0.0013   0.0051  -1.8380   0.1511
+ Model number:          25
+ Total WIMPs in star:      2.216257330928283E+044
+ Capture rate:     2.644455335742128E+042 WIMPs/yr
+ Net accretion rate:    5.728274626547987E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.587172589476648E+044 GeV
+ WIMP thermal radius:   1.647529004191065E-002 stellar radii
+ WIMP isothermal temperature:    13248403.8116992      K
+ Central WIMP density:   3.679127131585563E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.270168196085965E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:    1.18484233063431     
+ Last timestep:    46709.1798359557      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    25   1.8268   7.1235  17.0905  -0.0690   3.7641   5.4130   4.6694 -34.1459  -0.0393   1.0000   0.0000   1.0000   0.7286   0.2614   0.0010   0.0013   0.0051  -1.8587   0.1505
+ Model number:          26
+ Total WIMPs in star:      2.240658149819640E+044
+ Capture rate:     2.615593757770195E+042 WIMPs/yr
+ Net accretion rate:    5.352298349268802E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.562070774277507E+044 GeV
+ WIMP thermal radius:   1.669340668475994E-002 stellar radii
+ WIMP isothermal temperature:    13187504.2108719      K
+ Central WIMP density:   3.605979271477839E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.244088043465430E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:    1.10099213438978     
+ Last timestep:    47409.9603767016      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    26   1.8156   7.1215  17.0773  -0.0754   3.7630   5.4861   4.6759 -34.2302  -0.0404   1.0000   0.0000   1.0000   0.7286   0.2614   0.0011   0.0013   0.0051  -1.8785   0.1499
+ Model number:          27
+ Total WIMPs in star:      2.263941432162527E+044
+ Capture rate:     2.586755959788817E+042 WIMPs/yr
+ Net accretion rate:    5.052608275668459E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.536229877032133E+044 GeV
+ WIMP thermal radius:   1.689627329439443E-002 stellar radii
+ WIMP isothermal temperature:    13124249.6990571      K
+ Central WIMP density:   3.533977093672085E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.218524791468967E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:    1.03912693441259     
+ Last timestep:    48505.5443637090      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    27   1.8046   7.1194  17.0641  -0.0800   3.7623   5.5499   4.6858 -34.3217  -0.0412   1.0000   0.0000   1.0000   0.7286   0.2614   0.0011   0.0012   0.0051  -1.8976   0.1494
+ Model number:          28
+ Total WIMPs in star:      2.286381037519772E+044
+ Capture rate:     2.555752028170314E+042 WIMPs/yr
+ Net accretion rate:    5.228009644264950E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.503471931727664E+044 GeV
+ WIMP thermal radius:   1.712148195322514E-002 stellar radii
+ WIMP isothermal temperature:    13053927.1439722      K
+ Central WIMP density:   3.456721169511401E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.191092945356935E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.991174287393594     
+ Last timestep:    53364.6644734615      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    28   1.7928   7.1170  17.0498  -0.0857   3.7613   5.6108   4.7273 -34.4262  -0.0422   1.0000   0.0000   1.0000   0.7286   0.2614   0.0011   0.0012   0.0051  -1.9177   0.1490
+ Model number:          29
+ Total WIMPs in star:      2.310130975134902E+044
+ Capture rate:     2.525150855379218E+042 WIMPs/yr
+ Net accretion rate:    4.925336933300295E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.475897486046215E+044 GeV
+ WIMP thermal radius:   1.735279319056491E-002 stellar radii
+ WIMP isothermal temperature:    12982511.4677264      K
+ Central WIMP density:   3.385738786604025E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.165963816933987E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:    1.03875676124806     
+ Last timestep:    53939.3590172125      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    29   1.7812   7.1147  17.0358  -0.0925   3.7603   5.6647   4.7319 -34.5345  -0.0434   1.0000   0.0000   1.0000   0.7286   0.2614   0.0011   0.0012   0.0051  -1.9369   0.1485
+ Model number:          30
+ Total WIMPs in star:      2.332995698992763E+044
+ Capture rate:     2.495454409978664E+042 WIMPs/yr
+ Net accretion rate:    4.604885411472221E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.449405555863942E+044 GeV
+ WIMP thermal radius:   1.758598740716337E-002 stellar radii
+ WIMP isothermal temperature:    12911528.6793056      K
+ Central WIMP density:   3.313410602436425E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.142241240608764E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.989758767098723     
+ Last timestep:    53556.0989640279      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    30   1.7700   7.1123  17.0222  -0.1002   3.7590   5.7123   4.7288 -34.6441  -0.0448   1.0000   0.0000   1.0000   0.7286   0.2614   0.0012   0.0012   0.0051  -1.9553   0.1481
+ Model number:          31
+ Total WIMPs in star:      2.354823758447597E+044
+ Capture rate:     2.466568396525551E+042 WIMPs/yr
+ Net accretion rate:    4.310057832365179E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.423467818201899E+044 GeV
+ WIMP thermal radius:   1.782099271890907E-002 stellar radii
+ WIMP isothermal temperature:    12841111.5282144      K
+ Central WIMP density:   3.250236982201426E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.119622038735421E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.935623647495706     
+ Last timestep:    53229.7902634992      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    31   1.7592   7.1099  17.0089  -0.1088   3.7577   5.7550   4.7262 -34.7548  -0.0463   1.0000   0.0000   1.0000   0.7286   0.2614   0.0012   0.0011   0.0051  -1.9729   0.1477
+ Model number:          32
+ Total WIMPs in star:      2.375671358165704E+044
+ Capture rate:     2.438526999252972E+042 WIMPs/yr
+ Net accretion rate:    4.052874872174241E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.397998250531229E+044 GeV
+ WIMP thermal radius:   1.803905212744703E-002 stellar radii
+ WIMP isothermal temperature:    12771511.3999356      K
+ Central WIMP density:   3.189969731320613E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.098099128765084E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.885314650122688     
+ Last timestep:    52823.2165730111      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    32   1.7486   7.1075  16.9959  -0.1157   3.7565   5.7936   4.7228 -34.8665  -0.0475   1.0000   0.0000   1.0000   0.7286   0.2614   0.0012   0.0011   0.0051  -1.9897   0.1474
+ Model number:          33
+ Total WIMPs in star:      2.395662942389442E+044
+ Capture rate:     2.409288337894816E+042 WIMPs/yr
+ Net accretion rate:    4.092670790931460E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.368361629985502E+044 GeV
+ WIMP thermal radius:   1.826458018125309E-002 stellar radii
+ WIMP isothermal temperature:    12697748.4837731      K
+ Central WIMP density:   3.129641835058996E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.075387483917989E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.841513038199634     
+ Last timestep:    56295.2172891320      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    33   1.7377   7.1050  16.9823  -0.1226   3.7554   5.8312   4.7505 -34.9875  -0.0487   1.0000   0.0000   1.0000   0.7286   0.2614   0.0012   0.0011   0.0051  -2.0071   0.1470
+ Model number:          34
+ Total WIMPs in star:      2.416273528424443E+044
+ Capture rate:     2.379621027761230E+042 WIMPs/yr
+ Net accretion rate:    4.041148475550493E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.339209543005725E+044 GeV
+ WIMP thermal radius:   1.850185680442027E-002 stellar radii
+ WIMP isothermal temperature:    12621704.9333251      K
+ Central WIMP density:   3.066319250928626E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.053068085642306E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.860329125200062     
+ Last timestep:    58417.5987717411      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    34   1.7265   7.1024  16.9685  -0.1305   3.7541   5.8671   4.7665 -35.1129  -0.0500   1.0000   0.0000   1.0000   0.7286   0.2614   0.0012   0.0011   0.0051  -2.0245   0.1467
+ Model number:          35
+ Total WIMPs in star:      2.437055566257871E+044
+ Capture rate:     2.350756565246897E+042 WIMPs/yr
+ Net accretion rate:    3.830747072033163E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.312449094526566E+044 GeV
+ WIMP thermal radius:   1.874180872822391E-002 stellar radii
+ WIMP isothermal temperature:    12546710.9666899      K
+ Central WIMP density:   3.006875022433099E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.032124406302733E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.860086310136383     
+ Last timestep:    58062.6544971551      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    35   1.7156   7.0998  16.9549  -0.1392   3.7526   5.9001   4.7639 -35.2405  -0.0515   1.0000   0.0000   1.0000   0.7286   0.2614   0.0012   0.0011   0.0051  -2.0413   0.1464
+ Model number:          36
+ Total WIMPs in star:      2.457158488843492E+044
+ Capture rate:     2.322824778335546E+042 WIMPs/yr
+ Net accretion rate:    3.606714454905405E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.286757633786492E+044 GeV
+ WIMP thermal radius:   1.898219539245041E-002 stellar radii
+ WIMP isothermal temperature:    12473151.9756205      K
+ Central WIMP density:   2.950336976577512E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   1.012298562172669E+016 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.824885688449383     
+ Last timestep:    57382.2892599346      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    36   1.7051   7.0973  16.9418  -0.1487   3.7510   5.9304   4.7588 -35.3653  -0.0530   1.0000   0.0000   1.0000   0.7286   0.2614   0.0012   0.0011   0.0051  -2.0574   0.1461
+ Model number:          37
+ Total WIMPs in star:      2.476460048131991E+044
+ Capture rate:     2.295772463568712E+042 WIMPs/yr
+ Net accretion rate:    3.411588234279411E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.261656581225918E+044 GeV
+ WIMP thermal radius:   1.920983075554155E-002 stellar radii
+ WIMP isothermal temperature:    12401080.6315784      K
+ Central WIMP density:   2.896466542559475E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   9.933718777373358E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.785523578399025     
+ Last timestep:    56744.6190583332      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    37   1.6948   7.0948  16.9290  -0.1573   3.7495   5.9584   4.7539 -35.4923  -0.0543   1.0000   0.0000   1.0000   0.7286   0.2614   0.0012   0.0011   0.0051  -2.0729   0.1459
+ Model number:          38
+ Total WIMPs in star:      2.495068176359973E+044
+ Capture rate:     2.268244243285019E+042 WIMPs/yr
+ Net accretion rate:    3.395096774865765E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.234293275536361E+044 GeV
+ WIMP thermal radius:   1.943506010036186E-002 stellar radii
+ WIMP isothermal temperature:    12326929.0028033      K
+ Central WIMP density:   2.841309532290927E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   9.740241810088586E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.751400299876382     
+ Last timestep:    58961.2409659976      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    38   1.6844   7.0922  16.9158  -0.1650   3.7482   5.9857   4.7706 -35.6255  -0.0555   1.0000   0.0000   1.0000   0.7286   0.2614   0.0012   0.0011   0.0051  -2.0886   0.1456
+ Model number:          39
+ Total WIMPs in star:      2.513953477069728E+044
+ Capture rate:     2.239986688096505E+042 WIMPs/yr
+ Net accretion rate:    3.405855939984775E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.205928128696657E+044 GeV
+ WIMP thermal radius:   1.967322623689056E-002 stellar radii
+ WIMP isothermal temperature:    12249970.4871892      K
+ Central WIMP density:   2.785385480256142E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   9.544294421365760E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.756905197568840     
+ Last timestep:    61807.4284300172      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    39   1.6736   7.0894  16.9023  -0.1738   3.7466   6.0126   4.7910 -35.7663  -0.0567   1.0000   0.0000   1.0000   0.7286   0.2614   0.0012   0.0011   0.0051  -2.1047   0.1453
+ Model number:          40
+ Total WIMPs in star:      2.533286307905574E+044
+ Capture rate:     2.212449020620302E+042 WIMPs/yr
+ Net accretion rate:    3.247561862004890E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.179973402000252E+044 GeV
+ WIMP thermal radius:   1.991307718956219E-002 stellar radii
+ WIMP isothermal temperature:    12174151.5052274      K
+ Central WIMP density:   2.732784011857948E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   9.360007783021428E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.769021026529934     
+ Last timestep:    61519.8477490545      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    40   1.6630   7.0867  16.8890  -0.1833   3.7449   6.0378   4.7890 -35.9083  -0.0581   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0011   0.0051  -2.1203   0.1451
+ Model number:          41
+ Total WIMPs in star:      2.552086056037622E+044
+ Capture rate:     2.185752325668949E+042 WIMPs/yr
+ Net accretion rate:    3.080735296207194E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.154944972706877E+044 GeV
+ WIMP thermal radius:   2.015298188200122E-002 stellar radii
+ WIMP isothermal temperature:    12099917.3305820      K
+ Central WIMP density:   2.682619656115678E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   9.184187824863786E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.742109096527304     
+ Last timestep:    60852.8282608168      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    41   1.6528   7.0841  16.8760  -0.1937   3.7430   6.0613   4.7843 -36.0585  -0.0594   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0011   0.0051  -2.1353   0.1449
+ Model number:          42
+ Total WIMPs in star:      2.570263783711878E+044
+ Capture rate:     2.159897326372628E+042 WIMPs/yr
+ Net accretion rate:    2.918545149548590E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.130711874877142E+044 GeV
+ WIMP thermal radius:   2.037980586198053E-002 stellar radii
+ WIMP isothermal temperature:    12027361.4905320      K
+ Central WIMP density:   2.634765465010895E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   9.016879803792678E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.712269385714919     
+ Last timestep:    60122.6521013982      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    42   1.6428   7.0815  16.8633  -0.2030   3.7412   6.0834   4.7790 -36.2029  -0.0606   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0011   0.0051  -2.1499   0.1447
+ Model number:          43
+ Total WIMPs in star:      2.587807022873886E+044
+ Capture rate:     2.133664800438024E+042 WIMPs/yr
+ Net accretion rate:    2.904923882092512E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.104615561617099E+044 GeV
+ WIMP thermal radius:   2.060333551225010E-002 stellar radii
+ WIMP isothermal temperature:    11953083.4429608      K
+ Central WIMP density:   2.585885193428474E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   8.846073502131362E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.682546253547279     
+ Last timestep:    62231.3584188135      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    43   1.6326   7.0788  16.8504  -0.2116   3.7396   6.1052   4.7940 -36.3647  -0.0616   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0011   0.0051  -2.1646   0.1445
+ Model number:          44
+ Total WIMPs in star:      2.605605095190871E+044
+ Capture rate:     2.106863441163668E+042 WIMPs/yr
+ Net accretion rate:    2.906643768368008E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.077797003479988E+044 GeV
+ WIMP thermal radius:   2.083694032825651E-002 stellar radii
+ WIMP isothermal temperature:    11876504.2948774      K
+ Central WIMP density:   2.536524855205851E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   8.673691247457257E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.687766597727968     
+ Last timestep:    64871.5985880825      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    44   1.6221   7.0760  16.8370  -0.2211   3.7377   6.1268   4.8121 -36.5515  -0.0627   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.1796   0.1443
+ Model number:          45
+ Total WIMPs in star:      2.623766789240472E+044
+ Capture rate:     2.080712259914107E+042 WIMPs/yr
+ Net accretion rate:    2.780042738451046E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.052911832529596E+044 GeV
+ WIMP thermal radius:   2.107095737602840E-002 stellar radii
+ WIMP isothermal temperature:    11801119.5775890      K
+ Central WIMP density:   2.490232803025845E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   8.510426625456913E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.697024045705245     
+ Last timestep:    64590.4561653205      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    45   1.6118   7.0732  16.8239  -0.2313   3.7357   6.1472   4.8102 -36.7495  -0.0638   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.1942   0.1441
+ Model number:          46
+ Total WIMPs in star:      2.641472506386542E+044
+ Capture rate:     2.055345702316460E+042 WIMPs/yr
+ Net accretion rate:    2.643556628670381E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.028910136029756E+044 GeV
+ WIMP thermal radius:   2.130372236076584E-002 stellar radii
+ WIMP isothermal temperature:    11727375.6007086      K
+ Central WIMP density:   2.445568997684986E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   8.354574483958064E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.674820537354061     
+ Last timestep:    63876.7788084445      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    46   1.6018   7.0705  16.8112  -0.2423   3.7335   6.1666   4.8053 -36.9599  -0.0649   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.2084   0.1439
+ Model number:          47
+ Total WIMPs in star:      2.658625270455930E+044
+ Capture rate:     2.030769148807656E+042 WIMPs/yr
+ Net accretion rate:    2.515017848386958E+040 WIMPs/yr
+ Annually injected annihilation energy:   2.005618970323787E+044 GeV
+ WIMP thermal radius:   2.152033547004746E-002 stellar radii
+ WIMP isothermal temperature:    11655360.7058350      K
+ Central WIMP density:   2.402788552902402E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   8.205391614966442E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.649363717695940     
+ Last timestep:    63101.1056871077      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    47   1.5921   7.0678  16.7987  -0.2519   3.7316   6.1848   4.8000 -37.2385  -0.0657   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.2221   0.1438
+ Model number:          48
+ Total WIMPs in star:      2.675242730214281E+044
+ Capture rate:     2.005604383781010E+042 WIMPs/yr
+ Net accretion rate:    2.529056003833365E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.980313823742676E+044 GeV
+ WIMP thermal radius:   2.173790845789517E-002 stellar radii
+ WIMP isothermal temperature:    11581037.3737495      K
+ Central WIMP density:   2.358611807007216E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   8.051576763137503E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.625039562476638     
+ Last timestep:    65866.1385284370      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    48   1.5820   7.0651  16.7858  -0.2612   3.7296   6.2031   4.8187 -37.6142  -0.0665   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.2362   0.1436
+ Model number:          49
+ Total WIMPs in star:      2.692271278532343E+044
+ Capture rate:     1.980234815513219E+042 WIMPs/yr
+ Net accretion rate:    2.503638183459104E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.955198433678628E+044 GeV
+ WIMP thermal radius:   2.196084126644587E-002 stellar radii
+ WIMP isothermal temperature:    11505504.3244824      K
+ Central WIMP density:   2.314839138606033E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   7.899241688733443E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.636523487223838     
+ Last timestep:    67715.6982376168      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    49   1.5718   7.0622  16.7727  -0.2713   3.7275   6.2212   4.8307 -38.3584  -0.0672   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.2503   0.1434
+ Model number:          50
+ Total WIMPs in star:      2.709453760163191E+044
+ Capture rate:     1.955471979843704E+042 WIMPs/yr
+ Net accretion rate:    2.398426751924489E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.931487712324459E+044 GeV
+ WIMP thermal radius:   2.218263246434361E-002 stellar radii
+ WIMP isothermal temperature:    11431192.0167937      K
+ Central WIMP density:   2.273097182730548E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   7.754013313904627E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.638215092507865     
+ Last timestep:    67398.2613564559      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    50   1.5618   7.0594  16.7598  -0.2820   3.7252   6.2384   4.8286 -99.0000  -0.0680   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.2642   0.1433
+ Model number:          51
+ Total WIMPs in star:      2.726224193288183E+044
+ Capture rate:     1.931402118172443E+042 WIMPs/yr
+ Net accretion rate:    2.288599454243346E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.908516123630010E+044 GeV
+ WIMP thermal radius:   2.240215436396809E-002 stellar radii
+ WIMP isothermal temperature:    11358405.2492285      K
+ Central WIMP density:   2.233039224546620E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   7.614728928415603E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.618959931022480     
+ Last timestep:    66750.2562570315      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    51   1.5520   7.0566  16.7472  -0.2935   3.7227   6.2548   4.8245 -99.0000  -0.0687   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.2776   0.1432
+ Model number:          52
+ Total WIMPs in star:      2.742521257723205E+044
+ Capture rate:     1.908055746511961E+042 WIMPs/yr
+ Net accretion rate:    2.182388575002986E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.886231860761931E+044 GeV
+ WIMP thermal radius:   2.260199457881267E-002 stellar radii
+ WIMP isothermal temperature:    11287299.6604435      K
+ Central WIMP density:   2.194593139004850E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   7.481164545144282E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.597788856659112     
+ Last timestep:    65979.3165516525      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    52   1.5424   7.0539  16.7348  -0.3029   3.7205   6.2705   4.8194 -99.0000  -0.0691   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.2907   0.1430
+ Model number:          53
+ Total WIMPs in star:      2.758341248219570E+044
+ Capture rate:     1.883754358036352E+042 WIMPs/yr
+ Net accretion rate:    2.231388735943585E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.861440470676916E+044 GeV
+ WIMP thermal radius:   2.280899401974930E-002 stellar radii
+ WIMP isothermal temperature:    11212728.3765246      K
+ Central WIMP density:   2.154071244826380E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   7.340587452544536E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.576841125727459     
+ Last timestep:    69980.7389383627      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    53   1.5324   7.0510  16.7219  -0.3127   3.7183   6.2865   4.8450 -99.0000  -0.0695   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.3043   0.1429
+ Model number:          54
+ Total WIMPs in star:      2.774824708126799E+044
+ Capture rate:     1.859655289725992E+042 WIMPs/yr
+ Net accretion rate:    2.173724169457138E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.837918048031420E+044 GeV
+ WIMP thermal radius:   2.301651600151436E-002 stellar radii
+ WIMP isothermal temperature:    11138213.5462072      K
+ Central WIMP density:   2.114944025335036E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   7.204866758679421E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.597585955612570     
+ Last timestep:    70766.5208641071      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    54   1.5223   7.0481  16.7089  -0.3232   3.7159   6.3021   4.8498 -99.0000  -0.0699   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.3178   0.1428
+ Model number:          55
+ Total WIMPs in star:      2.791185540539113E+044
+ Capture rate:     1.836111415320133E+042 WIMPs/yr
+ Net accretion rate:    2.086320761289316E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.815248207707240E+044 GeV
+ WIMP thermal radius:   2.322184187092245E-002 stellar radii
+ WIMP isothermal temperature:    11064870.7099579      K
+ Central WIMP density:   2.077309793766318E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   7.074390045323063E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.589616791446238     
+ Last timestep:    70475.6621183668      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    55   1.5125   7.0453  16.6961  -0.3342   3.7133   6.3171   4.8480 -99.0000  -0.0703   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.3310   0.1427
+ Model number:          56
+ Total WIMPs in star:      2.807179693616282E+044
+ Capture rate:     1.813158144324386E+042 WIMPs/yr
+ Net accretion rate:    1.997349009270057E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.793184654231685E+044 GeV
+ WIMP thermal radius:   2.342185839703807E-002 stellar radii
+ WIMP isothermal temperature:    10992852.0074590      K
+ Central WIMP density:   2.041003006669591E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   6.948604269749515E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.573023643354052     
+ Last timestep:    70006.4725290600      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    56   1.5028   7.0424  16.6836  -0.3453   3.7106   6.3315   4.8451 -99.0000  -0.0706   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.3439   0.1426
+ Model number:          57
+ Total WIMPs in star:      2.822770365433855E+044
+ Capture rate:     1.790597299136422E+042 WIMPs/yr
+ Net accretion rate:    1.932891249962306E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.771268386636799E+044 GeV
+ WIMP thermal radius:   2.360672575788512E-002 stellar radii
+ WIMP isothermal temperature:    10921581.6773845      K
+ Central WIMP density:   2.005547805731383E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   6.825873545103786E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.555385601179279     
+ Last timestep:    70142.1031171520      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    57   1.4932   7.0396  16.6711  -0.3546   3.7083   6.3455   4.8460 -99.0000  -0.0706   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.3566   0.1425
+ Model number:          58
+ Total WIMPs in star:      2.838130273461492E+044
+ Capture rate:     1.767226449773852E+042 WIMPs/yr
+ Net accretion rate:    1.970141885981948E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.747525030914032E+044 GeV
+ WIMP thermal radius:   2.379825683416851E-002 stellar radii
+ WIMP isothermal temperature:    10847230.6408408      K
+ Central WIMP density:   1.968581897360113E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   6.698055930520902E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.544143024020861     
+ Last timestep:    74049.7118486829      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    58   1.4832   7.0366  16.6581  -0.3645   3.7059   6.3598   4.8695 -99.0000  -0.0706   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.3698   0.1424
+ Model number:          59
+ Total WIMPs in star:      2.854083830323791E+044
+ Capture rate:     1.744228822893495E+042 WIMPs/yr
+ Net accretion rate:    1.905268992453436E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.725176132968961E+044 GeV
+ WIMP thermal radius:   2.398784851915851E-002 stellar radii
+ WIMP isothermal temperature:    10773518.6549439      K
+ Central WIMP density:   1.933149438393222E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   6.575560971230624E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.562115030852403     
+ Last timestep:    74315.4969413149      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    59   1.4733   7.0337  16.6452  -0.3748   3.7033   6.3736   4.8711 -99.0000  -0.0705   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.3828   0.1423
+ Model number:          60
+ Total WIMPs in star:      2.869800678072241E+044
+ Capture rate:     1.721732313808586E+042 WIMPs/yr
+ Net accretion rate:    1.832941465112274E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.703402899157464E+044 GeV
+ WIMP thermal radius:   2.417466493713059E-002 stellar radii
+ WIMP isothermal temperature:    10700890.1304771      K
+ Central WIMP density:   1.898879145792170E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   6.457148560143339E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.550679261115711     
+ Last timestep:    74110.8997868478      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    60   1.4635   7.0308  16.6324  -0.3856   3.7005   6.3870   4.8699 -99.0000  -0.0705   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.3955   0.1422
+ Model number:          61
+ Total WIMPs in star:      2.885199565189369E+044
+ Capture rate:     1.699751330188792E+042 WIMPs/yr
+ Net accretion rate:    1.762884725506100E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.682122482933731E+044 GeV
+ WIMP thermal radius:   2.435237050512660E-002 stellar radii
+ WIMP isothermal temperature:    10629435.8353497      K
+ Central WIMP density:   1.865700023785014E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   6.342598329074675E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.536583855275692     
+ Last timestep:    73819.5101847584      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    61   1.4538   7.0278  16.6198  -0.3957   3.6979   6.4000   4.8682 -99.0000  -0.0703   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.4081   0.1421
+ Model number:          62
+ Total WIMPs in star:      2.900278780521544E+044
+ Capture rate:     1.677765020113598E+042 WIMPs/yr
+ Net accretion rate:    1.735812711353067E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.660406893000067E+044 GeV
+ WIMP thermal radius:   2.452267625466639E-002 stellar radii
+ WIMP isothermal temperature:    10557484.4210839      K
+ Central WIMP density:   1.832563153241785E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   6.228303041232492E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.522640288530106     
+ Last timestep:    75287.9144632048      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    62   1.4441   7.0249  16.6071  -0.4048   3.6955   6.4128   4.8767 -99.0000  -0.0699   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.4206   0.1421
+ Model number:          63
+ Total WIMPs in star:      2.915399326265449E+044
+ Capture rate:     1.655504217879709E+042 WIMPs/yr
+ Net accretion rate:    1.731915469453659E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.638185063185172E+044 GeV
+ WIMP thermal radius:   2.469475395070650E-002 stellar radii
+ WIMP isothermal temperature:    10484131.6469293      K
+ Central WIMP density:   1.799173861089918E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   6.113220997452847E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.521348011282729     
+ Last timestep:    77739.0083176207      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    63   1.4342   7.0219  16.5941  -0.4141   3.6929   6.4257   4.8906 -99.0000  -0.0695   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.4334   0.1420
+ Model number:          64
+ Total WIMPs in star:      2.930769842342594E+044
+ Capture rate:     1.633543391939437E+042 WIMPs/yr
+ Net accretion rate:    1.682175961543503E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.616721632324002E+044 GeV
+ WIMP thermal radius:   2.486483472391405E-002 stellar radii
+ WIMP isothermal temperature:    10411244.4596152      K
+ Central WIMP density:   1.766785658317671E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   6.001635855198997E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.527218207765552     
+ Last timestep:    78237.8197617548      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    64   1.4243   7.0188  16.5811  -0.4239   3.6903   6.4383   4.8934 -99.0000  -0.0691   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.4460   0.1419
+ Model number:          65
+ Total WIMPs in star:      2.945977508875516E+044
+ Capture rate:     1.611981846086631E+042 WIMPs/yr
+ Net accretion rate:    1.626759958655694E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.595714246500075E+044 GeV
+ WIMP thermal radius:   2.503230248001690E-002 stellar radii
+ WIMP isothermal temperature:    10339172.4280070      K
+ Central WIMP density:   1.735304022857458E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   5.893241476053475E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.518896650061288     
+ Last timestep:    78343.6235655018      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    65   1.4145   7.0158  16.5683  -0.4339   3.6875   6.4505   4.8940 -99.0000  -0.0686   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.4585   0.1419
+ Model number:          66
+ Total WIMPs in star:      2.960955898746048E+044
+ Capture rate:     1.590835051027700E+042 WIMPs/yr
+ Net accretion rate:    1.572692061303118E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.575108130414669E+044 GeV
+ WIMP thermal radius:   2.518841170993944E-002 stellar radii
+ WIMP isothermal temperature:    10268013.5113695      K
+ Central WIMP density:   1.704678173310728E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   5.787880558690624E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.508435309686022     
+ Last timestep:    78394.8844432013      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    66   1.4048   7.0128  16.5556  -0.4426   3.6850   6.4624   4.8943 -99.0000  -0.0680   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.4708   0.1418
+ Model number:          67
+ Total WIMPs in star:      2.975701253665300E+044
+ Capture rate:     1.569369080680338E+042 WIMPs/yr
+ Net accretion rate:    1.575258207339365E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.553616498606945E+044 GeV
+ WIMP thermal radius:   2.534294110593809E-002 stellar radii
+ WIMP isothermal temperature:    10195296.7263004      K
+ Central WIMP density:   1.673521257884737E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   5.680790811359806E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.497993061142728     
+ Last timestep:    81196.4643844995      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    67   1.3949   7.0097  16.5425  -0.4509   3.6826   6.4744   4.9095 -99.0000  -0.0672   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.4833   0.1418
+ Model number:          68
+ Total WIMPs in star:      2.990748968785753E+044
+ Capture rate:     1.547905909777403E+042 WIMPs/yr
+ Net accretion rate:    1.553902901461203E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.532366880762791E+044 GeV
+ WIMP thermal radius:   2.549686711065735E-002 stellar radii
+ WIMP isothermal temperature:    10122087.2120276      K
+ Central WIMP density:   1.642745824462964E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   5.575070015449091E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.505686352147026     
+ Last timestep:    82879.0057640546      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    68   1.3849   7.0066  16.5293  -0.4595   3.6800   6.4863   4.9184 -99.0000  -0.0664   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.4959   0.1417
+ Model number:          69
+ Total WIMPs in star:      3.005874626027335E+044
+ Capture rate:     1.526748586744470E+042 WIMPs/yr
+ Net accretion rate:    1.511607251231705E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.511632514232153E+044 GeV
+ WIMP thermal radius:   2.564848961689709E-002 stellar radii
+ WIMP isothermal temperature:    10049415.9784282      K
+ Central WIMP density:   1.612763981546555E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   5.472131427845922E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.505748138658482     
+ Last timestep:    83414.0233058009      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    69   1.3749   7.0035  16.5162  -0.4682   3.6774   6.4980   4.9212 -99.0000  -0.0655   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.5085   0.1417
+ Model number:          70
+ Total WIMPs in star:      3.020866362495503E+044
+ Capture rate:     1.505920317837573E+042 WIMPs/yr
+ Net accretion rate:    1.468064436199281E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.491239673475581E+044 GeV
+ WIMP thermal radius:   2.579645273300400E-002 stellar radii
+ WIMP isothermal temperature:    9977365.58616644      K
+ Central WIMP density:   1.583494070183305E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   5.371699696912203E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.498747896481026     
+ Last timestep:    83835.5925570878      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    70   1.3650   7.0004  16.5031  -0.4768   3.6748   6.5094   4.9234 -99.0000  -0.0646   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.5208   0.1416
+ Model number:          71
+ Total WIMPs in star:      3.035699541850880E+044
+ Capture rate:     1.485336626038270E+042 WIMPs/yr
+ Net accretion rate:    1.433636137057388E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.471000264667696E+044 GeV
+ WIMP thermal radius:   2.593370042700039E-002 stellar radii
+ WIMP isothermal temperature:    9905688.02498829      K
+ Central WIMP density:   1.554729241016459E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   5.273090974947808E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.491024016803035     
+ Last timestep:    84635.1153274350      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    71   1.3551   6.9972  16.4900  -0.4839   3.6725   6.5206   4.9276 -99.0000  -0.0635   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.5332   0.1416
+ Model number:          72
+ Total WIMPs in star:      3.050456629834577E+044
+ Capture rate:     1.464344148328591E+042 WIMPs/yr
+ Net accretion rate:    1.445867000849636E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.449885478320094E+044 GeV
+ WIMP thermal radius:   2.607221356903216E-002 stellar radii
+ WIMP isothermal temperature:    9832089.95419954      K
+ Central WIMP density:   1.525349927412727E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   5.172455457455510E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.486118200442825     
+ Last timestep:    88175.7853901105      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    72   1.3448   6.9940  16.4765  -0.4911   3.6701   6.5320   4.9453 -99.0000  -0.0624   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.5458   0.1416
+ Model number:          73
+ Total WIMPs in star:      3.065628908286507E+044
+ Capture rate:     1.443549859403619E+042 WIMPs/yr
+ Net accretion rate:    1.415648385101274E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.429393375552606E+044 GeV
+ WIMP thermal radius:   2.620879482103991E-002 stellar radii
+ WIMP isothermal temperature:    9758675.70473494      K
+ Central WIMP density:   1.496681054560086E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   5.074306187601044E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.497377287830927     
+ Last timestep:    89288.1571158063      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    73   1.3346   6.9907  16.4630  -0.4983   3.6677   6.5432   4.9508 -99.0000  -0.0611   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.5585   0.1415
+ Model number:          74
+ Total WIMPs in star:      3.080772256045967E+044
+ Capture rate:     1.423013657319357E+042 WIMPs/yr
+ Net accretion rate:    1.383173093358057E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.409181926385777E+044 GeV
+ WIMP thermal radius:   2.634338121942762E-002 stellar radii
+ WIMP isothermal temperature:    9685665.49062230      K
+ Central WIMP density:   1.468581608548571E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   4.978163555233297E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.493971978099737     
+ Last timestep:    90144.5134588194      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    74   1.3244   6.9875  16.4495  -0.5055   3.6652   6.5543   4.9549 -99.0000  -0.0599   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.5711   0.1415
+ Model number:          75
+ Total WIMPs in star:      3.095854892766981E+044
+ Capture rate:     1.402757427730368E+042 WIMPs/yr
+ Net accretion rate:    1.351579433845537E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.389241633391913E+044 GeV
+ WIMP thermal radius:   2.646981212924507E-002 stellar radii
+ WIMP isothermal temperature:    9613167.93194857      K
+ Central WIMP density:   1.441045143456763E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   4.884016141791216E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.489573245520312     
+ Last timestep:    90943.3322652176      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    75   1.3142   6.9842  16.4360  -0.5116   3.6630   6.5652   4.9588 -99.0000  -0.0585   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.5836   0.1415
+ Model number:          76
+ Total WIMPs in star:      3.110878074354233E+044
+ Capture rate:     1.382301402610628E+042 WIMPs/yr
+ Net accretion rate:    1.351412677321439E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.368787275837414E+044 GeV
+ WIMP thermal radius:   2.659354195317032E-002 stellar radii
+ WIMP isothermal temperature:    9539443.64753132      K
+ Central WIMP density:   1.413256255860304E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   4.789078223705677E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.485267627444428     
+ Last timestep:    93957.7975586468      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    76   1.3037   6.9809  16.4221  -0.5172   3.6609   6.5762   4.9729 -99.0000  -0.0570   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.5964   0.1415
+ Model number:          77
+ Total WIMPs in star:      3.126197307163524E+044
+ Capture rate:     1.361842037997040E+042 WIMPs/yr
+ Net accretion rate:    1.339378245888767E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.348448255538152E+044 GeV
+ WIMP thermal radius:   2.671627768700118E-002 stellar radii
+ WIMP isothermal temperature:    9465182.72811069      K
+ Central WIMP density:   1.385705171911026E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   4.695012470213342E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.492440797843582     
+ Last timestep:    96197.1416338765      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    77   1.2932   6.9775  16.4082  -0.5226   3.6587   6.5871   4.9832 -99.0000  -0.0554   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.6093   0.1414
+ Model number:          78
+ Total WIMPs in star:      3.141684792411756E+044
+ Capture rate:     1.341581238865603E+042 WIMPs/yr
+ Net accretion rate:    1.314754209424422E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.328433696771359E+044 GeV
+ WIMP thermal radius:   2.683734818934258E-002 stellar radii
+ WIMP isothermal temperature:    9391115.50047390      K
+ Central WIMP density:   1.358662677382611E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   4.602740252407017E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.495409717510235     
+ Last timestep:    97551.8498813979      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    78   1.2826   6.9741  16.3941  -0.5280   3.6566   6.5979   4.9892 -99.0000  -0.0538   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.6222   0.1414
+ Model number:          79
+ Total WIMPs in star:      3.157193182313751E+044
+ Capture rate:     1.321573230876125E+042 WIMPs/yr
+ Net accretion rate:    1.288628452391743E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.308686946352208E+044 GeV
+ WIMP thermal radius:   2.695204621952646E-002 stellar radii
+ WIMP isothermal temperature:    9317466.23404441      K
+ Central WIMP density:   1.332128690185066E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   4.512270833750896E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.493632904849455     
+ Last timestep:    98703.1155833834      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    79   1.2720   6.9706  16.3801  -0.5324   3.6546   6.6086   4.9943 -99.0000  -0.0520   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.6350   0.1414
+ Model number:          80
+ Total WIMPs in star:      3.172699116545351E+044
+ Capture rate:     1.301486286422390E+042 WIMPs/yr
+ Net accretion rate:    1.285770426928440E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.288628582153106E+044 GeV
+ WIMP thermal radius:   2.706294062677343E-002 stellar radii
+ WIMP isothermal temperature:    9243018.26769102      K
+ Central WIMP density:   1.305523909466640E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   4.421627864224026E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.491130359664458     
+ Last timestep:    101570.803644582      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    80   1.2612   6.9672  16.3658  -0.5360   3.6528   6.6193   5.0068 -99.0000  -0.0502   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.6481   0.1414
+ Model number:          81
+ Total WIMPs in star:      3.188488139925670E+044
+ Capture rate:     1.281362511769503E+042 WIMPs/yr
+ Net accretion rate:    1.280672590641514E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.268555785863088E+044 GeV
+ WIMP thermal radius:   2.717314921307305E-002 stellar radii
+ WIMP isothermal temperature:    9167902.42611388      K
+ Central WIMP density:   1.279035253160836E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   4.331435171470496E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.497652717775249     
+ Last timestep:    104358.294599593      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    81   1.2503   6.9636  16.3513  -0.5394   3.6510   6.6301   5.0185 -99.0000  -0.0482   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.6614   0.1414
+ Model number:          82
+ Total WIMPs in star:      3.204542439927701E+044
+ Capture rate:     1.261441305331573E+042 WIMPs/yr
+ Net accretion rate:    1.260432791979687E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.248836977411776E+044 GeV
+ WIMP thermal radius:   2.728193635718739E-002 stellar radii
+ WIMP isothermal temperature:    9093002.46555142      K
+ Central WIMP density:   1.253041465840352E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   4.242978171411342E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.503508223882108     
+ Last timestep:    105999.910422751      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    82   1.2393   6.9601  16.3367  -0.5427   3.6491   6.6408   5.0253 -99.0000  -0.0463   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.6747   0.1413
+ Model number:          83
+ Total WIMPs in star:      3.220673328183791E+044
+ Capture rate:     1.241776115539974E+042 WIMPs/yr
+ Net accretion rate:    1.238336776163481E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.229392747778339E+044 GeV
+ WIMP thermal radius:   2.738334753969439E-002 stellar radii
+ WIMP isothermal temperature:    9018544.38499757      K
+ Central WIMP density:   1.227533081047111E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   4.156234774318216E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.503375709901783     
+ Last timestep:    107451.804722481      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    83   1.2283   6.9565  16.3221  -0.5447   3.6476   6.6513   5.0312 -99.0000  -0.0441   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.6880   0.1413
+ Model number:          84
+ Total WIMPs in star:      3.236853207497443E+044
+ Capture rate:     1.221932204492362E+042 WIMPs/yr
+ Net accretion rate:    1.244622950138468E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.209485974990978E+044 GeV
+ WIMP thermal radius:   2.748348216865619E-002 stellar radii
+ WIMP isothermal temperature:    8942866.92098318      K
+ Central WIMP density:   1.201787051374060E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   4.068742638201940E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.502375673188077     
+ Last timestep:    111377.407556760      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    84   1.2170   6.9528  16.3071  -0.5462   3.6461   6.6620   5.0468 -99.0000  -0.0419   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.7016   0.1413
+ Model number:          85
+ Total WIMPs in star:      3.253465018670944E+044
+ Capture rate:     1.202204906387552E+042 WIMPs/yr
+ Net accretion rate:    1.232918469914171E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.189875721688410E+044 GeV
+ WIMP thermal radius:   2.758269131328676E-002 stellar radii
+ WIMP isothermal temperature:    8867074.17699922      K
+ Central WIMP density:   1.176418565282878E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   3.982584122062960E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.513208666213944     
+ Last timestep:    113823.059404022      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    85   1.2056   6.9491  16.2920  -0.5474   3.6447   6.6726   5.0562 -99.0000  -0.0397   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.7153   0.1413
+ Model number:          86
+ Total WIMPs in star:      3.270277361444405E+044
+ Capture rate:     1.182715161150020E+042 WIMPs/yr
+ Net accretion rate:    1.214723023469836E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.170567930915322E+044 GeV
+ WIMP thermal radius:   2.767849655448656E-002 stellar radii
+ WIMP isothermal temperature:    8791644.76507103      K
+ Central WIMP density:   1.151517723334367E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   3.898067443152133E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.516751914558116     
+ Last timestep:    115675.590515116      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    86   1.1942   6.9454  16.2768  -0.5481   3.6433   6.6831   5.0632 -99.0000  -0.0373   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.7291   0.1413
+ Model number:          87
+ Total WIMPs in star:      3.287201746647455E+044
+ Capture rate:     1.163325108354835E+042 WIMPs/yr
+ Net accretion rate:    1.206770578806750E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.151257402566768E+044 GeV
+ WIMP thermal radius:   2.776967812604843E-002 stellar radii
+ WIMP isothermal temperature:    8716064.99801868      K
+ Central WIMP density:   1.126814220893953E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   3.814273965401066E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.517521400557150     
+ Last timestep:    118459.868631651      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    87   1.1827   6.9417  16.2615  -0.5479   3.6421   6.6937   5.0736 -99.0000  -0.0348   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.7430   0.1413
+ Model number:          88
+ Total WIMPs in star:      3.304385380052613E+044
+ Capture rate:     1.143940525691141E+042 WIMPs/yr
+ Net accretion rate:    1.205554586615081E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.131884979824990E+044 GeV
+ WIMP thermal radius:   2.786069764740377E-002 stellar radii
+ WIMP isothermal temperature:    8639945.35354345      K
+ Central WIMP density:   1.102202054432020E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   3.730846477414912E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.522743498256015     
+ Last timestep:    121961.176693691      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    88   1.1710   6.9379  16.2460  -0.5474   3.6410   6.7043   5.0862 -99.0000  -0.0323   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.7571   0.1413
+ Model number:          89
+ Total WIMPs in star:      3.321936040685879E+044
+ Capture rate:     1.124776941341809E+042 WIMPs/yr
+ Net accretion rate:    1.190878549944563E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.112868155842364E+044 GeV
+ WIMP thermal radius:   2.795046845273274E-002 stellar radii
+ WIMP isothermal temperature:    8564125.98424656      K
+ Central WIMP density:   1.078055861998747E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   3.649039832096490E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.531132377573543     
+ Last timestep:    124255.558306254      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    89   1.1592   6.9340  16.2303  -0.5466   3.6399   6.7148   5.0943 -99.0000  -0.0297   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.7713   0.1413
+ Model number:          90
+ Total WIMPs in star:      3.339662737556913E+044
+ Capture rate:     1.105871360078339E+042 WIMPs/yr
+ Net accretion rate:    1.175665786511134E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.094114702213228E+044 GeV
+ WIMP thermal radius:   2.803469812771751E-002 stellar radii
+ WIMP isothermal temperature:    8488789.69078477      K
+ Central WIMP density:   1.054345897723606E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   3.568761561365208E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.533625471830980     
+ Last timestep:    126444.130834591      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    90   1.1474   6.9302  16.2146  -0.5448   3.6390   6.7253   5.1019 -99.0000  -0.0270   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.7855   0.1412
+ Model number:          91
+ Total WIMPs in star:      3.357557735449951E+044
+ Capture rate:     1.086992456936705E+042 WIMPs/yr
+ Net accretion rate:    1.175823044029388E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.075234226496411E+044 GeV
+ WIMP thermal radius:   2.811911869759137E-002 stellar radii
+ WIMP isothermal temperature:    8412997.29722922      K
+ Central WIMP density:   1.030699554262017E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   3.488743767967018E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.535832486669872     
+ Last timestep:    130277.767376034      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    91   1.1354   6.9263  16.1987  -0.5428   3.6381   6.7358   5.1149 -99.0000  -0.0243   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.8000   0.1412
+ Model number:          92
+ Total WIMPs in star:      3.375866115240105E+044
+ Capture rate:     1.068394081606349E+042 WIMPs/yr
+ Net accretion rate:    1.160216872909604E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.056791912877253E+044 GeV
+ WIMP thermal radius:   2.820320542135835E-002 stellar radii
+ WIMP isothermal temperature:    8337758.54847259      K
+ Central WIMP density:   1.007584771859521E+016 WIMPs/cm^3
+ WIMP density at thermal radius:   3.410567141245272E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.545288606562140     
+ Last timestep:    132512.863739620      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    92   1.1233   6.9224  16.1827  -0.5406   3.6373   6.7462   5.1223 -99.0000  -0.0215   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.8146   0.1412
+ Model number:          93
+ Total WIMPs in star:      3.394346788917998E+044
+ Capture rate:     1.050094615923279E+042 WIMPs/yr
+ Net accretion rate:    1.143837573693324E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.038656240186346E+044 GeV
+ WIMP thermal radius:   2.828229655676263E-002 stellar radii
+ WIMP isothermal temperature:    8263193.07319805      K
+ Central WIMP density:   9.849466599345122E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   3.334042889155268E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.547435029916104     
+ Last timestep:    134739.262496584      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    93   1.1113   6.9185  16.1667  -0.5376   3.6366   6.7566   5.1295 -99.0000  -0.0187   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.8291   0.1412
+ Model number:          94
+ Total WIMPs in star:      3.412986018667157E+044
+ Capture rate:     1.031923936873228E+042 WIMPs/yr
+ Net accretion rate:    1.138522115353817E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.020538715719689E+044 GeV
+ WIMP thermal radius:   2.836163626557007E-002 stellar radii
+ WIMP isothermal temperature:    8188585.82437733      K
+ Central WIMP density:   9.625103871186064E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   3.258244394844334E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.549125675962563     
+ Last timestep:    138292.309607975      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    94   1.0991   6.9146  16.1506  -0.5344   3.6360   6.7670   5.1408 -99.0000  -0.0158   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.8439   0.1412
+ Model number:          95
+ Total WIMPs in star:      3.431971004557239E+044
+ Capture rate:     1.014077834223916E+042 WIMPs/yr
+ Net accretion rate:    1.122487947867143E+040 WIMPs/yr
+ Annually injected annihilation energy:   1.002852954745244E+044 GeV
+ WIMP thermal radius:   2.844114634672460E-002 stellar radii
+ WIMP isothermal temperature:    8114742.80494457      K
+ Central WIMP density:   9.406182394810792E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   3.184321595130158E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.556257358988429     
+ Last timestep:    140471.735086270      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+    95   1.0869   6.9106  16.1344  -0.5311   3.6353   6.7773   5.1476 -99.0000  -0.0128   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.8586   0.1411
+ Model number:          96
+ Total WIMPs in star:      3.451124491645796E+044
+ Capture rate:     9.965679881163902E+041 WIMPs/yr
+ Net accretion rate:    1.105997131826192E+040 WIMPs/yr
+ Annually injected annihilation energy:   9.855080167981283E+043 GeV
+ WIMP thermal radius:   2.851650347673554E-002 stellar radii
+ WIMP isothermal temperature:    8041767.36781164      K
+ Central WIMP density:   9.192292543866318E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   3.112136167909794E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.558090003182533     
+ Last timestep:    142688.883384211      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    96   1.0747   6.9067  16.1183  -0.5272   3.6348   6.7875   5.1544 -99.0000  -0.0099   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.8734   0.1411
+ Model number:          97
+ Total WIMPs in star:      3.470435772774934E+044
+ Capture rate:     9.794266255486591E+041 WIMPs/yr
+ Net accretion rate:    1.087926926040164E+040 WIMPs/yr
+ Annually injected annihilation energy:   9.685473562882575E+043 GeV
+ WIMP thermal radius:   2.859165727158595E-002 stellar radii
+ WIMP isothermal temperature:    7969791.61855693      K
+ Central WIMP density:   8.983812048350751E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   3.041809890033709E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.559564894743292     
+ Last timestep:    144616.273817206      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    97   1.0626   6.9028  16.1022  -0.5231   3.6343   6.7977   5.1602 -99.0000  -0.0069   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.8881   0.1411
+ Model number:          98
+ Total WIMPs in star:      3.489872289055446E+044
+ Capture rate:     9.626092867999313E+041 WIMPs/yr
+ Net accretion rate:    1.072835049848765E+040 WIMPs/yr
+ Annually injected annihilation energy:   9.518809363014436E+043 GeV
+ WIMP thermal radius:   2.866751054685298E-002 stellar radii
+ WIMP isothermal temperature:    7898645.38311206      K
+ Central WIMP density:   8.779935932607839E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.973067980257800E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.560059818221922     
+ Last timestep:    146914.015763028      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    98   1.0505   6.8989  16.0862  -0.5191   3.6339   6.8077   5.1671 -99.0000  -0.0039   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.9029   0.1411
+ Model number:          99
+ Total WIMPs in star:      3.509483811256058E+044
+ Capture rate:     9.461152991295710E+041 WIMPs/yr
+ Net accretion rate:    1.058909989941878E+040 WIMPs/yr
+ Annually injected annihilation energy:   9.355261992301522E+043 GeV
+ WIMP thermal radius:   2.874038695951180E-002 stellar radii
+ WIMP isothermal temperature:    7828384.22658534      K
+ Central WIMP density:   8.580660131944040E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.905909113646396E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.561955297393422     
+ Last timestep:    149313.559468131      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+    99   1.0383   6.8950  16.0702  -0.5146   3.6335   6.8177   5.1741 -99.0000  -0.0009   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.9176   0.1410
+ Model number:         100
+ Total WIMPs in star:      3.529289620500968E+044
+ Capture rate:     9.299779137791323E+041 WIMPs/yr
+ Net accretion rate:    1.042800518005433E+040 WIMPs/yr
+ Annually injected annihilation energy:   9.195499085990780E+043 GeV
+ WIMP thermal radius:   2.881354577807750E-002 stellar radii
+ WIMP isothermal temperature:    7759141.34035273      K
+ Central WIMP density:   8.386503954866466E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.840503091780278E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.564351064432504     
+ Last timestep:    151414.097088797      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+   100   1.0263   6.8912  16.0542  -0.5100   3.6331   6.8276   5.1802 -99.0000   0.0021   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.9324   0.1410
+ Model number:         101
+ Total WIMPs in star:      3.549244870724657E+044
+ Capture rate:     9.141487043640374E+041 WIMPs/yr
+ Net accretion rate:    1.029680015346965E+040 WIMPs/yr
+ Annually injected annihilation energy:   9.038519042105678E+043 GeV
+ WIMP thermal radius:   2.888784009204153E-002 stellar radii
+ WIMP isothermal temperature:    7690724.96812580      K
+ Central WIMP density:   8.196604797322979E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.776556793069703E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.565418324066468     
+ Last timestep:    153969.807154282      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   101   1.0142   6.8873  16.0383  -0.5054   3.6328   6.8374   5.1874 -99.0000   0.0051   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.9471   0.1409
+ Model number:         102
+ Total WIMPs in star:      3.569404351393369E+044
+ Capture rate:     8.986247945344175E+041 WIMPs/yr
+ Net accretion rate:    1.017392114557196E+040 WIMPs/yr
+ Annually injected annihilation energy:   8.884508733888455E+043 GeV
+ WIMP thermal radius:   2.895999645600576E-002 stellar radii
+ WIMP isothermal temperature:    7623180.12292944      K
+ Central WIMP density:   8.010961271419117E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.714069859227685E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.567993514197762     
+ Last timestep:    156673.029524789      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   102   1.0021   6.8835  16.0223  -0.5004   3.6325   6.8472   5.1950 -99.0000   0.0081   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.9619   0.1409
+ Model number:         103
+ Total WIMPs in star:      3.589783343331812E+044
+ Capture rate:     8.834322144235414E+041 WIMPs/yr
+ Net accretion rate:    1.003360477840546E+040 WIMPs/yr
+ Annually injected annihilation energy:   8.733986096451360E+043 GeV
+ WIMP thermal radius:   2.903293115904075E-002 stellar radii
+ WIMP isothermal temperature:    7556608.75448995      K
+ Central WIMP density:   7.829977343586705E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.653172625357454E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.570935369944506     
+ Last timestep:    159125.984744156      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   103   0.9901   6.8797  16.0065  -0.4955   3.6323   6.8569   5.2017 -99.0000   0.0111   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.9767   0.1408
+ Model number:         104
+ Total WIMPs in star:      3.610344179937573E+044
+ Capture rate:     8.685336250405969E+041 WIMPs/yr
+ Net accretion rate:    9.918066245875960E+039 WIMPs/yr
+ Annually injected annihilation energy:   8.586155587947209E+043 GeV
+ WIMP thermal radius:   2.910705389802026E-002 stellar radii
+ WIMP isothermal temperature:    7490865.59123348      K
+ Central WIMP density:   7.652974124352342E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.593644249947187E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.572759819724297     
+ Last timestep:    161996.314171623      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   104   0.9781   6.8759  15.9906  -0.4905   3.6320   6.8666   5.2095 -99.0000   0.0142   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -2.9916   0.1408
+ Model number:         105
+ Total WIMPs in star:      3.631136267723439E+044
+ Capture rate:     8.539256804179474E+041 WIMPs/yr
+ Net accretion rate:    9.797613176741817E+039 WIMPs/yr
+ Annually injected annihilation energy:   8.441280672412057E+043 GeV
+ WIMP thermal radius:   2.917980287375572E-002 stellar radii
+ WIMP isothermal temperature:    7425976.02775594      K
+ Central WIMP density:   7.480061723124871E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.535508385119603E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.575903203395574     
+ Last timestep:    165035.703459415      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+   105   0.9661   6.8721  15.9748  -0.4853   3.6318   6.8762   5.2176 -99.0000   0.0172   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.0064   0.1407
+ Model number:         106
+ Total WIMPs in star:      3.652148382234246E+044
+ Capture rate:     8.396243530299403E+041 WIMPs/yr
+ Net accretion rate:    9.668972357951531E+039 WIMPs/yr
+ Annually injected annihilation energy:   8.299553806719887E+043 GeV
+ WIMP thermal radius:   2.925363580105901E-002 stellar radii
+ WIMP isothermal temperature:    7362002.72433259      K
+ Central WIMP density:   7.311396773465528E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.478819537662390E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.578664995240763     
+ Last timestep:    167943.695059611      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   106   0.9541   6.8684  15.9591  -0.4801   3.6316   6.8858   5.2252 -99.0000   0.0202   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.0212   0.1407
+ Model number:         107
+ Total WIMPs in star:      3.673360527910233E+044
+ Capture rate:     8.255969777868445E+041 WIMPs/yr
+ Net accretion rate:    9.566660848391388E+039 WIMPs/yr
+ Annually injected annihilation energy:   8.160303169384531E+043 GeV
+ WIMP thermal radius:   2.932835733727460E-002 stellar radii
+ WIMP isothermal temperature:    7298830.81065667      K
+ Central WIMP density:   7.146387964550057E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.423377642220552E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.580812810869689     
+ Last timestep:    171295.867742106      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   107   0.9421   6.8646  15.9434  -0.4748   3.6314   6.8954   5.2337 -99.0000   0.0232   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.0361   0.1406
+ Model number:         108
+ Total WIMPs in star:      3.694829949763712E+044
+ Capture rate:     8.118466163975574E+041 WIMPs/yr
+ Net accretion rate:    9.460483993551660E+039 WIMPs/yr
+ Annually injected annihilation energy:   8.023861324040058E+043 GeV
+ WIMP thermal radius:   2.940266961900089E-002 stellar radii
+ WIMP isothermal temperature:    7236513.16983369      K
+ Central WIMP density:   6.985196895246413E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.369233217848568E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.584462692685743     
+ Last timestep:    174748.824519858      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   108   0.9302   6.8609  15.9277  -0.4694   3.6312   6.9049   5.2424 -99.0000   0.0262   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.0510   0.1405
+ Model number:         109
+ Total WIMPs in star:      3.716547952991937E+044
+ Capture rate:     7.983799879050430E+041 WIMPs/yr
+ Net accretion rate:    9.348917093412414E+039 WIMPs/yr
+ Annually injected annihilation energy:   7.890310708116306E+043 GeV
+ WIMP thermal radius:   2.947847292304255E-002 stellar radii
+ WIMP isothermal temperature:    7175072.84572012      K
+ Central WIMP density:   6.827844376345478E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.316395878327370E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.587794391717923     
+ Last timestep:    178186.711403018      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   109   0.9182   6.8572  15.9120  -0.4641   3.6311   6.9145   5.2509 -99.0000   0.0292   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.0660   0.1405
+ Model number:         110
+ Total WIMPs in star:      3.738501069428158E+044
+ Capture rate:     7.851749928057717E+041 WIMPs/yr
+ Net accretion rate:    9.260136722212063E+039 WIMPs/yr
+ Annually injected annihilation energy:   7.759148560835597E+043 GeV
+ WIMP thermal radius:   2.955448860818733E-002 stellar radii
+ WIMP isothermal temperature:    7114449.75025093      K
+ Central WIMP density:   6.673920756596098E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.264723551735578E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.590685676974726     
+ Last timestep:    182073.262638260      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+   110   0.9063   6.8535  15.8964  -0.4586   3.6309   6.9240   5.2602 -99.0000   0.0322   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.0809   0.1404
+ Model number:         111
+ Total WIMPs in star:      3.760743427962644E+044
+ Capture rate:     7.722400133723812E+041 WIMPs/yr
+ Net accretion rate:    9.162689609747491E+039 WIMPs/yr
+ Annually injected annihilation energy:   7.630773237626336E+043 GeV
+ WIMP thermal radius:   2.963109093052710E-002 stellar radii
+ WIMP isothermal temperature:    7054696.29144845      K
+ Central WIMP density:   6.523645314123271E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.214288558929228E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.594953916594393     
+ Last timestep:    185979.476725316      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   111   0.8944   6.8499  15.8808  -0.4531   3.6308   6.9335   5.2695 -99.0000   0.0352   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.0959   0.1403
+ Model number:         112
+ Total WIMPs in star:      3.783254711848720E+044
+ Capture rate:     7.595643247316802E+041 WIMPs/yr
+ Net accretion rate:    9.069236947445104E+039 WIMPs/yr
+ Annually injected annihilation energy:   7.504950877842350E+043 GeV
+ WIMP thermal radius:   2.970928653956139E-002 stellar radii
+ WIMP isothermal temperature:    6995766.51952748      K
+ Central WIMP density:   6.376819597429954E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.165022976214159E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.598586006125684     
+ Last timestep:    190154.549472025      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   112   0.8825   6.8462  15.8652  -0.4476   3.6307   6.9430   5.2791 -99.0000   0.0382   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.1109   0.1402
+ Model number:         113
+ Total WIMPs in star:      3.806045132766627E+044
+ Capture rate:     7.471399340512544E+041 WIMPs/yr
+ Net accretion rate:    8.983996041842607E+039 WIMPs/yr
+ Annually injected annihilation energy:   7.381559380094117E+043 GeV
+ WIMP thermal radius:   2.978707598966615E-002 stellar radii
+ WIMP isothermal temperature:    6937679.17484575      K
+ Central WIMP density:   6.233297483342963E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.116877945408221E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.602402498740838     
+ Last timestep:    194695.872551947      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   113   0.8707   6.8426  15.8497  -0.4419   3.6306   6.9526   5.2894 -99.0000   0.0412   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.1260   0.1401
+ Model number:         114
+ Total WIMPs in star:      3.829136514894467E+044
+ Capture rate:     7.349747361722852E+041 WIMPs/yr
+ Net accretion rate:    8.888155558191207E+039 WIMPs/yr
+ Annually injected annihilation energy:   7.260865806140940E+043 GeV
+ WIMP thermal radius:   2.986648258809146E-002 stellar radii
+ WIMP isothermal temperature:    6880453.24195591      K
+ Central WIMP density:   6.093240547526169E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.069905521475850E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.606702793118337     
+ Last timestep:    199248.073878221      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   114   0.8588   6.8390  15.8343  -0.4363   3.6305   6.9621   5.2994 -99.0000   0.0442   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.1411   0.1400
+ Model number:         115
+ Total WIMPs in star:      3.852501799835886E+044
+ Capture rate:     7.230516183010708E+041 WIMPs/yr
+ Net accretion rate:    8.806774410600787E+039 WIMPs/yr
+ Annually injected annihilation energy:   7.142448438904701E+043 GeV
+ WIMP thermal radius:   2.994613765625461E-002 stellar radii
+ WIMP isothermal temperature:    6824056.10582594      K
+ Central WIMP density:   5.956315348273410E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   2.023993890345282E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.610197229859364     
+ Last timestep:    204341.216031809      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+   115   0.8470   6.8354  15.8189  -0.4306   3.6305   6.9717   5.3104 -99.0000   0.0471   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.1562   0.1399
+ Model number:         116
+ Total WIMPs in star:      3.876180073040031E+044
+ Capture rate:     7.113755139960519E+041 WIMPs/yr
+ Net accretion rate:    8.713209935652111E+039 WIMPs/yr
+ Annually injected annihilation energy:   7.026623040603998E+043 GeV
+ WIMP thermal radius:   3.002670070019427E-002 stellar radii
+ WIMP isothermal temperature:    6768496.47809716      K
+ Central WIMP density:   5.822708112249982E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.979202337378280E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.614620691550462     
+ Last timestep:    209590.367212322      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   116   0.8352   6.8319  15.8035  -0.4249   3.6304   6.9813   5.3214 -99.0000   0.0501   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.1713   0.1398
+ Model number:         117
+ Total WIMPs in star:      3.900138888694865E+044
+ Capture rate:     6.999353208180064E+041 WIMPs/yr
+ Net accretion rate:    8.622446631998068E+039 WIMPs/yr
+ Annually injected annihilation energy:   6.913128741860084E+043 GeV
+ WIMP thermal radius:   3.010794448639837E-002 stellar radii
+ WIMP isothermal temperature:    6713754.81570143      K
+ Central WIMP density:   5.692201984259801E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.935458008254746E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.618103782677015     
+ Last timestep:    215332.008951921      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   117   0.8234   6.8284  15.7882  -0.4192   3.6304   6.9910   5.3331 -99.0000   0.0530   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.1865   0.1397
+ Model number:         118
+ Total WIMPs in star:      3.924385890575415E+044
+ Capture rate:     6.887290077923870E+041 WIMPs/yr
+ Net accretion rate:    8.536699625968768E+039 WIMPs/yr
+ Annually injected annihilation energy:   6.801923081664182E+043 GeV
+ WIMP thermal radius:   3.018976066260090E-002 stellar radii
+ WIMP isothermal temperature:    6659844.24020381      K
+ Central WIMP density:   5.564732834124881E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.892731222996641E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.621695856802268     
+ Last timestep:    221459.477796060      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   118   0.8116   6.8249  15.7729  -0.4134   3.6304   7.0007   5.3453 -99.0000   0.0560   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.2017   0.1396
+ Model number:         119
+ Total WIMPs in star:      3.948935450885381E+044
+ Capture rate:     6.777520950465213E+041 WIMPs/yr
+ Net accretion rate:    8.450514744926975E+039 WIMPs/yr
+ Annually injected annihilation energy:   6.693015803015944E+043 GeV
+ WIMP thermal radius:   3.027241374745398E-002 stellar radii
+ WIMP isothermal temperature:    6606757.19979871      K
+ Central WIMP density:   5.440277296986324E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.851024112286410E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.625564381141098     
+ Last timestep:    228046.181070246      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   119   0.7999   6.8214  15.7577  -0.4075   3.6303   7.0104   5.3580 -99.0000   0.0589   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.2170   0.1394
+ Model number:         120
+ Total WIMPs in star:      3.973786627825885E+044
+ Capture rate:     6.670020368319874E+041 WIMPs/yr
+ Net accretion rate:    8.365106875671085E+039 WIMPs/yr
+ Annually injected annihilation energy:   6.586369299563163E+043 GeV
+ WIMP thermal radius:   3.035547864358637E-002 stellar radii
+ WIMP isothermal temperature:    6554507.60583378      K
+ Central WIMP density:   5.318771574344427E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.810311136973813E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.629313323795447     
+ Last timestep:    235140.456613081      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+   120   0.7882   6.8179  15.7425  -0.4016   3.6304   7.0203   5.3713 -99.0000   0.0619   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.2322   0.1393
+ Model number:         121
+ Total WIMPs in star:      3.998941813778273E+044
+ Capture rate:     6.564769723551445E+041 WIMPs/yr
+ Net accretion rate:    8.278820700838321E+039 WIMPs/yr
+ Annually injected annihilation energy:   6.481981516543062E+043 GeV
+ WIMP thermal radius:   3.043918550204964E-002 stellar radii
+ WIMP isothermal temperature:    6503098.25922934      K
+ Central WIMP density:   5.200200002388090E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.770593656879136E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.633028099099293     
+ Last timestep:    242770.165383245      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   121   0.7765   6.8145  15.7274  -0.3957   3.6304   7.0302   5.3852 -99.0000   0.0648   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.2475   0.1392
+ Model number:         122
+ Total WIMPs in star:      4.024398136316043E+044
+ Capture rate:     6.461706813487350E+041 WIMPs/yr
+ Net accretion rate:    8.192408805349973E+039 WIMPs/yr
+ Annually injected annihilation energy:   6.379782725433850E+043 GeV
+ WIMP thermal radius:   3.052337497681991E-002 stellar radii
+ WIMP isothermal temperature:    6452516.94290156      K
+ Central WIMP density:   5.084466494657654E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.731821984838652E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.636576467556006     
+ Last timestep:    251123.083306647      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   122   0.7649   6.8111  15.7124  -0.3897   3.6304   7.0403   5.3999 -99.0000   0.0677   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.2628   0.1390
+ Model number:         123
+ Total WIMPs in star:      4.050154771177357E+044
+ Capture rate:     6.360820142018590E+041 WIMPs/yr
+ Net accretion rate:    8.105374055390012E+039 WIMPs/yr
+ Annually injected annihilation energy:   6.279766401464689E+043 GeV
+ WIMP thermal radius:   3.060777445727064E-002 stellar radii
+ WIMP isothermal temperature:    6402780.51614598      K
+ Central WIMP density:   4.971537744234441E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.693992937881279E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.640012095942685     
+ Last timestep:    260206.458874595      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   123   0.7533   6.8078  15.6974  -0.3836   3.6305   7.0505   5.4153 -99.0000   0.0707   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.2781   0.1389
+ Model number:         124
+ Total WIMPs in star:      4.076208900115001E+044
+ Capture rate:     6.262064902492708E+041 WIMPs/yr
+ Net accretion rate:    8.016507316060190E+039 WIMPs/yr
+ Annually injected annihilation energy:   6.181899829332106E+043 GeV
+ WIMP thermal radius:   3.069286861080792E-002 stellar radii
+ WIMP isothermal temperature:    6353862.36056302      K
+ Central WIMP density:   4.861376021724818E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.657091811959975E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.643287242330981     
+ Last timestep:    270141.638048632      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   124   0.7417   6.8044  15.6825  -0.3775   3.6305   7.0608   5.4316 -99.0000   0.0736   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.2935   0.1387
+ Model number:         125
+ Total WIMPs in star:      4.102553312360271E+044
+ Capture rate:     6.165411830323156E+041 WIMPs/yr
+ Net accretion rate:    7.925153811225685E+039 WIMPs/yr
+ Annually injected annihilation energy:   6.086160292210900E+043 GeV
+ WIMP thermal radius:   3.077749514884379E-002 stellar radii
+ WIMP isothermal temperature:    6305794.12914286      K
+ Central WIMP density:   4.753946809101712E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.621108448620327E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.646296911930274     
+ Last timestep:    281168.530472720      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+   125   0.7302   6.8011  15.6677  -0.3713   3.6306   7.0713   5.4490 -99.0000   0.0765   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.3088   0.1385
+ Model number:         126
+ Total WIMPs in star:      4.129177821107753E+044
+ Capture rate:     6.070849529570508E+041 WIMPs/yr
+ Net accretion rate:    7.820602296273567E+039 WIMPs/yr
+ Annually injected annihilation energy:   5.992643506607772E+043 GeV
+ WIMP thermal radius:   3.086228728201158E-002 stellar radii
+ WIMP isothermal temperature:    6258539.80114680      K
+ Central WIMP density:   4.649310282332378E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.586060462482574E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.648974107594573     
+ Last timestep:    293270.315566362      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   126   0.7187   6.7979  15.6529  -0.3651   3.6307   7.0820   5.4673 -99.0000   0.0794   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.3242   0.1384
+ Model number:         127
+ Total WIMPs in star:      4.156034067361534E+044
+ Capture rate:     5.978305774771612E+041 WIMPs/yr
+ Net accretion rate:    7.718237132702411E+039 WIMPs/yr
+ Annually injected annihilation energy:   5.901123403444588E+043 GeV
+ WIMP thermal radius:   3.094687311053049E-002 stellar radii
+ WIMP isothermal temperature:    6212090.37217596      K
+ Central WIMP density:   4.547310294437831E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.551895067483741E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.650401784987220     
+ Last timestep:    306922.613112160      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   127   0.7073   6.7946  15.6383  -0.3589   3.6308   7.0929   5.4870 -99.0000   0.0823   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.3395   0.1382
+ Model number:         128
+ Total WIMPs in star:      4.183124714250339E+044
+ Capture rate:     5.887771378784182E+041 WIMPs/yr
+ Net accretion rate:    7.609627966614151E+039 WIMPs/yr
+ Annually injected annihilation energy:   5.811675099118041E+043 GeV
+ WIMP thermal radius:   3.103071295001159E-002 stellar radii
+ WIMP isothermal temperature:    6166465.80775283      K
+ Central WIMP density:   4.447960975563530E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.518618127940695E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.651838903380398     
+ Last timestep:    322247.952075356      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   128   0.6959   6.7914  15.6237  -0.3525   3.6310   7.1040   5.5082 -99.0000   0.0852   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.3548   0.1380
+ Model number:         129
+ Total WIMPs in star:      4.210421921380316E+044
+ Capture rate:     5.799228794359011E+041 WIMPs/yr
+ Net accretion rate:    7.490380638493761E+039 WIMPs/yr
+ Annually injected annihilation energy:   5.724324987974074E+043 GeV
+ WIMP thermal radius:   3.111399533848941E-002 stellar radii
+ WIMP isothermal temperature:    6121648.21482548      K
+ Central WIMP density:   4.351279112496829E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.486220355369614E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.652555421954913     
+ Last timestep:    339533.368950852      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   129   0.6846   6.7883  15.6092  -0.3461   3.6311   7.1155   5.5309 -99.0000   0.0881   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.3701   0.1379
+ Model number:         130
+ Total WIMPs in star:      4.237879449955074E+044
+ Capture rate:     5.712649004703622E+041 WIMPs/yr
+ Net accretion rate:    7.363755227263871E+039 WIMPs/yr
+ Annually injected annihilation energy:   5.639011452430983E+043 GeV
+ WIMP thermal radius:   3.119642914127399E-002 stellar radii
+ WIMP isothermal temperature:    6077627.41352894      K
+ Central WIMP density:   4.257225167748641E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.454780466889810E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.652132472409245     
+ Last timestep:    359291.879980179      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+   130   0.6734   6.7851  15.5949  -0.3396   3.6313   7.1273   5.5554 -99.0000   0.0910   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.3853   0.1377
+ Model number:         131
+ Total WIMPs in star:      4.265460071235414E+044
+ Capture rate:     5.628032245862170E+041 WIMPs/yr
+ Net accretion rate:    7.225728593105666E+039 WIMPs/yr
+ Annually injected annihilation energy:   5.555774959931113E+043 GeV
+ WIMP thermal radius:   3.127742165809221E-002 stellar radii
+ WIMP isothermal temperature:    6034415.04974721      K
+ Central WIMP density:   4.165895090000102E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.424124681905956E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.650811841300307     
+ Last timestep:    382052.677851544      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   131   0.6623   6.7820  15.5807  -0.3330   3.6315   7.1395   5.5821 -99.0000   0.0939   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.4004   0.1375
+ Model number:         132
+ Total WIMPs in star:      4.293108320434547E+044
+ Capture rate:     5.545377003011381E+041 WIMPs/yr
+ Net accretion rate:    7.072882216115448E+039 WIMPs/yr
+ Annually injected annihilation energy:   5.474648180850226E+043 GeV
+ WIMP thermal radius:   3.135652235451895E-002 stellar radii
+ WIMP isothermal temperature:    5992006.73753037      K
+ Central WIMP density:   4.077243991955462E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.394418813253830E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.648189145775439     
+ Last timestep:    408569.985549022      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   132   0.6512   6.7790  15.5666  -0.3264   3.6317   7.1522   5.6113 -99.0000   0.0968   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.4154   0.1373
+ Model number:         133
+ Total WIMPs in star:      4.320751380005148E+044
+ Capture rate:     5.464681866961985E+041 WIMPs/yr
+ Net accretion rate:    6.904014279780882E+039 WIMPs/yr
+ Annually injected annihilation energy:   5.395641724164176E+043 GeV
+ WIMP thermal radius:   3.143339498436665E-002 stellar radii
+ WIMP isothermal temperature:    5950384.02260129      K
+ Central WIMP density:   3.991322080818906E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.365625052352385E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.643893829536609     
+ Last timestep:    439851.331426889      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   133   0.6403   6.7760  15.5526  -0.3196   3.6319   7.1654   5.6433 -99.0000   0.0997   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.4304   0.1371
+ Model number:         134
+ Total WIMPs in star:      4.348306684812543E+044
+ Capture rate:     5.385965644700263E+041 WIMPs/yr
+ Net accretion rate:    6.717045734999998E+039 WIMPs/yr
+ Annually injected annihilation energy:   5.318795187350263E+043 GeV
+ WIMP thermal radius:   3.150750482731632E-002 stellar radii
+ WIMP isothermal temperature:    5909542.27376149      K
+ Central WIMP density:   3.908194701296146E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.337763145141852E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.637743354892180     
+ Last timestep:    477313.097821102      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   134   0.6295   6.7730  15.5388  -0.3128   3.6322   7.1793   5.6788 -99.0000   0.1025   1.0000   0.0000   1.0000   0.7286   0.2614   0.0013   0.0010   0.0051  -3.4451   0.1369
+ Model number:         135
+ Total WIMPs in star:      4.375677674073725E+044
+ Capture rate:     5.309259419789868E+041 WIMPs/yr
+ Net accretion rate:    6.505702202521147E+039 WIMPs/yr
+ Annually injected annihilation energy:   5.244202397764657E+043 GeV
+ WIMP thermal radius:   3.157820336616277E-002 stellar radii
+ WIMP isothermal temperature:    5869479.46378139      K
+ Central WIMP density:   3.827959963600030E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.310865778840900E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.629463173717287     
+ Last timestep:    522969.278572842      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+   135   0.6189   6.7700  15.5252  -0.3060   3.6325   7.1941   5.7185 -99.0000   0.1054   1.0000   0.0000   1.0000   0.7286   0.2614   0.0014   0.0009   0.0051  -3.4596   0.1367
+ Model number:         136
+ Total WIMPs in star:      4.402735280407715E+044
+ Capture rate:     5.234649275172529E+041 WIMPs/yr
+ Net accretion rate:    6.247741902773507E+039 WIMPs/yr
+ Annually injected annihilation energy:   5.172171856144794E+043 GeV
+ WIMP thermal radius:   3.164432696039260E-002 stellar radii
+ WIMP isothermal temperature:    5830185.40568693      K
+ Central WIMP density:   3.750889667988478E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.285024468947952E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.618363790694852     
+ Last timestep:    579611.936924814      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   136   0.6084   6.7671  15.5118  -0.2990   3.6328   7.2099   5.7631 -99.0000   0.1083   1.0000   0.0000   1.0000   0.7286   0.2614   0.0014   0.0009   0.0051  -3.4738   0.1366
+ Model number:         137
+ Total WIMPs in star:      4.429246950967024E+044
+ Capture rate:     5.162230641042223E+041 WIMPs/yr
+ Net accretion rate:    5.955758845976584E+039 WIMPs/yr
+ Annually injected annihilation energy:   5.102673052582457E+043 GeV
+ WIMP thermal radius:   3.170506357471112E-002 stellar radii
+ WIMP isothermal temperature:    5791696.15361710      K
+ Central WIMP density:   3.677079868656919E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.260259822358336E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.602163629443866     
+ Last timestep:    651975.154666608      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   137   0.5981   6.7642  15.4987  -0.2920   3.6331   7.2271   5.8142 -99.0000   0.1111   1.0000   0.0000   1.0000   0.7286   0.2614   0.0015   0.0008   0.0051  -3.4876   0.1364
+ Model number:         138
+ Total WIMPs in star:      4.455020695428050E+044
+ Capture rate:     5.092199659307202E+041 WIMPs/yr
+ Net accretion rate:    5.608791188321604E+039 WIMPs/yr
+ Annually injected annihilation energy:   5.036111747423987E+043 GeV
+ WIMP thermal radius:   3.175897077538810E-002 stellar radii
+ WIMP isothermal temperature:    5754072.98736382      K
+ Central WIMP density:   3.606931736774922E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.236733641696976E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.581899016838492     
+ Last timestep:    747012.539539882      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   138   0.5882   6.7614  15.4859  -0.2849   3.6335   7.2459   5.8733 -99.0000   0.1140   1.0000   0.0000   1.0000   0.7286   0.2614   0.0015   0.0008   0.0051  -3.5010   0.1363
+ Model number:         139
+ Total WIMPs in star:      4.479760112522814E+044
+ Capture rate:     5.024886481467642E+041 WIMPs/yr
+ Net accretion rate:    5.174183853593635E+039 WIMPs/yr
+ Annually injected annihilation energy:   4.973144642931705E+043 GeV
+ WIMP thermal radius:   3.180421674116205E-002 stellar radii
+ WIMP isothermal temperature:    5717373.16671735      K
+ Central WIMP density:   3.541039043211660E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.214616842241729E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.555315424688209     
+ Last timestep:    876531.790179852      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   139   0.5786   6.7586  15.4735  -0.2779   3.6338   7.2670   5.9428 -99.0000   0.1168   1.0000   0.0000   1.0000   0.7286   0.2614   0.0015   0.0008   0.0051  -3.5137   0.1361
+ Model number:         140
+ Total WIMPs in star:      4.503004081301875E+044
+ Capture rate:     4.960813738935464E+041 WIMPs/yr
+ Net accretion rate:    4.623973951440688E+039 WIMPs/yr
+ Annually injected annihilation energy:   4.914573999421057E+043 GeV
+ WIMP thermal radius:   3.183807999552440E-002 stellar radii
+ WIMP isothermal temperature:    5681774.63995142      K
+ Central WIMP density:   3.480227878497528E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.194198203909786E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.518866372198905     
+ Last timestep:    1062952.94899247      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+   140   0.5694   6.7559  15.4617  -0.2708   3.6342   7.2912   6.0265 -99.0000   0.1195   1.0000   0.0000   1.0000   0.7286   0.2614   0.0015   0.0008   0.0051  -3.5255   0.1360
+ Model number:         141
+ Total WIMPs in star:      4.524138187932733E+044
+ Capture rate:     4.901045669510762E+041 WIMPs/yr
+ Net accretion rate:    3.716975886248661E+039 WIMPs/yr
+ Annually injected annihilation energy:   4.863875910648276E+043 GeV
+ WIMP thermal radius:   3.185178811452834E-002 stellar radii
+ WIMP isothermal temperature:    5647376.14161281      K
+ Central WIMP density:   3.426902961132586E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.176430279203428E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.469333499354683     
+ Last timestep:    1350910.59050068      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   141   0.5611   6.7533  15.4507  -0.2637   3.6347   7.3202   6.1306 -99.0000   0.1222   1.0000   0.0000   1.0000   0.7286   0.2614   0.0016   0.0008   0.0051  -3.5357   0.1360
+ Model number:         142
+ Total WIMPs in star:      4.541392028115172E+044
+ Capture rate:     4.846747886845248E+041 WIMPs/yr
+ Net accretion rate:    2.945568615528715E+039 WIMPs/yr
+ Annually injected annihilation energy:   4.817292200689962E+043 GeV
+ WIMP thermal radius:   3.185144083774880E-002 stellar radii
+ WIMP isothermal temperature:    5615210.65966388      K
+ Central WIMP density:   3.380421669692532E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.160796478264714E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.381372970181598     
+ Last timestep:    1856345.60427296      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   142   0.5536   6.7508  15.4408  -0.2570   3.6351   7.3572   6.2687 -99.0000   0.1247   1.0000   0.0000   1.0000   0.7286   0.2614   0.0016   0.0008   0.0051  -3.5444   0.1360
+ Model number:         143
+ Total WIMPs in star:      4.555255205724004E+044
+ Capture rate:     4.801460355404716E+041 WIMPs/yr
+ Net accretion rate:    2.459456917145960E+039 WIMPs/yr
+ Annually injected annihilation energy:   4.776865786233256E+043 GeV
+ WIMP thermal radius:   3.185114902874640E-002 stellar radii
+ WIMP isothermal temperature:    5588252.01826316      K
+ Central WIMP density:   3.341189454850036E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.147603134736790E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.305262737130095     
+ Last timestep:    2784518.40640944      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   143   0.5474   6.7487  15.4324  -0.2514   3.6355   7.4073   6.4448 -99.0000   0.1268   1.0000   0.0000   1.0000   0.7286   0.2614   0.0016   0.0008   0.0051  -3.5517   0.1360
+ Model number:         144
+ Total WIMPs in star:      4.566966933320773E+044
+ Capture rate:     4.772904089795066E+041 WIMPs/yr
+ Net accretion rate:    1.553831215841795E+039 WIMPs/yr
+ Annually injected annihilation energy:   4.757365777636648E+043 GeV
+ WIMP thermal radius:   3.185096354911536E-002 stellar radii
+ WIMP isothermal temperature:    5571191.96820382      K
+ Central WIMP density:   3.318596860728064E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.140019564069698E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.257103654303538     
+ Last timestep:    4176777.60961417      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   144   0.5434   6.7474  15.4271  -0.2478   3.6357   7.4731   6.6208 -99.0000   0.1281   1.0000   0.0000   1.0000   0.7286   0.2614   0.0016   0.0008   0.0051  -3.5564   0.1360
+ Model number:         145
+ Total WIMPs in star:      4.574419072960996E+044
+ Capture rate:     4.761193098258415E+041 WIMPs/yr
+ Net accretion rate:    6.372881423760764E+038 WIMPs/yr
+ Annually injected annihilation energy:   4.754820216834654E+043 GeV
+ WIMP thermal radius:   3.185088692506097E-002 stellar radii
+ WIMP isothermal temperature:    5564183.77692500      K
+ Central WIMP density:   3.311245062980504E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.137566506801180E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   0.163174810525828     
+ Last timestep:    6265166.41442125      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ 
+  MOD#  log RHO   log Tc   log Pc   log L    log Ts  log Age  log DT  log L_He   log R  Ttl_Mass  He_Core  Noncore     XH1     XHe4     XC12     XN14     XO16   PSIcntr  GAMcntr
+   145   0.5417   6.7468  15.4249  -0.2463   3.6358   7.5562   6.7969 -99.0000   0.1287   1.0000   0.0000   1.0000   0.7286   0.2614   0.0016   0.0008   0.0051  -3.5583   0.1360
+ Model number:         146
+ Total WIMPs in star:      4.577483591425309E+044
+ Capture rate:     4.758958735876268E+041 WIMPs/yr
+ Net accretion rate:    1.188491397797524E+038 WIMPs/yr
+ Annually injected annihilation energy:   4.757770244478471E+043 GeV
+ WIMP thermal radius:   3.185087396733822E-002 stellar radii
+ WIMP isothermal temperature:    5562849.96204183      K
+ Central WIMP density:   3.311048724313206E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.137512716431120E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   6.699251676408495E-002
+ Last timestep:    9397749.62163187      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   146   0.5414   6.7467  15.4245  -0.2460   3.6358   7.6569   6.9730 -99.0000   0.1288   1.0000   0.0000   1.0000   0.7286   0.2614   0.0016   0.0008   0.0051  -3.5587   0.1360
+ Model number:         147
+ Total WIMPs in star:      4.578055283613879E+044
+ Capture rate:     4.758985325491583E+041 WIMPs/yr
+ Net accretion rate:   -6.472250204438624E+036 WIMPs/yr
+ Annually injected annihilation energy:   4.759050047993628E+043 GeV
+ WIMP thermal radius:   3.185087470613897E-002 stellar radii
+ WIMP isothermal temperature:    5562872.97408035      K
+ Central WIMP density:   3.311526638855338E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.137676546831332E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   1.248922420259309E-002
+ Last timestep:    14096624.4324478      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+   147   0.5414   6.7467  15.4245  -0.2461   3.6358   7.7744   7.1491 -99.0000   0.1288   1.0000   0.0000   1.0000   0.7286   0.2614   0.0016   0.0008   0.0051  -3.5587   0.1360
+ Model number:         148
+ Total WIMPs in star:      4.578024153010409E+044
+ Capture rate:     4.758936267520180E+041 WIMPs/yr
+ Net accretion rate:   -4.841031804815531E+036 WIMPs/yr
+ Annually injected annihilation energy:   4.758984677838228E+043 GeV
+ WIMP thermal radius:   3.185087574446736E-002 stellar radii
+ WIMP isothermal temperature:    5562854.15970177      K
+ Central WIMP density:   3.311503695166538E+015 WIMPs/cm^3
+ WIMP density at thermal radius:   1.137668653923670E+015 WIMPs/cm^3
+ Current distance from centre of galaxy:     1.000000000000000E-002 pc
+ Local WIMP ambient density:      10000000000.0000      GeV/cm^3
+ Local galactic escape velocity:      600.000000000000      km/s
+ Stellar velocity through halo:      220.000000000000      km/s
+ Change in orbital rho/v (%) during last timestep:   0.000000000000000E+000
+ WIMP population change (%) during last timestep:   6.799962329385275E-004
+ Last timestep:    21144936.6486717      yrs
+ Next requested maximum timestep:   -1.00000000000000      yrs
+ 
+ Star has become a certified WIMP burner - saving and quitting.
+   148   0.5414   6.7467  15.4245  -0.2461   3.6358   7.9065   7.3252 -99.0000   0.1288   1.0000   0.0000   1.0000   0.7286   0.2614   0.0016   0.0008   0.0051  -3.5587   0.1360
+Save profile for end of run:  148
+   148   0.5414   6.7467  15.4245  -0.2461   3.6358   7.9065   7.3252 -99.0000   0.1288   1.0000   0.0000   1.0000   0.7286   0.2614   0.0016   0.0008   0.0051  -3.5587   0.1360
+SAVED for later debugging at model number  148
+ 
+
+DarkStars run completed.
+
+
+     DarkSUSY found at /home/pat/DarkStars/DarkSUSYLE/                                                                                                 
+     *********************************************************
+     *** Welcome to DarkSUSY version                       ***
+     *** DarkSUSYLE                                        ***
+     *** Lobotomised Edition (DarkSUSYLE)                  ***
+     *********************************************************
+
+     Initializing DarkSUSYLE capture routines...
+     done.
+

@@ -1,0 +1,3 @@
+../DarkStars/example_verydark/logs
+../DarkStars/example_verydark/profiles
+../DarkStars/example_verydark/movie

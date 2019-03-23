@@ -1,0 +1,17 @@
+cd run
+echo
+echo Make EZ
+./mk
+echo
+echo Run demo1 -- this takes several minutes to finish
+echo
+echo
+./rn
+echo
+echo
+echo Check the output for some diffs
+./dff
+echo
+echo If the diffs are silent you should be okay
+echo "Check the README section << Doing Your Own Thing >> for suggestions on next steps."
+echo

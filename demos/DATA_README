@@ -1,0 +1,53 @@
+DATA_README   (as of June 3, 2006)
+
+    This is a (rough) roadmap to the contents of the data log files.  There is a ton of stuff and to give it a little structure I've separated things into different files.  There are currently the following logs for the history data: basics, convection, masses, power, mags, pressure, burn, epsnuc, and profiles.  Many have things taken directly from star_data.f and star_extras.f and you'll have to look there for the detailed comments if the names aren't self-explanatory.  The files are simply columns of data in the order listed below with one line per model in the history (typically only every 20th model created in the run is actually recorded plus a few selected extras at what the system thinks might be interesting points along the way).
+    
+    basics.log
+        star_Age, time_Step, log_Luminosity, log_Radius, log_surface_Temp, log_center_Temp, log_center_Density, log_center_Pressure, center_Degeneracy, center_H, center_He, center_C, center_N, center_O, center_Ne, dynamic_Timescale, KH_Timescale, nuc_Timescale, V_magnitude, B_minus_V, U_minus_B
+        
+    masses.log
+        star_Age, star_Mass, star_Mdot, star_Mass_H, star_Mass_He, star_Mass_C, star_Mass_N, star_Mass_O, star_Mass_Ne, mass_He_Core, mass_C_Core, mass_O_Core
+        
+    power.log
+        star_Age, power_H_burn, power_He_burn, power_Metal_burn, power_PP, power_CNO, power_3_alpha, power_Neutrinos, power_plasmon_neutrinos, power_brem_neutrinos, power_pair_neutrinos, power_photo_neutrinos
+        
+    mags.log
+        	Color magnitude estimates based on temperature, luminosity, and metallicity.  See ez_magnitude_data.f for details.
+The values on each line of the log are the star_Age followed by the 'n_mags' entries in the order given in ez_magnitude_data.
+Estimates are based on data from Lejeune, Cuisinier, Buser (1998) A&AS 130, 65.
+
+    pressure.log
+        star_Age, center SX_PRAD, center SX_PEL, center SX_PION, center SX_PCORR
+
+    The convection and burn logs differ a little from the contents of the star_extra module in order to make them easier to deal with from plotting programs.  Here's what I've put in them.
+    
+    convection.log
+        star_Age, CZR_s1, CZR_e1, CZR_s2, CZR_e2, CZR_s3, CZR_e3, ...
+        CZM_s1, CZM_e1, CZM_s2, CZM_e2, CZM_s3, CZM_e3, CZT_1, CZT_2, CZT_3, ...
+        inner_CZM, inner_CZR, inner_MZM, inner_MZR
+        
+        The "CZ" stands for convection zone.  The "R" means the locations are given as log10(R/Rsolar).  The "M" means the locations are given in Msolar units.  The "T" means the convection turnover time.  The "s" means the start of the zone.  The "e" means the end of the zone.  If there are fewer than 3 zones, the s3 and e3 values are both -20.  Similarly, if there are fewer than 2 zones, the s2 and e2 values are -20, and if there are no zones, all the s and e values are -20.  In some cases, you are only interested in the core convection and mixing.  The final four values concern this information.  The 'CZ' values are for the mass and radius coordinates where the convective mixing velocity (SX_CV) is first equal to 0.  The 'MZ' values are for the corresponding locations where the diffusion coefficient for convective mixing (SX_SG) is first equal to 0.
+        
+    burn.log
+        star_Age, HBZR_1, HBZR_2, HBZR_3, HBZR_4, HBZM_1, HBZM_2, HBZM_3, HBZM_4, ...
+        HeBZR_1, HeBZR_2, HeBZR_3, HeBZR_4, HeBZM_1, HeBZM_2, HeBZM_3, HeBZM_4
+        
+        The "HBZ" values are for the Hydrogen burning zones.  The "HeBZ" values are for Helium burning zones.  The "R" values are locations in Rsolar.  The "M" values are mass locations in Msolar.  The 1,2,3,4 values correspond to different burn rates: from 2 to 3, the rate exceeds 10^3 ergs/g/s; while from 1 to 2 and from 3 to 4, the rate exceeds 1 erg/g/s but is less than 10^3 ergs/g/s.  If the rate is never over 10^3 ergs/g/s, the 3 and 4 locations are both set to -20.  If the rate is never over 1 erg/g/s, all 4 locations are set to -20.
+
+	 epsnuc.log
+        star_Age, NucBZM_1, NucBZM_2, NucBZM_3, NucBZM_4, NucBZM_5, NucBZM_6, ...
+		  NucBZM_7, NucBZM_8, NucBZM_9, NucBZM_10, NucBZM_11, NucBZM_12
+		
+        The "NucBZM" values are mass locations in Msolar for the nuclear burning zones (all burning sources included).  There up to 3 zones reported, all having burn rates of at least 1 erg/g/s.  For each zone there are  4 number such as the following:
+        NucBZM_1 = is mass of inner edge where first goes > 1 (or -20 if none such)
+        NucBZM_2 = is mass of inner edge where first zone reaches 10^3 erg/g/sec (or -20 if none such)
+        NucBZM_3 = is mass of outer edge where first zone drops back below 10^3 erg/g/s
+        NucBZM_4 = is mass of outer edge where first zone ends (i.e. EPS_NUC < 1)
+If there is a 2nd or 3rd zone, its locations are given in the following entries.
+
+        
+        In addition to the histories which give the values of certain properties of the star over the course of the simulation, there are also profiles that show a fairly complete picture of the star at one particular point during the run.  The file 'profiles.log' has a line for each profile with age, mass, and model number.  The data is in a file with a name like 'model_215.log' that would hold the information for model number 215.  The contents of the profile log correspond to the items in star_data.f and star_extras.f, so look there for the details.  Check the subroutine called Write_Status_Info in ez_do_one_utils to see the order of things in the log file (the order should match the order of declarations in the modules).
+
+
+Cheers,
+Bill

@@ -1,0 +1,5 @@
+
+The 'zams' folder contains the Tioga files for making plots
+illustrating the properties of Zero-Age Main Sequence stars.
+
+The file 'zams.rb' can be loaded into Tioga to create the plots.

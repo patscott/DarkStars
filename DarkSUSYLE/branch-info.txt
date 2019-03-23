@@ -1,0 +1,9 @@
+This branch was created at revision 93 to add the possibility of calculating
+capture on general stars and not only the Sun.
+
+Author: Joakim Edsjo, edsjo@physto.se
+
+This branch was carefully tended to allow various other capture possibilities,
+then brutally pruned for public release.
+
+Gardener: Pat Scott, pat@fysik.su.se

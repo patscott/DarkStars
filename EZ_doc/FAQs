@@ -1,0 +1,214 @@
+FAQs as of April, 2007 (note that the code may have changed since the time of writing!)
+
+
+How can I get finer time resolution in the logs?
+
+	The easiest way is to save more frequently.  If you are using some variant of demo2,
+then you can just change the default value of the 'summary_cnt' variable to a smaller value.
+The routine Demo2_Before_Evolve in demo2.f sets summary_cnt to 20, which tells EZ
+to save info about every 20th model to the log files.  Try reducing this to 5 or less.
+
+	If you need still finer control over the time resolution, you can try playing with
+requesting a reduced timestep.  Take a look at the routine called EZ_Reduce_DTY
+in ez_driver.f.
+
+
+How are the models choosen for history profiles in the Demo2 plots?
+
+	The Demo2 plots start with a pair of plots, one showing the history at the surface,
+as a path in luminosity versus surface temperature, and one showing the history at the 
+center, as a path in density versus temperature.  These paths are label at various points
+which are automatically choosen by the routine "Do_One_Check_Model" in ez_do_one.f
+(that's where to look if you'd like to check the following for accuracy).
+I've tried to pick out points in the evolution that would be of interest.
+Here's how it typically goes.
+
+	0. The ZAMS location.
+	1. Leaving the main sequence (indicated by center hydrogen abundance less than 5% by mass).
+	2. Center hydrogen exhausted and surface temperature dropping.
+	3. Helium ignition (indicated by power from helium burning exceeding losses to neutrinos).
+	4. Post-helium-flash (if there was one)
+		or at the point where luminosity is starting to rise again (starting up the AGB).
+	5. Center helium exhausted and center temperature starting to fall.
+	6. End of run.
+	
+
+What's what in the source files?
+
+    The procedural interface is in ez_driver.f
+    The zones and variables are discussed in the comments in star_data.f
+The parameters for controlling mass change are given in star_controls.f
+The info available at each time step is listed in star_extras.f
+The equations are outlined in ez_equations.f
+The data used in the equations is calculated in ez_shell.f
+The shell values in turn rely on calculations done in ez_convection.f,
+ez_ionization.f, ez_nuclear.f, ez_opacity.f, ez_state.f, and ez_vcool.f
+The equations are solved in ez_solve.f and the system cycle is controlled in ez_cycle.f
+After each timestep, the current state info is put together in ez_report.f 
+
+
+Do you have any plans to move the initial data, eg star mass, metallicity etc, out of
+the code and into a data file?
+
+    For "hands-off" evolution from ZAMS to end-of-run, a data file for initial settings
+    would be an easy way to go.  If that's what you're planning to do, you might want
+    to set up a little routine that reads in the parameters and makes the appropriate
+    calls on the routines in the ez_driver file.  
+    
+    EZ really consists of the code accessible from the ez_driver routines and the data
+    that they place in star_data and star_extras.  Files like demo2.f should be seen
+    as examples of my style of using EZ rather than as an integral part of EZ.  If you'd
+    like to do things differently, please go ahead.  If that means having a data file for
+    initial parameters, no problem -- just do it.
+    
+    However, I think you may find that the data file approaching to controlling EZ
+    runs out of gas when you begin to try more complex projects that do "pseudo-evolution"
+    with interventions at each timestep to do computed operations such as modifying
+    mass loss rates according to the current stellar radius or luminosity.
+    
+
+What's in the log files?
+
+    Have you figured out already how to interpret the logs?  The file ez_log_utils.f
+    has the write routines.  For example, Write_Basics_Log  writes basics.log,
+    Write_Conv_log writes convection.log, etc.  The basics include things like
+    log_Luminosity, log_Radius, log_surface_Temp, log_center_Temp, which convection.log
+    has less obvious items such as conv_boundaries_M and inner_CZM.  All of these are
+    defined in the files star_data.f and star_extras.f.  The history for the entire
+    run is contained in the logs with names basics, burn, convection, masses, power,
+    epsnuc, and pressure.
+    
+    There are also logs containing complete snapshots of the state at
+    a given moment during the evolution.  These states are listed in profiles.log and
+    the data is in files with names like model_93.log.  The contents of the model file
+    are written by Write_Status_Info in ez_do_one_utils.f, so that's the place to go
+    to see what's what in those files.  Again, it will have lists of names that are
+    defined back in star_data and star_extras.
+    
+    Here's the layout of a profile log (as of June, 2006):
+    Line        Contents
+    1           model_Number, star_Age, time_Step
+    2           log_Luminosity, log_Radius, log_surface_Temp, log_center_Temp, log_center_Density
+    3           log_center_Pressure, center_Degeneracy, center_H, center_He
+    4           center_C, center_N, center_O, center_Ne
+    5           center_Mg, center_Si, center_Fe
+    6           initial_Mass, star_Mass, star_Mdot, initial_Z
+    7           star_Mass_H, star_Mass_He, star_Mass_C, star_Mass_N
+    8           star_Mass_O, star_Mass_Ne, star_Mass_Mg, star_Mass_Si, star_Mass_Fe
+    9           mass_He_Core, mass_C_Core, mass_O_Core
+    10          dynamic_Timescale, KH_Timescale, nuc_Timescale
+    11          power_H_burn, power_He_burn, power_Metal_burn, power_Neutrinos
+    12          power_PP, power_CNO, power_3_alpha, power_C_alpha, power_N_alpha, power_O_alpha, power_Ne_alpha
+    13          power_CC_Ne, power_CO, power_OO, power_Ne_decay, power_Mg_decay, power_CC_Mg
+    14          power_plasmon_neutrinos, power_brem_neutrinos, power_pair_neutrinos, power_photo_neutrinos
+    The following lines hold the values at each of 199 mesh points from surface to center for a particular property.
+    15          radius (Rsolar)
+    16          temperature (K)
+    17          mass interior to this meshpoint (Msolar)
+    18          luminosity (Lsolar) -- net rate of outward energy flow at this meshpoint
+    19          the degeneracy parameter (psi)
+    20          local mass fractions for H
+    21          local mass fractions for He
+    22          local mass fractions for C
+    23          local mass fractions for N
+    24          local mass fractions for O
+    25          local mass fractions for Ne
+    26          local mass fractions for Mg
+    27          pressure (dynes/cm^2)
+    28          density (gm/cm^3)
+    29          opacity
+    30          specific energy (ergs/g)
+    31          specific entropy (ergs/K/g)
+    32          grams per mole of gas particles (including electrons) -- mean particle molecular weight
+    33          free electron abundance (moles per gram of star) --inverse is mean molecular weight per free electron
+    ...         and so on.   see star_extras.f for the current info on the SX array    
+    
+    
+What's the overhead of keeping all that logging info?
+
+    I was curious about the overhead of saving the usual, rather extensive, data at
+    a fairly high frequency (every 5 models).  So I added one line to the code to
+    change the logging frequency to every 100 models instead.  The result (based on 
+    a single sample) was a speed up of about 10%.  In most cases, probably not enough 
+    to bother with, but if you're doing large surveys it might be worth making the change.
+
+    
+    There is a parameter called 'summary_cnt' that determines the logging frequency.
+    It defaults to 5 or 10, but if you don't need the full history at that level of 
+    detail, change it to 100 or more (the difference between 100 and 1000 is tiny).
+    
+    Make the change to summary_cnt AFTER your call on 'Init_Do_One_Utils' and 
+    BEFORE your call to do the evolution.
+
+
+How does mass loss work?
+
+    Recall that the code uses adaptive zoning, meaning that the mass and radius both
+    appear in the list of variables stored at each mesh point to be recalculated at
+    each time step.  The total mass is controlled by a boundary condition setting the
+    mass of the outer meshpoint (which corresponds to the tau=2/3 definition of the
+    photosphere).  When there is no mass change, the BC forces the outer mass
+    coordinate to be the same as for the previous model.  If there is a change in
+    mass, either from wind (via a non-zero setting for wind_Eta) or from artificial
+    loss/gain (via the extra_Mdot_param), a new total mass is calculated based on the
+    Mdot times the delta_t for the step.  So, the mass loss comes from the outermost 
+	 shell, but ALL of the zones will probably end up with different masses at the next 
+	 time step.  If you try to remove too much mass at once, the solver won't be able 
+    to find a new solution.  That will trigger a backup with a reduction in timestep.  
+	 Smaller timestep means less mass change,
+    so perhaps the solver will now be able to deal with it.  I've had the best success
+    with a gradual ramp up of mass change rather than an abrupt change.  Abrupt changes
+    are in general to be avoided since the solver makes a first guess based on
+    extrapolating from the last change.  If that guess isn't close to right, it's in trouble.
+    
+    
+	There are still issues about the exact composition of what is lost (or gained) that
+    remain unclear to me.  I believe that the loss/gain has composition identical to the
+    outermost shell, but I'd need to study the code some to be sure.  And if the mass
+    loss, say, exceeded the mass of the outer shell, I assume it would cause a backup,
+    but I haven't explicitly checked this.
+
+
+What EOS does EZ use?
+
+    The version of EZ that currently exists has the EOS I got from Peter Eggleton (which is 
+    basically what is described in PETH, 95).  In the works is an EOS project with Frank Timmes 
+    that will be give a hydrid of Timmes' Helmholtz EOS for regions with T > 10^7 (or so) and 
+    Saumon-Chabrier-Van Horn EOS for the lower temperature regions where H and He ionization 
+    becomes a nasty problem.
+
+
+I try to change mixing_length_alpha to 1, but the system comes back with "timestep too small"
+and gives up.  How can I do this?
+
+    This is a particular example of a generic issue.  Things can change, but the must to it
+    sloooowly to give the solver a chance to adjust.  For example, if alpha changes from 2.0
+    to 1.0 in a single jump, the solver will face a very difficult task: it will have a
+    initial guess based on the old value that will prove to be a pretty poor guess for the 
+    new value.  If the solver fails to converge, it triggers a backup with a reduction in
+    timestep.  If that fails, there is another reduction in timestep.  The process continues
+    until either a solution if found or the timestep gets too small and the run halts.
+
+    That doesn't mean you're stuck with alpha = 2 forever.  It just would need to change gradually
+    over enough steps to give the solver a chance to keep up.  That can be done in the Check_Model
+    routine.  Here's an example Check_Model that raises the optical depth tau defining the base of
+    the photosphere from the standard 2/3 to some  higher value.  It changes in steps of +1 per model.
+
+      INTEGER FUNCTION Raise_tau_Check_Model()
+      LOGICAL :: logged
+      DOUBLE PRECISION, PARAMETER :: d_tau_min = 1D-2, d_tau_max = 1D0
+      DOUBLE PRECISION :: d_tau
+      INTEGER, PARAMETER :: tau_ramp = 50
+      logged = Log_State ( .FALSE. )
+      Raise_tau_Check_Model = KEEP_GOING
+      IF (tau_Model .EQ. 0) tau_Model = model_Number - 1
+      d_tau = model_Number - tau_Model
+      d_tau = (target_tau_Photosphere - tau_Photosphere) * min(d_tau_max, max(d_tau_min, d_tau / tau_ramp))
+      tau_Photosphere = tau_Photosphere + d_tau
+      IF ( tau_Photosphere .GE. target_tau_Photosphere ) THEN
+         WRITE(*,'(I5,3X,A,1X,F8.2)') model_Number, 'Have reached target tau_Photosphere =', tau_Photosphere
+         tau_Photosphere = target_tau_Photosphere
+         Raise_tau_Check_Model = TERMINATE
+      END IF
+      END FUNCTION Raise_tau_Check_Model
+      

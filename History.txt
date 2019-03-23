@@ -1,0 +1,23 @@
+Revision history for DarkStars
+
+v1.03
+-----
+Improved support for saving a non-dark run and restarting it with the effects of dark matter included.
+Save file format modified.
+
+
+v1.02
+-----
+Fixed table and profile output so that plotting works with DoWimpyThings=false
+Added export of compiler options to makefile structure
+
+
+v1.01
+-----
+Corrected bug in WIMP conductive energy transport descibed in Erratum to Scott et al (2009, MNRAS 394:82).
+Fixed plotting scripts to point to correct directory structure.
+
+
+v1.00
+-----
+First public release.

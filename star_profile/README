@@ -1,0 +1,67 @@
+
+The 'star_profile' folder contains the Tioga files for making plots of
+particular stellar models.  EZ writes the model information into files
+with names like 'model_189.log' and, by default, places them in the
+'run' directory along with the other log files.  The file 'path.txt' in
+the star_profile directory tells the plotting code where to get the
+model data; change this if you're putting them someplace other than 'run'.
+
+The files 'profile1.rb', 'profile2.rb', etc., can be loaded into Tioga
+to create plots for the corresponding profiles (1 is the first profile
+created, 2 is the 2nd, etc.).  The 'profile_model.rb' file can be
+edited to give the name of a particular model log file.
+
+You can also watch the models as they are created by EZ.  The file
+'status.rb' is set to show plots from the file '../run/EZ_status.log'.
+This file is rewritten each time EZ writes a new line to the terminal
+(every 5th model by default).  So if you refresh the plot while EZ is
+running, you'll see the data for the most recently created model.  If
+you are using the MAC GUI for Tioga, you can turn on automatic timed
+refresh and sit back and watch the plot update!
+
+
+a few notes regarding making movies of stellar evolution
+
+First step is to create a set of log files:
+
+   here's a way using demo2
+
+   edit demo2.f
+   
+      in the Demo_2 subroutine
+      
+         pick your starting mass and initial Z
+   
+   	   WRITE_PROFILE_TO_MODELS = .TRUE.
+   	
+   	in Demo2_Before_Evolve
+   	
+      	set summary_cnt to how often want to save a model for the movie
+      	for example, 
+            summary_cnt = 20 ! save every 20th model for movie
+
+   
+   cd ~/EZ/run
+   rm models/*.log
+   ./mk
+   ./rn
+   ls models
+   
+   
+Second step is to create pdfs, one per log file:
+   
+   cd ~/EZ/star_profile
+
+   edit movie_batch.rb to set figure number in last line
+
+   rm movie_out/*.pdf
+   ruby < movie_batch.rb
+   ls movie_out
+
+
+Last step is to turn the pdfs into a movie.
+
+   for mac, GraphicConverter is good for this (see Tioga Tutorial Animation).
+   
+   for linux one good choice is to use the convert tool from ImageMagick 
+   and mencoder from mplayer.

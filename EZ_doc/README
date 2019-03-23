@@ -1,0 +1,500 @@
+README for EZ, Version 3.6.3, April 27, 2007
+
+Here's the standard open source license for EZ:
+
+  Copyright (c) 2005, 2006, 2007 Bill Paxton
+
+  Permission is hereby granted, free of charge, to any
+  person obtaining a copy of this software and associated
+  documentation files (the "Software"), to deal in the
+  Software without restriction, including without
+  limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of
+  the Software, and to permit persons to whom the Software
+  is furnished to do so, subject to the following
+  conditions:
+
+  The above copyright notice and this permission notice
+  shall be included in all copies or substantial portions
+  of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+  ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+  TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+  PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT
+  SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+  CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+  DEALINGS IN THE SOFTWARE.
+
+If you can't agree to that, stop now and go have a cup of coffee.
+And if you use EZ to design a bridge and it falls down, don't blame me!
+Now on to the more interesting stuff.
+
+
+<< QUICK START VERSION OF INSTALLATION >>
+
+    ./QUICK_INSTALL
+    
+    This does the make, runs the demos, and checks the output for sanity.  If the
+diff's don't complain, you're off to a good start -- it's okay to skip to the << Doing
+Your Own Thing >> section below.  If the diff's do complain, then you'll
+need to read the more complete installation instructions.
+
+
+<< What's New in This Release (3.6.3) >>
+
+   Fixed a few problems in star_profile plotting files.
+   Updated the star_profile/README for making movies.
+
+
+<< Quick Overview of How EZ Is Structured [Optional] >>
+
+	When you run EZ, control first goes to dispatch.f which then calls your driver.
+In the case of demos 1 and 2, the drivers are called Demo_1 and Demo_2 (how creative).
+It shouldn't be a surprise that the Demo_1 subroutine lives in demo1.f and Demo_2
+lives in demo2.f.  When I'm using EZ to do an experiment, I edit dispatch to call my
+driver instead.  The driver subroutine then makes calls on routines in ez_driver.f
+such as the following:
+
+	EZ_Start ( metals_dir )  -- to load the opacity tables and specify Z
+	EZ_ZAMS ( initial_Mass, Initialize_Params ) -- to load a ZAMS model
+	EZ_Evolve ( Check_Model ) -- to evolve it
+	
+	The arguments Initialize_Params and Check_Model are call back procedures.
+The first one is to set up things like the Reimers' wind eta parameter at the
+start of a run.  The Check_Model routine is the workhorse on the user's side.
+It is called after each model of the run is created to inspect the current state,
+decide what if anything to write out to logs, change control parameters as desired,
+and say when to stop the run.
+
+	The key interfaces from the viewpoint of the driver are these:
+
+	ez_driver.f -- the module with the procedural interface
+	star_data.f -- the module with the basic information about each model
+	star_extras.f -- the module with more expensive to compute state information
+	star_controls.f -- the module with the parameters that control the evolution
+	ez_log.f -- the module for creating log files
+
+	After building and running the standard download version, we'll look into making
+some changes in a later section (see below: Doing Your Own Thing).
+
+ 
+<< Building and Running EZ >>
+
+    The tar file contains a main directory, 'EZ', with subdirectories 'demos', 'LAPACK',
+'make', 'metals', 'run', and 'src'.  In reverse order, 'src' holds the source files, 'run' 
+will contain the executable once you've created one, 'metals' holds the data files 
+for the various metallicities, 'make' has the makefile and eventually will get the 
+object files, 'LAPACK' has some source files from http://www.netlib.org/lapack/, 
+and 'demos' has a variety of files related to the demos.
+
+    First, you'll need to edit the makefile to specify which Fortran 90/95 compiler to use.  
+Several compilers are already represented in the makefile, so check for yours.  By 
+the way, I've used the -O2 option indicating a moderate optimization level.  More 
+extreme optimization seems to cause trouble.
+
+        Note 1: Some fortran 90 compilers seem to insist on 'f90' as
+        the extension rather than 'f', and some other compilers insist
+        on 'f' rather than 'f90'.  Since my compiler is of the latter
+        class, the files in the 'src' directory use 'f' as extension.
+        If your compiler needs 'f90' instead, there is a little shell
+        script to change the names (ftof90.sh in the src directory).
+        
+        Note 2: The Sun fortran 90 seems to have trouble with EZ,
+        producing things like "floating exception".  If you manage
+        to make EZ work on a Sun, please let me know how!
+
+    Connect to the 'make' directory, edit the makefile, and type 'make' to the shell.  
+The makefile gets the sources from 'src' and puts the object files in 'make' and the 
+executable in 'run'.  Once you've created the system, connect to 'run' and type 
+'./EZ' to run the demo.  The demo programs look in '../metals' for the 
+information they need and write output to the 'run' directory.  There is lots of 
+terminal output from the demos (as well as log files) so you can see what's 
+happening.  You might want to look at the file 'demos/Demo1.terminal.txt' to see
+what the terminal output from Demo1 is supposed to look like.  Notice that it has
+multiple columns of data and needs wide lines and fixed pitch fonts to look okay.
+Similarly, there is a Demo2.terminal.txt file showing sample Demo2 output, but
+there may be differences between your output and the sample stemming from
+accumulated small variations in the results of the compiled programs.
+
+    To check what you've got, compare the demo1 DIFFME files you're getting in the 'run' 
+directory to those in the 'demos/data' directory by doing something like this:
+
+      diff demo1_z02_6.DIFFME ../demos/data/demo1_z02_6.DIFFME
+      diff demo1_z004_6.DIFFME ../demos/data/demo1_z004_6.DIFFME
+      diff demo1_z0001_6.DIFFME ../demos/data/demo1_z0001_6.DIFFME
+
+Then do the same for the demo2 DIFFME file
+
+      diff demo2.DIFFME ../demos/data/demo2.DIFFME
+
+The DIFFME files hold the most significant digits for the output to the terminal.  Even 
+considering only the most significant digits, there will probably still be a few cases 
+where the values differ because of small variations in the decisions made by the 
+compilers giving different round-off errors. I see this sort of thing even when I'm 
+running two compilers (Absoft & IBM xlf) on the same machine with exactly the same 
+source code files and input data files.  Because of this, the demo2.DIFFME only covers
+a bit less than the first 100 timesteps.
+
+
+<< Doing Your Own Thing >>
+
+    After you've convinced yourself that the code is probably working, you might want to
+try something new.   As a simple project, go to 'ez_example.f' and edit the mass and
+metallicity parameters to specify some combination you haven't seen yet.  Go to dispatch.f
+and comment out the calls on Demo_1 and Demo_2 and uncomment the call on Do_Example.
+Rebuild and rerun to get a set of logs for the requested case.
+
+    Next, go to the Initial_Params subroutine in your edited version of 'ez_example.f'
+and set wind_Eta to 0 instead of 1 to turn off the Reimers' wind.  Or even better,
+open 'star_controls.f' and find something else to change.
+
+    Also, the file experiment.f has a simple example that might be useful as a
+template for doing your own stuff.  It reads in an initial mass from a file, then
+evolves the specified star from ZAMS until the central hydrogen mass fraction has
+dropped to below the central helium fraction.  At that point it writes out a simple
+log file containing things like the density profile, after which it terminates
+the run.
+
+
+<< Where to Find Stuff >>
+
+    The procedure interface is in 'ez_driver.f' -- look there if you want more info than 
+is evident from the demo files or want to try something not in the demos such as 
+adjusting the initial helium abundance.  The data interface is in 'star_data.f' and
+'star_extras.f' -- look there to see what your Check_Model routine can access.
+In addition, 'star_constants.f' has some useful constants for such things as converting
+to solar units.  Finally, 'star_controls.f' has the control parameters for things such
+as Reimers' wind.
+
+    A note on formatting of text files: TAB's are a nuisance.  There's no standard convention
+for dealing with them and the result is often a mess when you look at imported code.
+In the interface files, I've tried to get rid of tabs so they should look ok without any major
+hassles.  For the EZ code files however, I'm afraid things may look weird. 
+
+
+<< Pitfalls and Disclaimers >>
+
+    
+
+    You'll undoubtedly find new pitfalls of your own, but there are a few things that 
+caused me trouble along the way that I should mention.  First the disclaimers:
+the main one is that I make no claim to being finished with bringing EZ info a form
+that I like (for example, there still far too many global variables); I'm also clearly
+not an expert on simulating stellar evolution in general or even Eggleton's code in 
+particular.  There are still parts of his code that I've imported to EZ which remain 
+a mystery to me.  So if you find something weird going on, don't get your hopes up 
+that I'll be able to explain it.  And weird things WILL happen if you try enough 
+cases.  This is way too complex a piece of software not to have unexplored corners, 
+so you may be the first to venture into some area.
+
+    The most likely cases to cause trouble are probably those that push the limits of 
+the basic assumption of slow change (i.e., quasi-hydrostatic equilibrium).  For 
+example, while I've found the behavior up to and after helium ignition to be reasonable,
+with more massive stars and carbon ignition, I haven't been so lucky.  Perhaps it is 
+due to some instability in an implicit, centrally-differenced numerical scheme.  
+Perhaps it is related to the fact that the system doesn't explicitly keep track of 
+nitrogen abundances (it follows H, He, C, O, and Ne and derives N indirectly).  Perhaps
+I've just driven the system to the end of the paved road and off into the swamp.  Or 
+perhaps it is simply due to (oh no, don't say it) A BUG IN THE CODE.  Whatever the 
+source, I ran into suspicious saw-tooth oscillations once carbon burning was 
+underway.
+
+    The last model of a run that quits because of something other than extreme degeneracy
+is likely to contain some strange looking stuff.  Not surprising since the model is
+in the processes of breaking down and the results are naturally getting out of control.
+The last profile for 1.0 Msun, Z=0.02 is a good example of this (at least as of release 2.4).
+
+
+<< Distribution List and Web Site >>
+
+    Send me a message at paxton@kitp.ucsb.edu if you'd like to be added to a list
+for e-mails about future releases of EZ.
+
+    And check out the web site at http://theory.kitp.ucsb.edu/~paxton/.
+
+
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+
+
+From previous releases:
+
+   
+
+<< What's New in This Release (3.6.2) >>
+
+	Changes to makefile -- gfortran is now the default compiler for EZ.
+	
+	New controls and their default values:
+      number_of_center_shells_to_mix = 15
+      number_of_surface_shells_to_mix = 40
+
+	Fixed the magnitudes to write the correct bolometric luminosity (I hope).
+
+
+<< What's New in This Release (3.6.1) >>
+
+	This might well be called the "Roni Waldman" release.  He's expressed interest in
+trying to provide for a variable number of mesh points in EZ, and this release is a first
+small step to support that effort.  The file star_data.f now has a compile time constant
+called max_N_SHELLs (which I've set to 2000, but it can of course grow as needed).  The
+old "N_SHELLs" constant is now a runtime variable.  I've made a quick pass over the
+code changing various declarations to use max_N_SHELLs, and a few changes to things like
+the call from the solver to the linear algebra routine.  The initial models that are
+read from file are of course still 199 mesh points, and that value is defined in
+ez_setup and is not used anywhere else.  The routine Read_ZAMS in ez_setup returns with
+a model with 199 points. The main "API" corresponding to Read_ZAMS is EZ_ZAMS in ez_driver.
+So you might want to change the EZ_ZAMS interface to include a requested number of mesh points.
+Then it can call another routine to do the adjustment in an incremental fashion (that 
+routine should live in ez_setup along with Read_ZAMS).  Notice that the system is NOT going
+to be able to deal with changes in mesh number during a run by this arrangement.  We
+can tackle that problem later if it becomes important.
+
+	Of course, the hard part in all of this is getting the interpolation from old mesh
+number to the next to work in a way that allows the solver to converge the new model.
+Since that's so difficult, I've decided to let Roni do it.  ;-)
+
+	By the way, in case you're wondering why all the bother about number of mesh points,
+if you'd like to actually place any trust in the numbers coming out, it is nice to be
+able to run the test with twice as many mesh points to see if the results hold up.
+
+
+<< What's New in This Release (3.6.0) >>
+
+	There are several new things in this release.   There is a 'timestep_max' variable
+in star_controls.f that makes it easy to get higher time resolution in the log files
+if necessary.  There is an array of color magnitude estimates in star_extras.f with
+values based on data from Lejeune, Cuisinier, Buser (1998) A&AS 130, 65.  These values
+are also saved in a new log file called "mags.log".  The plots in 'star_history' now
+include color magnitude histories.
+
+
+<< What's New in This Release (3.5.4) >>
+
+	Yet another small tweak in the code that tries to jump over the helium flash.
+The goal of course is to get a new star with steady core helium burning, while matching
+the core mass and total mass of the original star at the time of the flash.
+The code attempts to do this by starting with a much larger star, letting it "cook"
+until the core is just the right size, then quickly removing excess envelope to get
+the right total mass.  It is rather amazing that it ever works!  But in a recent
+attempt to make it deal with a wider range of starting cases, I screwed up the simple
+case of 2Msun -- sorry about that.   Thanks to Madhusudhan Nikku for pointing it out.
+
+
+<< What's New in This Release (3.5.3) >>
+
+	Reported value of mu modified according to suggestion by Rich Townsend.  The old
+version gave a strange sort of "effective mu" that changed with degeneracy.  Now,
+the value is more what you'd expect.  Thanks to Rich both for pointing this out
+and providing the solution.
+
+
+<< What's New in This Release (3.5.2) >>
+
+	Some changes to make things work on my new Mac-with-Intel-inside!
+For example, the intel compiler runtime seems to insist on putting in line breaks
+in WRITE(*,*) output, and those breaks break things.  So I've gone around replacing
+the WRITE(*,*)'s by explicit formats.  The good news of the switch to Mac-Intel is 
+that compared to my old G4 laptop, EZ runs about 3 to 4 times faster, without even
+using any of the dual processor stuff.  Cool!
+
+	NOTE: The default makefile now is setup for my new Mac-Intel.  So if you were
+just using the default before, you may need to edit it now!
+
+	Also, I added a few things to the star_controls.f file such as PSI_limit and GAM_limit.
+The PSI_limit default is now 1000 rather than 100, and GAM_limit is 150.  This will stop
+the code before the liquid-solid transition, but in practice, something else usually
+forces termination long before that!  I also removed the artificial age limit from 
+ez_done_one_utils.f.
+   
+
+<< What's New in This Release (3.5.1) >>
+
+   Just a small fix to the directory structure of the 3.5 release.
+   
+
+<< What's New in This Release (3.5) >>
+
+   A few control parameters tweaked.  In particular, the "speed limit" for convection
+velocities no longer is set to keep things subsonic; this limit was mistakenly introduced
+along with the control parameter called 'convection_speed_limit' back in release 3.2.
+(It seemed like a good idea at the time!)  The control parameter is still there, but now
+it defaults to 10^6 instead of 1.
+
+
+<< What's New in This Release (3.4) >>
+
+    Improved support for creating helium stars.   
+    See Get_Helium_Star_Info in ez_do_one.f for an example.
+
+
+<< What's New in This Release (3.3) >>
+
+    I've added a few things to the release for making plots like the ones on the webpage.
+They are in 3 new subfolders under EZ: star_history, star_profiles, and zams.  I've included
+source files for use with Tioga.
+
+    The star_controls now have a variable called 'CNO_Factor' that let's you try the "what if"
+experiment of turning off the CNO cycles and forcing the star to get by with PP only.
+
+
+<< What's New in This Release (3.2) >>
+
+    The implementation of mixing length convection now allows you to limit convection 
+velocities to be subsonic and limit the dlnT/dlnP value to avoid creating a density inversion.
+The default configuration sets a very high limit and so acts like previous versions.
+These changes are in the Grad_Star routine in ez_convection.f.
+
+
+<< What's New in This Release (3.1) >>
+
+    The file experiment.f now has a simple example that might be useful as a
+template for doing your own stuff.  It reads in an initial mass from a file, then
+evolves the specified star from ZAMS until the central hydrogen mass fraction has
+dropped to below the central helium fraction.  At that point it writes out a simple
+log file containing things like the density profile, after which it terminates
+the run.
+
+<< What's New in This Release (3.0.x) >>
+
+    Various minor things fixed.
+    EZview has died and been replaced by Tioga.  See my website for details.
+
+<< What's New in This Release (3.0) >>
+
+	The big change in this release is the Profile program that uses the new
+EZview to display plots of stellar models as EZ produces them.  EZview is now
+in a separate release and is not directly tied to EZ.  (You may find it useful for
+other applications as well.)  The Profile program and its README file live in the
+"profile" subdirectory.
+
+	There is also a "zams" directory with a program that uses EZview to make
+plots of the demo1 output showing ZAMS data for various masses and metallicities.
+The directory also has the tex file for putting the various plots together in one
+document.
+
+    Similarly, there is a "history" directory with a program using EZview to
+make the demo2 plots of stellar evolution histories, and a "profile" directory
+with a program to make the stellar profile plots.  There are README files with
+more information.
+    
+    Only minor changes in EZ itself.  Evert Glebbeek, a PhD student of Onno Pols, has
+done some comparisons of EZ with the Eggleton code to check for consistent results.
+The good news is that I don't seem to have messed up the physics with all of my
+restructuring and rewriting.  Evert did need to adjust various control parameters
+in order to get good results, and this has resulted in a new entry in the
+star_controls.f file called 'convective_diffusion_prefactor'.
+
+
+<< What's New in This Release (2.6.1) >>
+
+    Bug fix in the demo1 output routine.  
+    
+
+<< What's New in This Release (2.6) >>
+
+    Mainly just updates to support EZ_VIEW, the new program for creating and viewing
+profile plots concurrently with the simulation by EZ.
+    
+
+    Descriptions of previous releases can be found at the end of this file.
+
+
+<< What's New in This Release (2.5) >>
+
+    There's a new file called 'ez_example.f' that makes it possible to create standard
+output logs from single star runs with minimal effort on the part of the user: just give
+the desired initial mass and metallicity (with an option to change control parameters too).
+    
+
+<< What's New in This Release (2.4.3) >>
+
+	There are now files for checking the results of demo2.  In 'demos', there is
+a 'Demo2.terminal.txt' file with an example of the output (as it looks on my Mac),
+and in 'demos/data' there is a 'demo2.DIFFME' file.
+
+	Thanks to Onno Pols for pointing out a bug in the reporting of the luminosity.
+And also thanks to him for suggesting that the terminal log abundances would be
+more useful if they give center mass fractions rather than total fractions.
+
+
+<< What's New in This Release (2.4.2) >>
+
+    The Intel fortran compiler didn't like some of my most recent changes.  
+This release deals with that issue.
+
+
+<< What's New in This Release (2.4.1) >>
+
+    This minor release mainly involves the EZ_SM add-ons to the sm plotting
+system that I've created to do the stellar evolution plots.  They live
+in the release at 'demos/sm/support' and have a first cut at documentation
+in the file EZ_SM in that directory.
+
+    I've also updated the "Doing Your Own Thing" section of README and added
+some hooks in the demo2.f file to make it easier to try new things and get them
+to log files for plotting (see Write_Special_Log and Write_Special_Profiles).
+My guess is that demo2.f will be the first choice as a template for developing
+new experiments, and the README section has some suggestions for getting started.
+
+
+<< What's New in This Release (2.4) >>
+
+    I've redone the format of the log files.  The file ez_log.f has the 
+details including documentation of the contents of the new log files and the
+interfaces to the log creation subroutines.  It's fairly easy now to add a special
+log file for a new experiment while making use of the standard mechanisms.  In 
+particular, the new log package autmatically takes care of removing backups.
+
+     I've also changed over to using sm for creating the evolution plots
+(see http://www.astro.princeton.edu/~rhl/sm/sm.html) In the process, I've
+developed a love-hate relation with sm: love the imaging model, hate the macro
+language for developing anything non-trivial.  It's been decades since I've
+been reduced to mumbled obscenities because of not being able to pass a simple
+argument to a procedure.  After finally giving up and reading the YACC grammar,
+I was able to figure things out a little better, and eventually got it working.
+The results are now on the web site.  Since sm seems to be popular among the
+astro-crowd, I'll include my plotting programs in the release.  See the 'sm'
+subdirectory in the 'demos' directory.  But don't come crying to me if it hurts!
+
+    I've also switched over to using SubEthaEdit for editing sources (check it
+out at http://www.codingmonkeys.de/subethaedit/).  It's great (although I wish
+it understood Fortran syntax), but I seem to have once again stumbled into TAB
+inconsistencies... sigh.  You may notice this if you browse the code much.
+
+
+<< What's New in This Release (2.3) >>
+
+    There is now a routine to create a post Helium flash model with the same mass,
+core mass, and metallicity as just before the flash.  It may not be perfect as
+a simulation of the star after a flash, but at least it gives something to play with.
+The the function EZ_Post_He_Flash in the ez_driver module for calling details.
+There are lots of new plots on the website, including ones for the helium flash
+cases (0.8 Msun to 2.0 Msun), so you can check out the results.
+
+
+<< What's New in This Release (2.2) >>
+
+    At the interface level, there's been some work on the data modules to make them
+a little less like the menu in a Chinese restaurant.  The file star_data now has the
+basics while star_extras has, you guessed it, the extras.  The basics come along
+automatically; the extras cost more in computation and are provided only upon
+request.  The request comes in the form of a call on a new addition to the ez_driver
+interface called, appropriately, EZ_Extras.  The main difference between basics and
+extras is that the basics can be provided very cheaply and should usually be enough
+to allow your Check_Model routine to decide if it needs to see more details.  The
+extras are more expensive to calculate since they involve evaluating the equation
+of state at each mesh point.
+
+    At the implementation level, the solver module has seen the most changes.  The
+1970's vintage matrix solving routines, hand crafted by Peter Eggleton for this
+program to minimize storage requirements among other things, have been
+replaced by an off-the-shelf LAPACK routine to solve a banded diagonal matrix
+equation.  In the process of doing this, I've added lots of comments to ez_solve. 
+
+
+
+

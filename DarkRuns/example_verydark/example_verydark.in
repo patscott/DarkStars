@@ -1,0 +1,57 @@
+&directories
+ metals_dir = '../metals/z01',		! metallicity -- use z0_proto, z0001, z0003, z001, z004, z01, z02, or z03
+ main_dir = '../DarkRuns/example_verydark',! main directory for I/O for this model
+ data_dir = 'logs',			! directory where log files will be stored
+ prof_dir = 'profiles',			! directory where profile files will be stored
+ movie_dir = 'movie'			! directory where movie data files will be stored
+/
+&switches                  		! see readme_switches.txt for a more detailed description of switches
+ capmode=.false., 			! numerical integration over halo velocity distribution
+ interpmode=.true., 			! use advanced interpolation scheme
+ potmode=.false., 			! calculate gravitational potential explicitly every time required
+ chopatvesc=.false.,			! truncate halo velocity distribution at galactic escape velocity
+ altveldist=.false.,			! use some fancy alternative halo velocity distribution function
+ WIMPdensmode=.true.,			! use accurate description of WIMP radial density structure
+ ReconvergeModels=.false.,		! whether to reconverge each stellar model with new WIMP population
+ DoTransport=.true.,			! include effects of WIMP conductive energy transport
+ DoMovie=.false.,			! write required profile files for making a video afterwards
+ DoWimpyThings=.true.,			! whether to actually do a simulation including WIMPs or not
+ verbose=.true.,			! print full summary at each timestep
+ integrator=0  				! choice of integrator for simple integrals 0 = Simpson's rule, 1 = RK45, 2 = Romberg
+/
+&controls
+ hold_on = 1.d0,			! target max fractional change in WIMP population per timestep
+ initial_timestep = 12,			! too low can prevent initial convergence, too high is innaccurate :) [yr]
+ timestep_rescale = 1.d0                ! rescaling factor to apply to the internal STARS timestep chooser
+ min_timestep = 1.d0,			! minimum timestep allowed when following user-defined orbit [yr]
+ summary_cnt = 1,			! save log information every summary_cnt timesteps
+ stop_at_Model = -10,			! model to stop and save at for later use; see readme for -ve stop codes.
+ max_Age = 1.4d10,			! age to stop and save for later use; set negative to not stop
+ save_filename = 'restart.sav',		! filename to save model at max_Age or stop_at_Model with for later use
+ restore_filename = '',			! filename in run directory to restore model from; set to '' for new
+ save_freq = -1.d0			! time to run between periodic saves (days); -ve to just save at the end
+/
+&physics
+ mx=100.0d0,				! WIMP mass [GeV]
+ sigsi=1.0d-44,				! spin-independent WIMP-nucleus cross-section [cm^2]
+ sigsd=1.0d-38,				! spin-dependent WIMP-nucleus cross-section [cm^2]
+ sigann=3.d-26,				! WIMP annihilation cross-section (v->0, mean over v) [cm^3/s]
+ nuLossFactor=0.1d0,			! Fraction of WIMP annihilation energy lost in neutrinos (dimensionless)
+ boost_factor=1.d0			! Factor by which to multiply capture rates to mimic ignored effects (dimensionless)
+ vd_3d_star=270.d0,			! WIMP halo velocity dispersion [km/s]
+ v_star = 220.d0,			! Stellar proper motion through WIMP halo [km/s]; set -ve for orbit.dat
+ rhowimp = 1.d10,			! local WIMP density [GeV/cm^3]; set -ve to use orbit.dat
+ galesc = 600.d0, 			! local galactic escape velocity [km/s]; set -ve to use orbit.dat
+ galr = 0.01d0,				! local galactocentric distance [parsecs]; set -ve to use orbit.dat
+ n_WIMPs = 1.d30,			! initial number of WIMPs in star
+ mass = 1.d0,				! initial stellar mass -- anything from 0.3 to 100 [M_solar]
+ K0 = 0.4d0,				! Knudsen number at which WIMP energy transport is maximised
+ Knudsen_suppression_tau = 0.5d0,	! relaxation scale for Knudsen-dependent suppression function
+ tau_therm = -1.0			! WIMP thermalisation timescale (experimental; set -ve to skip) [s]
+/
+&abundances					! solar abundances and isotopic ratios
+ solar_C=8.39,					! carbon abundance
+ solar_O=8.66,					! oxygen abundance
+ heavy_abuns=6.17,6.37,7.51,7.14,6.18,6.31,7.45,6.17,2.00,	! Na, Al, Si, S, Ar, Ca, Fe, Ni & Pb abundances
+ iso_ratios=2240.,86.8,479.,2.36,2.83,3.05	! He4/3, C12/13, O16/18, Ni58/60, Pb208/207 & Pb208/206 ratios
+/

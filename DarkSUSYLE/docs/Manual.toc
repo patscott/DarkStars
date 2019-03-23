@@ -1,0 +1,809 @@
+\contentsline {chapter}{\numberline {1}Introduction}{19}{chapter.1}
+\contentsline {chapter}{\numberline {2}General remarks on notation}{21}{chapter.2}
+\contentsline {chapter}{\numberline {3}ac: Accelerator bounds}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Accelerator bounds}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}Routine headers -- fortran files}{23}{section.3.2}
+\contentsline {subsection}{dsacbnd.f}{23}{section*.3}
+\contentsline {subsection}{dsacbnd1.f}{24}{section*.4}
+\contentsline {subsection}{dsacbnd2.f}{24}{section*.5}
+\contentsline {subsection}{dsacbnd3.f}{25}{section*.6}
+\contentsline {subsection}{dsacbnd4.f}{25}{section*.7}
+\contentsline {subsection}{dsacbnd5.f}{26}{section*.8}
+\contentsline {subsection}{dsacbnd6.f}{27}{section*.9}
+\contentsline {subsection}{dsacset.f}{28}{section*.10}
+\contentsline {subsection}{dsbsgamma.f}{28}{section*.11}
+\contentsline {subsection}{dsbsgf1.f}{28}{section*.12}
+\contentsline {subsection}{dsbsgf2.f}{28}{section*.13}
+\contentsline {subsection}{dsbsgf3.f}{28}{section*.14}
+\contentsline {subsection}{dsbsgf4.f}{28}{section*.15}
+\contentsline {subsection}{dsgm2muon.f}{29}{section*.16}
+\contentsline {subsection}{dswexcl.f}{29}{section*.17}
+\contentsline {chapter}{\numberline {4}an: Annihilation cross sections (general, $\chi ^0$ and $\chi ^\pm $) }{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Annihilation cross sections -- theory }{31}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Annihilation cross sections}{31}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Coannihilation diagrams}{31}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Neutralino and chargino annihilation}{32}{subsection.4.1.3}
+\contentsline {subsubsection}{Neutralino-neutralino annihilation}{32}{section*.18}
+\contentsline {subsubsection}{Neutralino-chargino annihilation}{32}{section*.19}
+\contentsline {subsubsection}{Chargino-chargino annihilation}{33}{section*.20}
+\contentsline {subsection}{\numberline {4.1.4}Squark-squark annihilation}{33}{subsection.4.1.4}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {d}^i_{a}\mathaccent "707E\relax {d}_{b}^{i*}$ annihilation}{34}{section*.21}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {d}^i_{a}\mathaccent "707E\relax {d}_{b}^{j*}$ annihilation ($i \not =j$)}{34}{section*.22}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {d}^i_{a}\mathaccent "707E\relax {d}_{b}^{i}$ annihilation}{34}{section*.23}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {d}^i_{a}\mathaccent "707E\relax {d}_{b}^{j}$ annihilation ($i \not =j$)}{34}{section*.24}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {u}^i_{a}\mathaccent "707E\relax {u}_{b}^{i*}$ annihilation}{34}{section*.25}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {u}^i_a\mathaccent "707E\relax {u}^{j*}_b$ annihilation ($i \not =j$)}{35}{section*.26}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {u}^i_a \mathaccent "707E\relax {u}^{i}_b$ annihilation}{35}{section*.27}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {u}^i_a \mathaccent "707E\relax {u}^{j}_b$ annihilation ($i \not =j$)}{35}{section*.28}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {u}^i_a \mathaccent "707E\relax {d}_{b}^{i*}$ annihilation}{36}{section*.29}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {u}_a^i \mathaccent "707E\relax {d}_{b}^{j*}$ annihilation ($i \not =j$)}{36}{section*.30}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {u}_a^i \mathaccent "707E\relax {d}_{b}^{i}$ annihilation}{36}{section*.31}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {u}_a^i \mathaccent "707E\relax {d}_{b}^{j}$ annihilation ($i \not =j$)}{36}{section*.32}
+\contentsline {subsection}{\numberline {4.1.5}Squark-neutralino annihilation}{37}{subsection.4.1.5}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {u}^i_{a} \mathaccent "707E\relax {\chi }_{j}^{0}$ annihilation}{37}{section*.33}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {d}^i_{a} \mathaccent "707E\relax {\chi }_{j}^{0}$ annihilation}{37}{section*.34}
+\contentsline {subsection}{\numberline {4.1.6}Squark-chargino annihilation}{37}{subsection.4.1.6}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {u}^i_{a} \mathaccent "707E\relax {\chi }_{c}^{+}$ annihilation}{37}{section*.35}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {u}^{i*}_{a} \mathaccent "707E\relax {\chi }_{c}^{+}$ annihilation}{38}{section*.36}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {d}^{i}_{a} \mathaccent "707E\relax {\chi }_{c}^{+}$ annihilation}{38}{section*.37}
+\contentsline {subsubsection}{$\mathaccent "707E\relax {d}^{i*}_{a} \mathaccent "707E\relax {\chi }_{c}^{+}$ annihilation}{38}{section*.38}
+\contentsline {subsection}{\numberline {4.1.7}Degrees of freedom}{38}{subsection.4.1.7}
+\contentsline {section}{\numberline {4.2}Annihilation routines - general remarks}{38}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}General routines}{39}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Neutralino and chargino (co)annihilation cross sections}{39}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Routine headers -- fortran files}{39}{section.4.3}
+\contentsline {subsection}{dsanalbe.f}{39}{section*.39}
+\contentsline {subsection}{dsanclearaa.f}{39}{section*.40}
+\contentsline {subsection}{dsandwdcos.f}{39}{section*.41}
+\contentsline {subsection}{dsandwdcoscc.f}{40}{section*.42}
+\contentsline {subsection}{dsandwdcoscn.f}{41}{section*.43}
+\contentsline {subsection}{dsandwdcosd.f}{41}{section*.44}
+\contentsline {subsection}{dsandwdcosnn.f}{41}{section*.45}
+\contentsline {subsection}{dsandwdcoss.f}{42}{section*.46}
+\contentsline {subsection}{dsandwdcosy.f}{42}{section*.47}
+\contentsline {subsection}{dsankinvar.f}{43}{section*.48}
+\contentsline {subsection}{dsanset.f}{43}{section*.49}
+\contentsline {subsection}{dsansumaa.f}{43}{section*.50}
+\contentsline {subsection}{dsantucc.f}{43}{section*.51}
+\contentsline {subsection}{dsantucn.f}{43}{section*.52}
+\contentsline {subsection}{dsantunn.f}{44}{section*.53}
+\contentsline {subsection}{dsantures.f}{44}{section*.54}
+\contentsline {subsection}{dsanwriteaa.f}{44}{section*.55}
+\contentsline {subsection}{dsanwx.f}{44}{section*.56}
+\contentsline {subsection}{dsanwxint.f}{45}{section*.57}
+\contentsline {subsection}{dssigmav.f}{45}{section*.58}
+\contentsline {chapter}{\numberline {5}an1l: Annihilation cross sections (1-loop)}{47}{chapter.5}
+\contentsline {section}{\numberline {5.1}Annihilation cross sections at 1-loop -- general }{47}{section.5.1}
+\contentsline {section}{\numberline {5.2}Routine headers -- fortran files}{47}{section.5.2}
+\contentsline {subsection}{dsanggim.f}{47}{section*.59}
+\contentsline {subsection}{dsanggimpar.f}{47}{section*.60}
+\contentsline {subsection}{dsanggre.f}{48}{section*.61}
+\contentsline {subsection}{dsanggrepar.f}{48}{section*.62}
+\contentsline {subsection}{dsanglglim.f}{49}{section*.63}
+\contentsline {subsection}{dsanglglre.f}{49}{section*.64}
+\contentsline {subsection}{dsanzg.f}{49}{section*.65}
+\contentsline {subsection}{dsanzgpar.f}{50}{section*.66}
+\contentsline {subsection}{dsdilog.f}{50}{section*.67}
+\contentsline {subsection}{dsdilogp.f}{51}{section*.68}
+\contentsline {subsection}{dsfl1c1.f}{51}{section*.69}
+\contentsline {subsection}{dsfl1c2.f}{51}{section*.70}
+\contentsline {subsection}{dsfl2c1.f}{51}{section*.71}
+\contentsline {subsection}{dsfl2c2.f}{52}{section*.72}
+\contentsline {subsection}{dsfl3c1.f}{52}{section*.73}
+\contentsline {subsection}{dsfl3c2.f}{52}{section*.74}
+\contentsline {subsection}{dsfl4c1.f}{52}{section*.75}
+\contentsline {subsection}{dsfl4c2.f}{53}{section*.76}
+\contentsline {subsection}{dsi\_12.f}{53}{section*.77}
+\contentsline {subsection}{dsi\_13.f}{53}{section*.78}
+\contentsline {subsection}{dsi\_14.f}{53}{section*.79}
+\contentsline {subsection}{dsi\_22.f}{54}{section*.80}
+\contentsline {subsection}{dsi\_23.f}{54}{section*.81}
+\contentsline {subsection}{dsi\_24.f}{54}{section*.82}
+\contentsline {subsection}{dsi\_32.f}{54}{section*.83}
+\contentsline {subsection}{dsi\_33.f}{54}{section*.84}
+\contentsline {subsection}{dsi\_34.f}{55}{section*.85}
+\contentsline {subsection}{dsi\_41.f}{55}{section*.86}
+\contentsline {subsection}{dsi\_42.f}{55}{section*.87}
+\contentsline {subsection}{dsilp2.f}{55}{section*.88}
+\contentsline {subsection}{dsj\_1.f}{56}{section*.89}
+\contentsline {subsection}{dsj\_2.f}{56}{section*.90}
+\contentsline {subsection}{dsj\_3.f}{56}{section*.91}
+\contentsline {subsection}{dslp2.f}{56}{section*.92}
+\contentsline {subsection}{dspi1.f}{57}{section*.93}
+\contentsline {subsection}{dspiw2.f}{57}{section*.94}
+\contentsline {subsection}{dspiw2i.f}{57}{section*.95}
+\contentsline {subsection}{dspiw3.f}{57}{section*.96}
+\contentsline {subsection}{dspiw3i.f}{58}{section*.97}
+\contentsline {subsection}{dsrepfbox.f}{58}{section*.98}
+\contentsline {subsection}{dsrepgh.f}{58}{section*.99}
+\contentsline {subsection}{dsrepw.f}{58}{section*.100}
+\contentsline {subsection}{dsslc1.f}{59}{section*.101}
+\contentsline {subsection}{dsslc2.f}{59}{section*.102}
+\contentsline {subsection}{dssubka.f}{59}{section*.103}
+\contentsline {subsection}{dssubkb.f}{59}{section*.104}
+\contentsline {subsection}{dssubkc.f}{60}{section*.105}
+\contentsline {subsection}{dsti\_214.f}{60}{section*.106}
+\contentsline {subsection}{dsti\_224.f}{60}{section*.107}
+\contentsline {subsection}{dsti\_23.f}{60}{section*.108}
+\contentsline {subsection}{dsti\_33.f}{61}{section*.109}
+\contentsline {subsection}{dsti\_5.f}{61}{section*.110}
+\contentsline {chapter}{\numberline {6}anstu: $t$, $u$ and $s$ diagrams for $ff$-annihilation}{63}{chapter.6}
+\contentsline {section}{\numberline {6.1}Annihilation amplitudes for fermion-fermion annihilation}{63}{section.6.1}
+\contentsline {section}{\numberline {6.2}Routine headers -- fortran files}{63}{section.6.2}
+\contentsline {subsection}{dsansffsff.f}{63}{section*.111}
+\contentsline {subsection}{dsansffsss.f}{64}{section*.112}
+\contentsline {subsection}{dsansffssv.f}{64}{section*.113}
+\contentsline {subsection}{dsansffsvs.f}{64}{section*.114}
+\contentsline {subsection}{dsansffsvv.f}{64}{section*.115}
+\contentsline {subsection}{dsansffvff.f}{65}{section*.116}
+\contentsline {subsection}{dsansffvss.f}{65}{section*.117}
+\contentsline {subsection}{dsansffvsv.f}{65}{section*.118}
+\contentsline {subsection}{dsansffvvs.f}{65}{section*.119}
+\contentsline {subsection}{dsansffvvv.f}{66}{section*.120}
+\contentsline {subsection}{dsantfffss.f}{66}{section*.121}
+\contentsline {subsection}{dsantfffssex.f}{66}{section*.122}
+\contentsline {subsection}{dsantfffssin.f}{67}{section*.123}
+\contentsline {subsection}{dsantfffsv.f}{67}{section*.124}
+\contentsline {subsection}{dsantfffsvin.f}{67}{section*.125}
+\contentsline {subsection}{dsantfffvs.f}{67}{section*.126}
+\contentsline {subsection}{dsantfffvsex.f}{68}{section*.127}
+\contentsline {subsection}{dsantfffvv.f}{68}{section*.128}
+\contentsline {subsection}{dsantfffvvex.f}{68}{section*.129}
+\contentsline {subsection}{dsantfffvvin.f}{68}{section*.130}
+\contentsline {subsection}{dsantffsff.f}{69}{section*.131}
+\contentsline {subsection}{dsanufffss.f}{69}{section*.132}
+\contentsline {subsection}{dsanufffssin.f}{69}{section*.133}
+\contentsline {subsection}{dsanufffsv.f}{70}{section*.134}
+\contentsline {subsection}{dsanufffsvin.f}{70}{section*.135}
+\contentsline {subsection}{dsanufffvs.f}{70}{section*.136}
+\contentsline {subsection}{dsanufffvv.f}{70}{section*.137}
+\contentsline {subsection}{dsanufffvvex.f}{71}{section*.138}
+\contentsline {subsection}{dsanufffvvin.f}{71}{section*.139}
+\contentsline {subsection}{dsanuffsff.f}{71}{section*.140}
+\contentsline {chapter}{\numberline {7}as: Annihilation cross sections (with sfermions)}{73}{chapter.7}
+\contentsline {section}{\numberline {7.1}Annihilation cross sections with sfermions -- general }{73}{section.7.1}
+\contentsline {section}{\numberline {7.2}Routine headers -- fortran files}{73}{section.7.2}
+\contentsline {subsection}{dsaschicasea.f}{73}{section*.141}
+\contentsline {subsection}{dsaschicaseb.f}{74}{section*.142}
+\contentsline {subsection}{dsaschicasec.f}{75}{section*.143}
+\contentsline {subsection}{dsaschicased.f}{75}{section*.144}
+\contentsline {subsection}{dsaschizero.f}{76}{section*.145}
+\contentsline {subsection}{dsascolset.f}{76}{section*.146}
+\contentsline {subsection}{dsasdepro.f}{76}{section*.147}
+\contentsline {subsection}{dsasdwdcossfchi.f}{76}{section*.148}
+\contentsline {subsection}{dsasdwdcossfsf.f}{77}{section*.149}
+\contentsline {subsection}{dsasfer.f}{77}{section*.150}
+\contentsline {subsection}{dsasfercode.f}{78}{section*.151}
+\contentsline {subsection}{dsasfercol.f}{78}{section*.152}
+\contentsline {subsection}{dsasfere.f}{78}{section*.153}
+\contentsline {subsection}{dsasferecol.f}{78}{section*.154}
+\contentsline {subsection}{dsasff.f}{79}{section*.155}
+\contentsline {subsection}{dsasffcol.f}{79}{section*.156}
+\contentsline {subsection}{dsasgbgb.f}{79}{section*.157}
+\contentsline {subsection}{dsasgbgb1exp.f}{80}{section*.158}
+\contentsline {subsection}{dsasgbgb2exp.f}{81}{section*.159}
+\contentsline {subsection}{dsasgbhb.f}{82}{section*.160}
+\contentsline {subsection}{dsashbhb.f}{82}{section*.161}
+\contentsline {subsection}{dsaskinset.f}{83}{section*.162}
+\contentsline {subsection}{dsaskinset1.f}{83}{section*.163}
+\contentsline {subsection}{dsaskinset2.f}{84}{section*.164}
+\contentsline {subsection}{dsaskinset3.f}{84}{section*.165}
+\contentsline {subsection}{dsasphghb.f}{84}{section*.166}
+\contentsline {subsection}{dsasscscsSHffb.f}{84}{section*.167}
+\contentsline {subsection}{dsasscscsSHffbcol.f}{85}{section*.168}
+\contentsline {subsection}{dsasscscsSVffb.f}{85}{section*.169}
+\contentsline {subsection}{dsasscscsSVffbcol.f}{85}{section*.170}
+\contentsline {subsection}{dsasscscsTCffb.f}{85}{section*.171}
+\contentsline {subsection}{dsasscscsTCffbcol.f}{86}{section*.172}
+\contentsline {subsection}{dsasscscTCff.f}{86}{section*.173}
+\contentsline {subsection}{dsasscscTCffcol.f}{86}{section*.174}
+\contentsline {subsection}{dsasscscUCff.f}{86}{section*.175}
+\contentsline {subsection}{dsasscscUCffcol.f}{87}{section*.176}
+\contentsline {subsection}{dsassfercode.f}{87}{section*.177}
+\contentsline {subsection}{dsaswcomp.f}{87}{section*.178}
+\contentsline {chapter}{\numberline {8}bsg: $b \rightarrow s \gamma $}{89}{chapter.8}
+\contentsline {section}{\numberline {8.1}$b \rightarrow s \gamma $ -- theory}{89}{section.8.1}
+\contentsline {section}{\numberline {8.2}$b \rightarrow s \gamma $ -- routines}{89}{section.8.2}
+\contentsline {section}{\numberline {8.3}Routine headers -- fortran files}{90}{section.8.3}
+\contentsline {subsection}{dsbsgalpha3.f}{90}{section*.179}
+\contentsline {subsection}{dsbsgalpha3int.f}{90}{section*.180}
+\contentsline {subsection}{dsbsgammafull.f}{90}{section*.181}
+\contentsline {subsection}{dsbsgat0.f}{90}{section*.182}
+\contentsline {subsection}{dsbsgat1.f}{91}{section*.183}
+\contentsline {subsection}{dsbsgbofe.f}{91}{section*.184}
+\contentsline {subsection}{dsbsgc41h2.f}{91}{section*.185}
+\contentsline {subsection}{dsbsgc41susy.f}{92}{section*.186}
+\contentsline {subsection}{dsbsgc70h2.f}{92}{section*.187}
+\contentsline {subsection}{dsbsgc70susy.f}{92}{section*.188}
+\contentsline {subsection}{dsbsgc71chisusy.f}{92}{section*.189}
+\contentsline {subsection}{dsbsgc71h2.f}{93}{section*.190}
+\contentsline {subsection}{dsbsgc71phi1susy.f}{93}{section*.191}
+\contentsline {subsection}{dsbsgc71phi2susy.f}{93}{section*.192}
+\contentsline {subsection}{dsbsgc71wsusy.f}{94}{section*.193}
+\contentsline {subsection}{dsbsgc80h2.f}{94}{section*.194}
+\contentsline {subsection}{dsbsgc80susy.f}{94}{section*.195}
+\contentsline {subsection}{dsbsgc81chisusy.f}{94}{section*.196}
+\contentsline {subsection}{dsbsgc81h2.f}{95}{section*.197}
+\contentsline {subsection}{dsbsgc81phi1susy.f}{95}{section*.198}
+\contentsline {subsection}{dsbsgc81phi2susy.f}{95}{section*.199}
+\contentsline {subsection}{dsbsgc81wsusy.f}{96}{section*.200}
+\contentsline {subsection}{dsbsgckm.f}{96}{section*.201}
+\contentsline {subsection}{dsbsgd1td.f}{96}{section*.202}
+\contentsline {subsection}{dsbsgd2d.f}{96}{section*.203}
+\contentsline {subsection}{dsbsgd2td.f}{97}{section*.204}
+\contentsline {subsection}{dsbsgd7chi1.f}{97}{section*.205}
+\contentsline {subsection}{dsbsgd7chi2.f}{97}{section*.206}
+\contentsline {subsection}{dsbsgd7h.f}{97}{section*.207}
+\contentsline {subsection}{dsbsgd8chi1.f}{98}{section*.208}
+\contentsline {subsection}{dsbsgd8chi2.f}{98}{section*.209}
+\contentsline {subsection}{dsbsgd8h.f}{98}{section*.210}
+\contentsline {subsection}{dsbsgeb.f}{98}{section*.211}
+\contentsline {subsection}{dsbsgechi.f}{99}{section*.212}
+\contentsline {subsection}{dsbsgeh.f}{99}{section*.213}
+\contentsline {subsection}{dsbsget0.f}{99}{section*.214}
+\contentsline {subsection}{dsbsgf71.f}{99}{section*.215}
+\contentsline {subsection}{dsbsgf72.f}{100}{section*.216}
+\contentsline {subsection}{dsbsgf73.f}{100}{section*.217}
+\contentsline {subsection}{dsbsgf81.f}{100}{section*.218}
+\contentsline {subsection}{dsbsgf82.f}{100}{section*.219}
+\contentsline {subsection}{dsbsgf83.f}{101}{section*.220}
+\contentsline {subsection}{dsbsgft0.f}{101}{section*.221}
+\contentsline {subsection}{dsbsgft1.f}{101}{section*.222}
+\contentsline {subsection}{dsbsgfxy.f}{102}{section*.223}
+\contentsline {subsection}{dsbsgg.f}{102}{section*.224}
+\contentsline {subsection}{dsbsgg7chi2.f}{102}{section*.225}
+\contentsline {subsection}{dsbsgg7chij1.f}{102}{section*.226}
+\contentsline {subsection}{dsbsgg7h.f}{103}{section*.227}
+\contentsline {subsection}{dsbsgg7w.f}{103}{section*.228}
+\contentsline {subsection}{dsbsgg8chi2.f}{103}{section*.229}
+\contentsline {subsection}{dsbsgg8chij1.f}{103}{section*.230}
+\contentsline {subsection}{dsbsgg8h.f}{104}{section*.231}
+\contentsline {subsection}{dsbsgg8w.f}{104}{section*.232}
+\contentsline {subsection}{dsbsggxy.f}{104}{section*.233}
+\contentsline {subsection}{dsbsgh1x.f}{105}{section*.234}
+\contentsline {subsection}{dsbsgh2xy.f}{105}{section*.235}
+\contentsline {subsection}{dsbsgh3x.f}{105}{section*.236}
+\contentsline {subsection}{dsbsghd.f}{105}{section*.237}
+\contentsline {subsection}{dsbsghtd.f}{106}{section*.238}
+\contentsline {subsection}{dsbsgkc.f}{106}{section*.239}
+\contentsline {subsection}{dsbsgkt.f}{106}{section*.240}
+\contentsline {subsection}{dsbsgmtmuw.f}{106}{section*.241}
+\contentsline {subsection}{dsbsgmtmuwint.f}{107}{section*.242}
+\contentsline {subsection}{dsbsgri.f}{107}{section*.243}
+\contentsline {subsection}{dsbsgud.f}{107}{section*.244}
+\contentsline {subsection}{dsbsgutd.f}{107}{section*.245}
+\contentsline {subsection}{dsbsgwud.f}{108}{section*.246}
+\contentsline {subsection}{dsbsgwxy.f}{108}{section*.247}
+\contentsline {subsection}{dsbsgyt.f}{108}{section*.248}
+\contentsline {subsection}{dsphi22a.f}{108}{section*.249}
+\contentsline {subsection}{dsphi22b.f}{109}{section*.250}
+\contentsline {subsection}{dsphi27a.f}{109}{section*.251}
+\contentsline {subsection}{dsphi27b.f}{109}{section*.252}
+\contentsline {chapter}{\numberline {9}db: Anti-deuteron fluxes from the halo}{111}{chapter.9}
+\contentsline {section}{\numberline {9.1}Anti-deuteron fluxes from annihilation in the halo}{111}{section.9.1}
+\contentsline {section}{\numberline {9.2}Routine headers -- fortran files}{111}{section.9.2}
+\contentsline {subsection}{dsdbsigmavdbar.f}{111}{section*.253}
+\contentsline {subsection}{dsdbtd15.f}{111}{section*.254}
+\contentsline {subsection}{dsdbtd15beu.f}{112}{section*.255}
+\contentsline {subsection}{dsdbtd15beucl.f}{112}{section*.256}
+\contentsline {subsection}{dsdbtd15beuclsp.f}{113}{section*.257}
+\contentsline {subsection}{dsdbtd15beum.f}{113}{section*.258}
+\contentsline {subsection}{dsdbtd15comp.f}{114}{section*.259}
+\contentsline {subsection}{dsdbtd15point.f}{114}{section*.260}
+\contentsline {subsection}{dsdbtd15x.f}{115}{section*.261}
+\contentsline {chapter}{\numberline {10}dd: Direct detection}{117}{chapter.10}
+\contentsline {section}{\numberline {10.1}Direct detection -- theory}{117}{section.10.1}
+\contentsline {section}{\numberline {10.2}Direct detection -- routines}{119}{section.10.2}
+\contentsline {section}{\numberline {10.3}Routine headers -- fortran files}{119}{section.10.3}
+\contentsline {subsection}{dsdddn1.f}{119}{section*.262}
+\contentsline {subsection}{dsdddn2.f}{120}{section*.263}
+\contentsline {subsection}{dsdddn3.f}{120}{section*.264}
+\contentsline {subsection}{dsdddn4.f}{120}{section*.265}
+\contentsline {subsection}{dsdddrde.f}{120}{section*.266}
+\contentsline {subsection}{dsddeta.f}{121}{section*.267}
+\contentsline {subsection}{dsddffsd.f}{121}{section*.268}
+\contentsline {subsection}{dsddffsi.f}{121}{section*.269}
+\contentsline {subsection}{dsddgpgn.f}{121}{section*.270}
+\contentsline {subsection}{dsddlim.f}{122}{section*.271}
+\contentsline {subsection}{dsddlimits.f}{122}{section*.272}
+\contentsline {subsection}{dsddneunuc.f}{122}{section*.273}
+\contentsline {subsection}{dsddo.f}{123}{section*.274}
+\contentsline {subsection}{dsddset.f}{123}{section*.275}
+\contentsline {subsection}{dsddsigmaff.f}{123}{section*.276}
+\contentsline {subsection}{dsddsigsi.f}{123}{section*.277}
+\contentsline {subsection}{dsddvearth.f}{124}{section*.278}
+\contentsline {chapter}{\numberline {11}ep: Positron fluxes from the halo}{125}{chapter.11}
+\contentsline {section}{\numberline {11.1}Positrons from the halo -- theory}{125}{section.11.1}
+\contentsline {subsection}{\numberline {11.1.1}Propagation and the interstellar flux}{125}{subsection.11.1.1}
+\contentsline {subsection}{\numberline {11.1.2}Solar modulation}{127}{subsection.11.1.2}
+\contentsline {section}{\numberline {11.2}Positrons from the halo -- routines}{127}{section.11.2}
+\contentsline {section}{\numberline {11.3}Routine headers -- fortran files}{127}{section.11.3}
+\contentsline {subsection}{dsembg.f}{127}{section*.279}
+\contentsline {subsection}{dsepbg.f}{127}{section*.280}
+\contentsline {subsection}{dsepdiff.f}{128}{section*.281}
+\contentsline {subsection}{dsepdsigv\_de.f}{128}{section*.282}
+\contentsline {subsection}{dsepeecut.f}{129}{section*.283}
+\contentsline {subsection}{dsepeeuncut.f}{129}{section*.284}
+\contentsline {subsection}{dsepf.f}{129}{section*.285}
+\contentsline {subsection}{dsepfrsm.f}{129}{section*.286}
+\contentsline {subsection}{dsepgalpropdiff.f}{130}{section*.287}
+\contentsline {subsection}{dsepgalpropig.f}{130}{section*.288}
+\contentsline {subsection}{dsepgalpropig2.f}{130}{section*.289}
+\contentsline {subsection}{dsepgalpropline.f}{130}{section*.290}
+\contentsline {subsection}{dsephalodens2.f}{130}{section*.291}
+\contentsline {subsection}{dsepideltavint.f}{131}{section*.292}
+\contentsline {subsection}{dsepimage\_sum.f}{131}{section*.293}
+\contentsline {subsection}{dsepipol.f}{131}{section*.294}
+\contentsline {subsection}{dsepkt.f}{132}{section*.295}
+\contentsline {subsection}{dsepktdiff.f}{132}{section*.296}
+\contentsline {subsection}{dsepktig.f}{132}{section*.297}
+\contentsline {subsection}{dsepktig2.f}{132}{section*.298}
+\contentsline {subsection}{dsepktline.f}{133}{section*.299}
+\contentsline {subsection}{dseploghalodens2.f}{133}{section*.300}
+\contentsline {subsection}{dsepmake\_tables.f}{133}{section*.301}
+\contentsline {subsection}{dsepmake\_tables2.f}{134}{section*.302}
+\contentsline {subsection}{dsepmsdiff.f}{134}{section*.303}
+\contentsline {subsection}{dsepmsig.f}{134}{section*.304}
+\contentsline {subsection}{dsepmsig2.f}{135}{section*.305}
+\contentsline {subsection}{dsepmsline.f}{135}{section*.306}
+\contentsline {subsection}{dsepmstable.f}{135}{section*.307}
+\contentsline {subsection}{dseprsm.f}{135}{section*.308}
+\contentsline {subsection}{dsepset.f}{136}{section*.309}
+\contentsline {subsection}{dsepsigvdnde.f}{136}{section*.310}
+\contentsline {subsection}{dsepspec.f}{136}{section*.311}
+\contentsline {subsection}{dseptab.f}{137}{section*.312}
+\contentsline {subsection}{dsepvvcut.f}{137}{section*.313}
+\contentsline {subsection}{dsepvvuncut.f}{137}{section*.314}
+\contentsline {subsection}{dsepwcut.f}{137}{section*.315}
+\contentsline {subsection}{dsepwuncut.f}{138}{section*.316}
+\contentsline {subsection}{dsgalpropig.f}{138}{section*.317}
+\contentsline {subsection}{dsgalpropig2.f}{138}{section*.318}
+\contentsline {subsection}{dsgalpropset.f}{139}{section*.319}
+\contentsline {chapter}{\numberline {12}ep2: Positron fluxes from the halo (alternative solution)}{141}{chapter.12}
+\contentsline {section}{\numberline {12.1}Routine headers -- fortran files}{141}{section.12.1}
+\contentsline {subsection}{dsepintgreen.f}{141}{section*.320}
+\contentsline {subsection}{dsepspecm.f}{141}{section*.321}
+\contentsline {subsection}{dsepvofeps.f}{142}{section*.322}
+\contentsline {chapter}{\numberline {13}ge: General routines}{143}{chapter.13}
+\contentsline {section}{\numberline {13.1}General routines}{143}{section.13.1}
+\contentsline {section}{\numberline {13.2}Routine headers -- fortran files}{143}{section.13.2}
+\contentsline {subsection}{cosd.f}{143}{section*.323}
+\contentsline {subsection}{dsabsq.f}{143}{section*.324}
+\contentsline {subsection}{dsbessei0.f}{143}{section*.325}
+\contentsline {subsection}{dsbessei1.f}{143}{section*.326}
+\contentsline {subsection}{dsbessek0.f}{144}{section*.327}
+\contentsline {subsection}{dsbessek1.f}{144}{section*.328}
+\contentsline {subsection}{dsbessek2.f}{144}{section*.329}
+\contentsline {subsection}{dsbessjw.f}{144}{section*.330}
+\contentsline {subsection}{dscharadd.f}{144}{section*.331}
+\contentsline {subsection}{dsf2s.f}{145}{section*.332}
+\contentsline {subsection}{dsf\_int.f}{145}{section*.333}
+\contentsline {subsection}{dsf\_int2.f}{145}{section*.334}
+\contentsline {subsection}{dshiprecint3.f}{145}{section*.335}
+\contentsline {subsection}{dshunt.f}{145}{section*.336}
+\contentsline {subsection}{dsi2s.f}{146}{section*.337}
+\contentsline {subsection}{dsi\_trim.f}{146}{section*.338}
+\contentsline {subsection}{dsidtag.f}{146}{section*.339}
+\contentsline {subsection}{dsisnan.f}{146}{section*.340}
+\contentsline {subsection}{dsquartic.f}{146}{section*.341}
+\contentsline {subsection}{dsrnd1.f}{146}{section*.342}
+\contentsline {subsection}{dsrndlin.f}{146}{section*.343}
+\contentsline {subsection}{dsrndlog.f}{146}{section*.344}
+\contentsline {subsection}{dsrndsgn.f}{146}{section*.345}
+\contentsline {subsection}{dswrite.f}{147}{section*.346}
+\contentsline {subsection}{erf.f}{147}{section*.347}
+\contentsline {subsection}{erfc.f}{147}{section*.348}
+\contentsline {subsection}{sind.f}{147}{section*.349}
+\contentsline {subsection}{spline.f}{147}{section*.350}
+\contentsline {subsection}{splint.f}{147}{section*.351}
+\contentsline {chapter}{\numberline {14}ha: Halo annihilation yields}{149}{chapter.14}
+\contentsline {section}{\numberline {14.1}Annihilation in the halo, yields -- theory}{149}{section.14.1}
+\contentsline {subsection}{\numberline {14.1.1}Monte Carlo simulations}{149}{subsection.14.1.1}
+\contentsline {section}{\numberline {14.2}Routine headers -- fortran files}{149}{section.14.2}
+\contentsline {subsection}{dshacom.f}{149}{section*.352}
+\contentsline {subsection}{dshadec.f}{149}{section*.353}
+\contentsline {subsection}{dshadydth.f}{150}{section*.354}
+\contentsline {subsection}{dshadyh.f}{150}{section*.355}
+\contentsline {subsection}{dshaemean.f}{150}{section*.356}
+\contentsline {subsection}{dshaifind.f}{150}{section*.357}
+\contentsline {subsection}{dshainit.f}{151}{section*.358}
+\contentsline {subsection}{dshapbyieldf.f}{151}{section*.359}
+\contentsline {subsection}{dshawspec.f}{151}{section*.360}
+\contentsline {subsection}{dshayield.f}{151}{section*.361}
+\contentsline {subsection}{dshayield\_int.f}{152}{section*.362}
+\contentsline {subsection}{dshayielddec.f}{153}{section*.363}
+\contentsline {subsection}{dshayieldf.f}{153}{section*.364}
+\contentsline {subsection}{dshayieldfth.f}{154}{section*.365}
+\contentsline {subsection}{dshayieldget.f}{154}{section*.366}
+\contentsline {subsection}{dshayieldh.f}{154}{section*.367}
+\contentsline {subsection}{dshayieldh2.f}{154}{section*.368}
+\contentsline {subsection}{dshayieldh3.f}{155}{section*.369}
+\contentsline {subsection}{dshayieldh4.f}{155}{section*.370}
+\contentsline {chapter}{\numberline {15}hm: Halo models}{157}{chapter.15}
+\contentsline {section}{\numberline {15.1}Halo models -- theory}{157}{section.15.1}
+\contentsline {subsection}{\numberline {15.1.1}Rescaling of the neutralino density}{158}{subsection.15.1.1}
+\contentsline {section}{\numberline {15.2}Halo model -- routines}{159}{section.15.2}
+\contentsline {section}{\numberline {15.3}Routine headers -- fortran files}{159}{section.15.3}
+\contentsline {subsection}{dshmabgrho.f}{159}{section*.371}
+\contentsline {subsection}{dshmaxiprob.f}{159}{section*.372}
+\contentsline {subsection}{dshmaxirho.f}{160}{section*.373}
+\contentsline {subsection}{dshmboerrho.f}{160}{section*.374}
+\contentsline {subsection}{dshmboerrhoaxi.f}{161}{section*.375}
+\contentsline {subsection}{dshmburrho.f}{161}{section*.376}
+\contentsline {subsection}{dshmdfisotr.f}{161}{section*.377}
+\contentsline {subsection}{dshmdfisotrnum.f}{162}{section*.378}
+\contentsline {subsection}{dshmhaloprof.f}{162}{section*.379}
+\contentsline {subsection}{dshmj.f}{163}{section*.380}
+\contentsline {subsection}{dshmjave.f}{164}{section*.381}
+\contentsline {subsection}{dshmjavegc.f}{164}{section*.382}
+\contentsline {subsection}{dshmjavepar1.f}{165}{section*.383}
+\contentsline {subsection}{dshmjavepar2.f}{165}{section*.384}
+\contentsline {subsection}{dshmjavepar3.f}{165}{section*.385}
+\contentsline {subsection}{dshmjavepar4.f}{165}{section*.386}
+\contentsline {subsection}{dshmjavepar5.f}{165}{section*.387}
+\contentsline {subsection}{dshmjpar1.f}{166}{section*.388}
+\contentsline {subsection}{dshmn03rho.f}{166}{section*.389}
+\contentsline {subsection}{dshmnumrho.f}{166}{section*.390}
+\contentsline {subsection}{dshmrescale\_rho.f}{167}{section*.391}
+\contentsline {subsection}{dshmrho.f}{167}{section*.392}
+\contentsline {subsection}{dshmrho2cylint.f}{167}{section*.393}
+\contentsline {subsection}{dshmset.f}{167}{section*.394}
+\contentsline {subsection}{dshmsphrho.f}{168}{section*.395}
+\contentsline {subsection}{dshmudf.f}{168}{section*.396}
+\contentsline {subsection}{dshmudfearth.f}{169}{section*.397}
+\contentsline {subsection}{dshmudfearthtab.f}{169}{section*.398}
+\contentsline {subsection}{dshmudfgauss.f}{170}{section*.399}
+\contentsline {subsection}{dshmudfiso.f}{171}{section*.400}
+\contentsline {subsection}{dshmudfnum.f}{171}{section*.401}
+\contentsline {subsection}{dshmudfnumc.f}{172}{section*.402}
+\contentsline {subsection}{dshmudftab.f}{173}{section*.403}
+\contentsline {subsection}{dshmvelearth.f}{173}{section*.404}
+\contentsline {chapter}{\numberline {16}hr: Halo rates from annihilation}{175}{chapter.16}
+\contentsline {section}{\numberline {16.1}Gamma rays from the halo -- theory}{175}{section.16.1}
+\contentsline {subsection}{\numberline {16.1.1}$\chi \chi \to \gamma \gamma $}{176}{subsection.16.1.1}
+\contentsline {subsection}{\numberline {16.1.2}$\chi \chi \to Z\gamma $}{177}{subsection.16.1.2}
+\contentsline {subsection}{\numberline {16.1.3}Gamma rays with continuum energy spectrum}{178}{subsection.16.1.3}
+\contentsline {subsection}{\numberline {16.1.4}Sources and fluxes}{178}{subsection.16.1.4}
+\contentsline {section}{\numberline {16.2}Neutrinos from halo -- theory}{179}{section.16.2}
+\contentsline {section}{\numberline {16.3}Routine headers -- fortran files}{180}{section.16.3}
+\contentsline {subsection}{dshaloyield.f}{180}{section*.405}
+\contentsline {subsection}{dshaloyielddb.f}{180}{section*.406}
+\contentsline {subsection}{dshrdbardiff.f}{180}{section*.407}
+\contentsline {subsection}{dshrdbdiff0.f}{181}{section*.408}
+\contentsline {subsection}{dshrgacdiffsusy.f}{181}{section*.409}
+\contentsline {subsection}{dshrgacont.f}{182}{section*.410}
+\contentsline {subsection}{dshrgacontdiff.f}{182}{section*.411}
+\contentsline {subsection}{dshrgacsusy.f}{183}{section*.412}
+\contentsline {subsection}{dshrgaline.f}{183}{section*.413}
+\contentsline {subsection}{dshrgalsusy.f}{184}{section*.414}
+\contentsline {subsection}{dshrmudiff.f}{184}{section*.415}
+\contentsline {subsection}{dshrmuhalo.f}{185}{section*.416}
+\contentsline {subsection}{dshrpbardiff.f}{185}{section*.417}
+\contentsline {subsection}{dshrpbdiff0.f}{186}{section*.418}
+\contentsline {subsection}{dsnsigvgacdiff.f}{186}{section*.419}
+\contentsline {subsection}{dsnsigvgacont.f}{187}{section*.420}
+\contentsline {subsection}{dsnsigvgaline.f}{187}{section*.421}
+\contentsline {chapter}{\numberline {17}ini: Initialization routines}{189}{chapter.17}
+\contentsline {section}{\numberline {17.1}Initialization routines}{189}{section.17.1}
+\contentsline {section}{\numberline {17.2}Routine headers -- fortran files}{189}{section.17.2}
+\contentsline {subsection}{dscval.f}{189}{section*.422}
+\contentsline {subsection}{dsfval.f}{189}{section*.423}
+\contentsline {subsection}{dsinit.f}{189}{section*.424}
+\contentsline {subsection}{dsival.f}{189}{section*.425}
+\contentsline {subsection}{dskillsp.f}{190}{section*.426}
+\contentsline {subsection}{dslowcase.f}{190}{section*.427}
+\contentsline {subsection}{dslval.f}{190}{section*.428}
+\contentsline {subsection}{dsreadpar.f}{190}{section*.429}
+\contentsline {chapter}{\numberline {18}mu: Muon neutrino yields from annihilation in the Sun/Earth}{191}{chapter.18}
+\contentsline {section}{\numberline {18.1}Muon yields from annihilation in the Earth/Sun -- theory}{191}{section.18.1}
+\contentsline {subsection}{\numberline {18.1.1}Monte Carlo simulations}{191}{subsection.18.1.1}
+\contentsline {section}{\numberline {18.2}Routine headers -- fortran files}{192}{section.18.2}
+\contentsline {subsection}{dsmucom.f}{192}{section*.430}
+\contentsline {subsection}{dsmudydth.f}{192}{section*.431}
+\contentsline {subsection}{dsmuemean.f}{192}{section*.432}
+\contentsline {subsection}{dsmuifind.f}{192}{section*.433}
+\contentsline {subsection}{dsmuinit.f}{193}{section*.434}
+\contentsline {subsection}{dsmuyield.f}{193}{section*.435}
+\contentsline {subsection}{dsmuyield\_int.f}{193}{section*.436}
+\contentsline {subsection}{dsmuyieldf.f}{194}{section*.437}
+\contentsline {subsection}{dsmuyieldfth.f}{194}{section*.438}
+\contentsline {subsection}{dsmuyieldh.f}{194}{section*.439}
+\contentsline {subsection}{dsmuyieldh2.f}{194}{section*.440}
+\contentsline {subsection}{dsmuyieldh3.f}{195}{section*.441}
+\contentsline {subsection}{dsmuyieldh4.f}{195}{section*.442}
+\contentsline {chapter}{\numberline {19}nt: Neutrino and muon rates from annihilation in the Sun/Earth}{197}{chapter.19}
+\contentsline {section}{\numberline {19.1}Neutrinos from the Sun and Earth -- theory}{197}{section.19.1}
+\contentsline {subsection}{\numberline {19.1.1}Neutrino yield from annihilations}{197}{subsection.19.1.1}
+\contentsline {subsection}{\numberline {19.1.2}Evolution of the number density in the Earth/Sun}{198}{subsection.19.1.2}
+\contentsline {subsection}{\numberline {19.1.3}Approximate capture rate expressions}{199}{subsection.19.1.3}
+\contentsline {subsection}{\numberline {19.1.4}Earth and Sun composition}{200}{subsection.19.1.4}
+\contentsline {subsection}{\numberline {19.1.5}More accurate capture rate expressions}{201}{subsection.19.1.5}
+\contentsline {subsection}{\numberline {19.1.6}Accurate capture rates in the Earth for general velocity distributions}{201}{subsection.19.1.6}
+\contentsline {subsection}{\numberline {19.1.7}Accurate capture rates for the Earth for a Maxwell-Boltzmann velocity distribution}{203}{subsection.19.1.7}
+\contentsline {subsection}{\numberline {19.1.8}A possible new population of neutralinos}{204}{subsection.19.1.8}
+\contentsline {subsection}{\numberline {19.1.9}Effects of WIMP diffusion in the solar system}{205}{subsection.19.1.9}
+\contentsline {section}{\numberline {19.2}Neutrinos from Sun and Earth -- routines}{205}{section.19.2}
+\contentsline {section}{\numberline {19.3}Routine headers -- fortran files}{207}{section.19.3}
+\contentsline {subsection}{dsai.f}{207}{section*.443}
+\contentsline {subsection}{dsaip.f}{207}{section*.444}
+\contentsline {subsection}{dsatm\_mu.f}{207}{section*.445}
+\contentsline {subsection}{dsbi.f}{207}{section*.446}
+\contentsline {subsection}{dsbip.f}{207}{section*.447}
+\contentsline {subsection}{dsff.f}{208}{section*.448}
+\contentsline {subsection}{dsff2.f}{208}{section*.449}
+\contentsline {subsection}{dsff3.f}{208}{section*.450}
+\contentsline {subsection}{dsfff2.f}{208}{section*.451}
+\contentsline {subsection}{dsfff3.f}{208}{section*.452}
+\contentsline {subsection}{dsgauss1.f}{208}{section*.453}
+\contentsline {subsection}{dshiprecint.f}{208}{section*.454}
+\contentsline {subsection}{dshiprecint2.f}{208}{section*.455}
+\contentsline {subsection}{dshonda.f}{208}{section*.456}
+\contentsline {subsection}{dslnff.f}{209}{section*.457}
+\contentsline {subsection}{dsntannrate.f}{209}{section*.458}
+\contentsline {subsection}{dsntcapcom.f}{210}{section*.459}
+\contentsline {subsection}{dsntcapearth.f}{210}{section*.460}
+\contentsline {subsection}{dsntcapearth2.f}{210}{section*.461}
+\contentsline {subsection}{dsntcapearthfull.f}{210}{section*.462}
+\contentsline {subsection}{dsntcapearthnum.f}{211}{section*.463}
+\contentsline {subsection}{dsntcapearthnumi.f}{212}{section*.464}
+\contentsline {subsection}{dsntcapearthtab.f}{212}{section*.465}
+\contentsline {subsection}{dsntcapsun.f}{212}{section*.466}
+\contentsline {subsection}{dsntcapsunnum.f}{213}{section*.467}
+\contentsline {subsection}{dsntcapsunnumi.f}{213}{section*.468}
+\contentsline {subsection}{dsntcapsuntab.f}{213}{section*.469}
+\contentsline {subsection}{dsntceint.f}{214}{section*.470}
+\contentsline {subsection}{dsntceint2.f}{214}{section*.471}
+\contentsline {subsection}{dsntcsint.f}{214}{section*.472}
+\contentsline {subsection}{dsntcsint2.f}{214}{section*.473}
+\contentsline {subsection}{dsntctabcreate.f}{214}{section*.474}
+\contentsline {subsection}{dsntctabget.f}{215}{section*.475}
+\contentsline {subsection}{dsntctabread.f}{215}{section*.476}
+\contentsline {subsection}{dsntctabwrite.f}{215}{section*.477}
+\contentsline {subsection}{dsntdiffrates.f}{216}{section*.478}
+\contentsline {subsection}{dsntdkannrate.f}{216}{section*.479}
+\contentsline {subsection}{dsntdkcapea.f}{217}{section*.480}
+\contentsline {subsection}{dsntdkcapeafull.f}{217}{section*.481}
+\contentsline {subsection}{dsntdkcapearth.f}{218}{section*.482}
+\contentsline {subsection}{dsntdkcom.f}{218}{section*.483}
+\contentsline {subsection}{dsntdkfbigu.f}{218}{section*.484}
+\contentsline {subsection}{dsntdkfoveru.f}{218}{section*.485}
+\contentsline {subsection}{dsntdkgtot10.f}{218}{section*.486}
+\contentsline {subsection}{dsntdkka.f}{219}{section*.487}
+\contentsline {subsection}{dsntdkyf.f}{219}{section*.488}
+\contentsline {subsection}{dsntdqagse.f}{219}{section*.489}
+\contentsline {subsection}{dsntdqagseb.f}{222}{section*.490}
+\contentsline {subsection}{dsntdqk21.f}{225}{section*.491}
+\contentsline {subsection}{dsntdqk21b.f}{226}{section*.492}
+\contentsline {subsection}{dsntearthdens.f}{227}{section*.493}
+\contentsline {subsection}{dsntearthdenscomp.f}{228}{section*.494}
+\contentsline {subsection}{dsntearthmass.f}{229}{section*.495}
+\contentsline {subsection}{dsntearthmassint.f}{229}{section*.496}
+\contentsline {subsection}{dsntearthne.f}{229}{section*.497}
+\contentsline {subsection}{dsntearthpot.f}{229}{section*.498}
+\contentsline {subsection}{dsntearthpotint.f}{230}{section*.499}
+\contentsline {subsection}{dsntearthvesc.f}{230}{section*.500}
+\contentsline {subsection}{dsntedfunc.f}{230}{section*.501}
+\contentsline {subsection}{dsntepfunc.f}{230}{section*.502}
+\contentsline {subsection}{dsntfoveru.f}{230}{section*.503}
+\contentsline {subsection}{dsntfoveruearth.f}{231}{section*.504}
+\contentsline {subsection}{dsntismbkg.f}{231}{section*.505}
+\contentsline {subsection}{dsntismrd.f}{231}{section*.506}
+\contentsline {subsection}{dsntlitlf\_e.f}{231}{section*.507}
+\contentsline {subsection}{dsntlitlf\_s.f}{232}{section*.508}
+\contentsline {subsection}{dsntmoderf.f}{232}{section*.509}
+\contentsline {subsection}{dsntmuonyield.f}{232}{section*.510}
+\contentsline {subsection}{dsntnuism.f}{233}{section*.511}
+\contentsline {subsection}{dsntnusun.f}{233}{section*.512}
+\contentsline {subsection}{dsntrates.f}{233}{section*.513}
+\contentsline {subsection}{dsntse.f}{234}{section*.514}
+\contentsline {subsection}{dsntsefull.f}{234}{section*.515}
+\contentsline {subsection}{dsntset.f}{234}{section*.516}
+\contentsline {subsection}{dsntspfunc.f}{234}{section*.517}
+\contentsline {subsection}{dsntss.f}{234}{section*.518}
+\contentsline {subsection}{dsntsunbkg.f}{235}{section*.519}
+\contentsline {subsection}{dsntsuncdens.f}{235}{section*.520}
+\contentsline {subsection}{dsntsuncdensint.f}{235}{section*.521}
+\contentsline {subsection}{dsntsuncdfunc.f}{236}{section*.522}
+\contentsline {subsection}{dsntsundens.f}{236}{section*.523}
+\contentsline {subsection}{dsntsundenscomp.f}{236}{section*.524}
+\contentsline {subsection}{dsntsunmass.f}{237}{section*.525}
+\contentsline {subsection}{dsntsunmfrac.f}{237}{section*.526}
+\contentsline {subsection}{dsntsunne.f}{237}{section*.527}
+\contentsline {subsection}{dsntsunne2x.f}{238}{section*.528}
+\contentsline {subsection}{dsntsunpot.f}{238}{section*.529}
+\contentsline {subsection}{dsntsunpotint.f}{238}{section*.530}
+\contentsline {subsection}{dsntsunread.f}{239}{section*.531}
+\contentsline {subsection}{dsntsunvesc.f}{239}{section*.532}
+\contentsline {subsection}{dsntsunx2z.f}{239}{section*.533}
+\contentsline {subsection}{dsntsunz2x.f}{240}{section*.534}
+\contentsline {chapter}{\numberline {20}pb: Antiproton fluxes from the halo}{241}{chapter.20}
+\contentsline {section}{\numberline {20.1}Antiprotons -- theory}{241}{section.20.1}
+\contentsline {subsection}{\numberline {20.1.1}The Antiproton Source Function}{242}{subsection.20.1.1}
+\contentsline {subsection}{\numberline {20.1.2}Propagation model}{242}{subsection.20.1.2}
+\contentsline {subsection}{\numberline {20.1.3}Solar Modulation}{244}{subsection.20.1.3}
+\contentsline {section}{\numberline {20.2}Antiprotons from the halo -- routines}{244}{section.20.2}
+\contentsline {section}{\numberline {20.3}Routine headers -- fortran files}{245}{section.20.3}
+\contentsline {subsection}{dspbaddterm.f}{245}{section*.535}
+\contentsline {subsection}{dspbbeupargc.f}{245}{section*.536}
+\contentsline {subsection}{dspbbeupargs.f}{245}{section*.537}
+\contentsline {subsection}{dspbbeuparh.f}{245}{section*.538}
+\contentsline {subsection}{dspbbeuparm.f}{246}{section*.539}
+\contentsline {subsection}{dspbcharpar1.f}{246}{section*.540}
+\contentsline {subsection}{dspbcharpar2.f}{246}{section*.541}
+\contentsline {subsection}{dspbgalpropdiff.f}{246}{section*.542}
+\contentsline {subsection}{dspbgalpropig.f}{247}{section*.543}
+\contentsline {subsection}{dspbgalpropig2.f}{247}{section*.544}
+\contentsline {subsection}{dspbkdiff.f}{247}{section*.545}
+\contentsline {subsection}{dspbkdiffm.f}{247}{section*.546}
+\contentsline {subsection}{dspbset.f}{247}{section*.547}
+\contentsline {subsection}{dspbsigmavpbar.f}{248}{section*.548}
+\contentsline {subsection}{dspbtd15.f}{248}{section*.549}
+\contentsline {subsection}{dspbtd15beu.f}{248}{section*.550}
+\contentsline {subsection}{dspbtd15beucl.f}{248}{section*.551}
+\contentsline {subsection}{dspbtd15beuclsp.f}{249}{section*.552}
+\contentsline {subsection}{dspbtd15beum.f}{250}{section*.553}
+\contentsline {subsection}{dspbtd15char.f}{250}{section*.554}
+\contentsline {subsection}{dspbtd15comp.f}{250}{section*.555}
+\contentsline {subsection}{dspbtd15point.f}{251}{section*.556}
+\contentsline {subsection}{dspbtd15x.f}{252}{section*.557}
+\contentsline {subsection}{dspbtpb.f}{252}{section*.558}
+\contentsline {chapter}{\numberline {21}rd: Relic density routines (general)}{253}{chapter.21}
+\contentsline {section}{\numberline {21.1}Relic density -- theoretical background}{253}{section.21.1}
+\contentsline {subsection}{\numberline {21.1.1}The Boltzmann equation and thermal averaging}{253}{subsection.21.1.1}
+\contentsline {subsection}{\numberline {21.1.2}Review of the Boltzmann equation with coannihilations}{253}{subsection.21.1.2}
+\contentsline {subsection}{\numberline {21.1.3}Thermal averaging}{255}{subsection.21.1.3}
+\contentsline {subsection}{\numberline {21.1.4}Internal degrees of freedom}{259}{subsection.21.1.4}
+\contentsline {subsubsection}{Neutralino-chargino annihilation}{259}{section*.559}
+\contentsline {subsubsection}{Chargino-chargino annihilation}{259}{section*.560}
+\contentsline {subsubsection}{Neutralino-sfermion annihilation}{260}{section*.561}
+\contentsline {subsubsection}{Chargino-sfermion annihilation}{261}{section*.562}
+\contentsline {subsubsection}{Sfermion-sfermion annihilation}{262}{section*.563}
+\contentsline {subsubsection}{Squark-squark annihilation}{263}{section*.564}
+\contentsline {subsubsection}{Sfermion-squark annihilation}{263}{section*.565}
+\contentsline {subsubsection}{Summary of degrees of freedom}{264}{section*.566}
+\contentsline {subsection}{\numberline {21.1.5}Reformulation of the Boltzmann equation}{264}{subsection.21.1.5}
+\contentsline {section}{\numberline {21.2}Relic density -- numerical integration of the density equation}{265}{section.21.2}
+\contentsline {section}{\numberline {21.3}Relic density -- routines}{267}{section.21.3}
+\contentsline {subsection}{\numberline {21.3.1}Neutralino relic density}{267}{subsection.21.3.1}
+\contentsline {subsection}{\numberline {21.3.2}General relic density routines}{267}{subsection.21.3.2}
+\contentsline {subsection}{\numberline {21.3.3}Brief description of the internal routines}{268}{subsection.21.3.3}
+\contentsline {section}{\numberline {21.4}Routine headers -- fortran files}{270}{section.21.4}
+\contentsline {subsection}{dsrdaddpt.f}{270}{section*.567}
+\contentsline {subsection}{dsrdcom.f}{271}{section*.568}
+\contentsline {subsection}{dsrddof150.f}{271}{section*.569}
+\contentsline {subsection}{dsrddpmin.f}{271}{section*.570}
+\contentsline {subsection}{dsrdens.f}{271}{section*.571}
+\contentsline {subsection}{dsrdeqn.f}{272}{section*.572}
+\contentsline {subsection}{dsrdfunc.f}{272}{section*.573}
+\contentsline {subsection}{dsrdfuncs.f}{273}{section*.574}
+\contentsline {subsection}{dsrdlny.f}{273}{section*.575}
+\contentsline {subsection}{dsrdnormlz.f}{273}{section*.576}
+\contentsline {subsection}{dsrdqad.f}{274}{section*.577}
+\contentsline {subsection}{dsrdqrkck.f}{274}{section*.578}
+\contentsline {subsection}{dsrdrhs.f}{274}{section*.579}
+\contentsline {subsection}{dsrdspline.f}{275}{section*.580}
+\contentsline {subsection}{dsrdstart.f}{275}{section*.581}
+\contentsline {subsection}{dsrdtab.f}{275}{section*.582}
+\contentsline {subsection}{dsrdthav.f}{276}{section*.583}
+\contentsline {subsection}{dsrdthclose.f}{276}{section*.584}
+\contentsline {subsection}{dsrdthlim.f}{276}{section*.585}
+\contentsline {subsection}{dsrdthtest.f}{276}{section*.586}
+\contentsline {subsection}{dsrdwdwdcos.f}{277}{section*.587}
+\contentsline {subsection}{dsrdwfunc.f}{277}{section*.588}
+\contentsline {subsection}{dsrdwintp.f}{277}{section*.589}
+\contentsline {subsection}{dsrdwintpch.f}{277}{section*.590}
+\contentsline {subsection}{dsrdwintprint.f}{277}{section*.591}
+\contentsline {subsection}{dsrdwintrp.f}{278}{section*.592}
+\contentsline {subsection}{dsrdwprint.f}{278}{section*.593}
+\contentsline {subsection}{dsrdwres.f}{278}{section*.594}
+\contentsline {chapter}{\numberline {22}rge: mSUGRA interface (Isasugra) to DarkSUSY}{281}{chapter.22}
+\contentsline {section}{\numberline {22.1}mSUGRA (ISASUGRA) interface to DarkSUSY}{281}{section.22.1}
+\contentsline {section}{\numberline {22.2}Routine headers -- fortran files}{281}{section.22.2}
+\contentsline {subsection}{dsgive\_model\_isasugra.f}{281}{section*.595}
+\contentsline {subsection}{dsisasugra\_check.f}{282}{section*.596}
+\contentsline {subsection}{dsisasugra\_darksusy.f}{282}{section*.597}
+\contentsline {subsection}{dsmodelsetup\_isasugra.f}{282}{section*.598}
+\contentsline {subsection}{dsrge\_isasugra.f}{282}{section*.599}
+\contentsline {subsection}{dssusy\_isasugra.f}{283}{section*.600}
+\contentsline {chapter}{\numberline {23}rn: Relic density of neutralinos (wrapper for rd routines)}{285}{chapter.23}
+\contentsline {section}{\numberline {23.1}Relic density of neutralinos}{285}{section.23.1}
+\contentsline {section}{\numberline {23.2}Routine headers -- fortran files}{285}{section.23.2}
+\contentsline {subsection}{dsrdomega.f}{285}{section*.601}
+\contentsline {subsection}{dsrdres.f}{286}{section*.602}
+\contentsline {subsection}{dsrdthr.f}{286}{section*.603}
+\contentsline {subsection}{dsrdwrate.f}{286}{section*.604}
+\contentsline {chapter}{\numberline {24}su: General SUSY model setup: masses, vertices etc}{289}{chapter.24}
+\contentsline {section}{\numberline {24.1}Supersymmetric model}{289}{section.24.1}
+\contentsline {subsection}{\numberline {24.1.1}Parameters}{289}{subsection.24.1.1}
+\contentsline {subsection}{\numberline {24.1.2}Mass spectrum}{289}{subsection.24.1.2}
+\contentsline {subsection}{\numberline {24.1.3}Three-particle vertices}{292}{subsection.24.1.3}
+\contentsline {subsection}{\numberline {24.1.4}Accelerator bounds}{294}{subsection.24.1.4}
+\contentsline {section}{\numberline {24.2}General supersymmetry -- routines}{295}{section.24.2}
+\contentsline {section}{\numberline {24.3}Routine headers -- fortran files}{297}{section.24.3}
+\contentsline {subsection}{dsb0loop.f}{297}{section*.605}
+\contentsline {subsection}{dschasct.f}{297}{section*.606}
+\contentsline {subsection}{dsfeynhiggsfast.f}{297}{section*.607}
+\contentsline {subsection}{dsfindmtmt.f}{298}{section*.608}
+\contentsline {subsection}{dsg0loop.f}{298}{section*.609}
+\contentsline {subsection}{dsg4set.f}{298}{section*.610}
+\contentsline {subsection}{dsg4set12.f}{298}{section*.611}
+\contentsline {subsection}{dsg4set1234.f}{299}{section*.612}
+\contentsline {subsection}{dsg4set13.f}{299}{section*.613}
+\contentsline {subsection}{dsg4set23.f}{299}{section*.614}
+\contentsline {subsection}{dsg4set34.f}{299}{section*.615}
+\contentsline {subsection}{dsg4setc.f}{299}{section*.616}
+\contentsline {subsection}{dsg4setc12.f}{299}{section*.617}
+\contentsline {subsection}{dsg4setc1234.f}{300}{section*.618}
+\contentsline {subsection}{dsg4setc13.f}{300}{section*.619}
+\contentsline {subsection}{dsg4setc23.f}{300}{section*.620}
+\contentsline {subsection}{dsg4setc34.f}{300}{section*.621}
+\contentsline {subsection}{dsgive\_model.f}{300}{section*.622}
+\contentsline {subsection}{dshgfu.f}{301}{section*.623}
+\contentsline {subsection}{dshigferqcd.f}{301}{section*.624}
+\contentsline {subsection}{dshigsct.f}{301}{section*.625}
+\contentsline {subsection}{dshigwid.f}{302}{section*.626}
+\contentsline {subsection}{dshlf2.f}{302}{section*.627}
+\contentsline {subsection}{dshlf3.f}{302}{section*.628}
+\contentsline {subsection}{dsmodelsetup.f}{302}{section*.629}
+\contentsline {subsection}{dsmqpole1loop.f}{303}{section*.630}
+\contentsline {subsection}{dsneusct.f}{303}{section*.631}
+\contentsline {subsection}{dspole.f}{303}{section*.632}
+\contentsline {subsection}{dsprep.f}{303}{section*.633}
+\contentsline {subsection}{dsqindx.f}{304}{section*.634}
+\contentsline {subsection}{dsralph3.f}{304}{section*.635}
+\contentsline {subsection}{dsralph31loop.f}{304}{section*.636}
+\contentsline {subsection}{dsrghm.f}{304}{section*.637}
+\contentsline {subsection}{dsrmq.f}{304}{section*.638}
+\contentsline {subsection}{dsrmq1loop.f}{304}{section*.639}
+\contentsline {subsection}{dssettopmass.f}{304}{section*.640}
+\contentsline {subsection}{dssfesct.f}{304}{section*.641}
+\contentsline {subsection}{dsspectrum.f}{305}{section*.642}
+\contentsline {subsection}{dssuconst.f}{305}{section*.643}
+\contentsline {subsection}{dssusy.f}{305}{section*.644}
+\contentsline {subsection}{dsvertx.f}{305}{section*.645}
+\contentsline {subsection}{dsvertx1.f}{306}{section*.646}
+\contentsline {subsection}{dsvertx3.f}{306}{section*.647}
+\contentsline {subsection}{dswhwarn.f}{307}{section*.648}
+\contentsline {subsection}{dswspectrum.f}{307}{section*.649}
+\contentsline {subsection}{dswunph.f}{307}{section*.650}
+\contentsline {subsection}{dswvertx.f}{307}{section*.651}
+\contentsline {subsection}{g4p.f}{308}{section*.652}
+\contentsline {chapter}{\numberline {25}suspect: mSUGRA interface (suspect) to DarkSUSY}{309}{chapter.25}
+\contentsline {section}{\numberline {25.1}Routine headers -- fortran files}{309}{section.25.1}
+\contentsline {subsection}{dssuspecterr.f}{309}{section*.653}
+\contentsline {subsection}{dssuspectsugra.f}{309}{section*.654}
+\contentsline {subsection}{suspect2.f}{310}{section*.655}
+\contentsline {chapter}{\numberline {26}xcern: CERN routines needed by DarkSUSY}{313}{chapter.26}
+\contentsline {section}{\numberline {26.1}Routine headers -- fortran files}{313}{section.26.1}
+\contentsline {subsection}{besj064.f}{313}{section*.656}
+\contentsline {subsection}{bsir364.f}{313}{section*.657}
+\contentsline {subsection}{dbzejy.f}{313}{section*.658}
+\contentsline {subsection}{ddilog.f}{314}{section*.659}
+\contentsline {subsection}{dgadap.f}{314}{section*.660}
+\contentsline {subsection}{drkstp.f}{314}{section*.661}
+\contentsline {subsection}{eisrs1.f}{315}{section*.662}
+\contentsline {subsection}{gpindp.f}{315}{section*.663}
+\contentsline {subsection}{mtlprt.f}{316}{section*.664}
+\contentsline {subsection}{tql2.f}{316}{section*.665}
+\contentsline {subsection}{tred2.f}{316}{section*.666}
+\contentsline {chapter}{\numberline {27}xcmlib: CMLIB routines needed by DarkSUSY}{317}{chapter.27}
+\contentsline {section}{\numberline {27.1}Routine headers -- fortran files}{317}{section.27.1}
+\contentsline {subsection}{d1mach.f}{317}{section*.667}
+\contentsline {subsection}{dqagse.f}{317}{section*.668}
+\contentsline {subsection}{dqagseb.f}{320}{section*.669}
+\contentsline {subsection}{dqelg.f}{323}{section*.670}
+\contentsline {subsection}{dqk21.f}{324}{section*.671}
+\contentsline {subsection}{dqk21b.f}{325}{section*.672}
+\contentsline {subsection}{dqpsrt.f}{326}{section*.673}
+\contentsline {chapter}{\numberline {28}xfeynhiggs: FeynHiggs interface to DarkSUSY}{329}{chapter.28}
+\contentsline {section}{\numberline {28.1}Routine headers -- fortran files}{329}{section.28.1}
+\contentsline {subsection}{dsfeynhiggs.f}{329}{section*.674}
+\contentsline {subsection}{dsfeynhiggsdummy.f}{330}{section*.675}
+\contentsline {subsection}{FeynHiggsSub\_ds.f}{330}{section*.676}
+\contentsline {subsection}{Hhmasssr2\_ds.f}{331}{section*.677}
+\contentsline {chapter}{\numberline {29}xhdecay: HDecay interface to DarkSUSY}{333}{chapter.29}
+\contentsline {section}{\numberline {29.1}Routine headers -- fortran files}{333}{section.29.1}
+\contentsline {subsection}{dshdecay.f}{333}{section*.678}
+\contentsline {subsection}{hdecay.f}{333}{section*.679}
+\contentsline {chapter}{Acknowledgements}{337}{chapter*.680}
+\contentsline {chapter}{Bibliography}{337}{chapter*.680}
