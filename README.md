@@ -284,11 +284,17 @@ Controls
                 save at for later use.  There are a number of
                 negative integral values which constitute special
                 stop codes:
-                -1
+                -4  Stop when the star becomes a dark star (stops
+                    in the HR diagram
+                -5  Stop when the star leaves the main sequence
+                -6  Stop when center hydrogen exhausted
+                -7  Stop when helium ignites (not in He flash)
+                -8  Stop when helium burning begins (any way)
+                -9  Stop when central helium depleted
                 -10 Stop when the star either leaves the main
                     sequence or becomes a dark star (halts in
                     the HR diagram).  This is just a logical
-                    AND of -6 and -x
+                    AND of -6 and -4.
                 Any other negative value is interpreted as an
                 indication that the code should not stop and
                 save its state for later use at any particular
