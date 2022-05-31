@@ -52,7 +52,7 @@ FC = gfortran -ffixed-line-length-132
 #FC = g95 -ffixed-line-length-132
 
 # use standard optimization
-FFLAGS = -O2 #-check all -traceback -fpstkchk -std90 -warn unused -warn declarations
+FFLAGS = -O2 --std=legacy #-check all -traceback -fpstkchk -std90 -warn unused -warn declarations
 #FFLAGS = -O2 -Rb -Rs
 # -Rb checks array boundaries, -Rs checks array conformance
 # for performance profiling and gprof with Absoft compiler (others use -pg)
@@ -60,7 +60,8 @@ FFLAGS = -O2 #-check all -traceback -fpstkchk -std90 -warn unused -warn declarat
 # then do gprof EZ > profile.doc; open profile.doc
 
 FF = $(FC)
-export FC FF FFLAGS
+FOPT = $(FFLAGS)
+export FC FF FFLAGS FOPT
 
 PROG = EZ
 RUNDIR = ../run
